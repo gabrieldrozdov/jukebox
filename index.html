@@ -1,13 +1,1826 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Jukebox</title>
-	<link rel="stylesheet" href="style.css">
-</head>
-<body>
-	Coming soon!
-	<script src="script.js"></script>
-</body>
-</html>
+
+		<!DOCTYPE html>
+		<html lang="en">
+		<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<title>Jukebox</title>
+			<meta name="author" content="Gabriel Drozdov">
+			<meta name="keywords" content="Music, Composition, Songs, Creative Coding, Songwriting, Sound Design, Music Production">
+			<meta name="description" content="Real music for human ears.">
+			<meta property="og:url" content="https://jukebox.barcoloudly.com/">
+			<meta name="og:title" property="og:title" content="Jukebox">
+			<meta property="og:description" content="Real music for human ears.">
+			<meta property="og:image" content="./assets/meta/opengraph.jpg">
+			<link rel="icon" type="image/png" href="assets/meta/favicon.png" />
+			<link rel="stylesheet" href="style.css">
+		</head>
+		<body>
+			<button class="menu-toggle menu-toggle-info" onclick="openInfo();">Info</button>
+			<button class="menu-toggle menu-toggle-music" onclick="openMusic();">Music</button>
+
+			<div class="info" data-active="0">
+				<button class="info-close" onclick="closeInfo();">Close</button>
+				<nav class="nav">
+					
+			<a href="#to-home-to-home" class="nav-link" data-album="to-home-to-home" onclick="closeInfo(); openMusic();"><img src="music/to-home-to-home/to-home-to-home.jpg"></a>
+		
+			<a href="#2018-21-pretty-much-everything" class="nav-link" data-album="2018-21-pretty-much-everything" onclick="closeInfo(); openMusic();"><img src="music/2018-21-pretty-much-everything/2018-21-pretty-much-everything.jpg"></a>
+		
+			<a href="#karaoke-superstar" class="nav-link" data-album="karaoke-superstar" onclick="closeInfo(); openMusic();"><img src="music/karaoke-superstar/karaoke-superstar.jpg"></a>
+		
+			<a href="#eurydice" class="nav-link" data-album="eurydice" onclick="closeInfo(); openMusic();"><img src="music/eurydice/eurydice.jpg"></a>
+		
+			<a href="#rhinoceros" class="nav-link" data-album="rhinoceros" onclick="closeInfo(); openMusic();"><img src="music/rhinoceros/rhinoceros.jpg"></a>
+		
+			<a href="#99-histories" class="nav-link" data-album="99-histories" onclick="closeInfo(); openMusic();"><img src="music/99-histories/99-histories.jpg"></a>
+		
+			<a href="#moonbug" class="nav-link" data-album="moonbug" onclick="closeInfo(); openMusic();"><img src="music/moonbug/moonbug.jpg"></a>
+		
+			<a href="#falling-in-love-to-voices" class="nav-link" data-album="falling-in-love-to-voices" onclick="closeInfo(); openMusic();"><img src="music/falling-in-love-to-voices/falling-in-love-to-voices.jpg"></a>
+		
+			<a href="#time-passes" class="nav-link" data-album="time-passes" onclick="closeInfo(); openMusic();"><img src="music/time-passes/time-passes.jpg"></a>
+		
+			<a href="#dano" class="nav-link" data-album="dano" onclick="closeInfo(); openMusic();"><img src="music/dano/dano.jpg"></a>
+		
+			<a href="#something-happens" class="nav-link" data-album="something-happens" onclick="closeInfo(); openMusic();"><img src="music/something-happens/something-happens.jpg"></a>
+		
+			<a href="#granola" class="nav-link" data-album="granola" onclick="closeInfo(); openMusic();"><img src="music/granola/granola.jpg"></a>
+		
+			<a href="#to-home" class="nav-link" data-album="to-home" onclick="closeInfo(); openMusic();"><img src="music/to-home/to-home.jpg"></a>
+		
+				</nav>
+				<div class="info-content">
+					<section class="info-content-intro">
+						<p>
+							Oh hi there. Gabriel Drozdov, a.k.a. Barco Loudly, here. I’ve been making music for a while. Here’s all of it.
+						</p>
+						<p>
+							This music is mine. If you want royalty-free tracks for whatever, check out <a href="https://bgm.barcoloudly.com/" target="_blank">BGM</a>. If you want musical toys, go to <a href="https://barcoloudly.com/" target="_blank">Barco Loudly</a>. If you want your own website (like to work together), reach out to <a href="https://noreplica.com/" target="_blank">No Replica</a>.
+						</p>
+					</section>
+					
+			<section class="info-notes">
+				<p class="info-notes-date">2021 December 28</p>
+				<h2 class="info-notes-album"><a href="#to-home-to-home" onclick="closeInfo();">To Home?? To&nbsp;Home!!</a></h2>
+				<p>I wrote a concept album, “To Home”, in 2015 before I graduated from high school. I knew nothing about music production or engineering. I could write faster than I could record—I ended up adding an additional four songs to the album, as well as wrote and recorded tens more that wouldn't make the cut. I wrote lyrics for the whole album and sang them—my voice wasn't good, and I grew tired. I released the album in 2015, but that album is something I no longer wish to share. None of the vocal recordings sounded particularly professional, or refined, or good. I tried again in 2016 by making a shorter, refined version of the same album, this time called “Time Passes”. That also did not end up particularly good. I still love the underlying songs, though, so I've taken out the vocals and extracted the piano recordings. “To Home?? To Home!!” is a collection of what I played at the time, remastered a bit and put into one place. The lyrics will stay in my head and in a document I made when I was 15, 16, 17 and 18.</p>
+			</section>
+		
+			<section class="info-notes">
+				<p class="info-notes-date">2021 June 13</p>
+				<h2 class="info-notes-album"><a href="#2018-21-pretty-much-everything" onclick="closeInfo();">2018-21 pretty much everything</a></h2>
+				<p>Pretty much everything.</p>
+			</section>
+		
+			<section class="info-notes">
+				<p class="info-notes-date">2019 May 10</p>
+				<h2 class="info-notes-album"><a href="#karaoke-superstar" onclick="closeInfo();">Karaoke Superstar</a></h2>
+				<p>Compositions for Wilson Lai’s senior thesis film at Wesleyan University.</p>
+			</section>
+		
+			<section class="info-notes">
+				<p class="info-notes-date">2019 April 12</p>
+				<h2 class="info-notes-album"><a href="#eurydice" onclick="closeInfo();">Eurydice</a></h2>
+				<p>Sound design for Wesleyan University's production of Eurydice directed by Corey Sorenson. Featuring samples from “Don’t Sit Under the Apple Tree” by Glenn Miller, “La Vie en rose”, “String Quartet in F Major” by Ravel, and “A New Satiesfaction” by Made in Berlin string quartet.</p>
+			</section>
+		
+			<section class="info-notes">
+				<p class="info-notes-date">2018 May 3</p>
+				<h2 class="info-notes-album"><a href="#rhinoceros" onclick="closeInfo();">Rhinoceros</a></h2>
+				<p>Sound design for Second Stage's production of Rhinoceros directed by Jordan Tragash at Wesleyan University.</p>
+			</section>
+		
+			<section class="info-notes">
+				<p class="info-notes-date">2018 February 28</p>
+				<h2 class="info-notes-album"><a href="#99-histories" onclick="closeInfo();">99 Histories</a></h2>
+				<p>Sound design for Eva Yichen Lou's senior thesis at Wesleyan University. Cello performed by Aïli Niimura. Featuring Prelude to Bach's Cello Suite No.1 in G.</p>
+			</section>
+		
+			<section class="info-notes">
+				<p class="info-notes-date">2017 July 23</p>
+				<h2 class="info-notes-album"><a href="#moonbug" onclick="closeInfo();">Moonbug</a></h2>
+				<p>Songs that might've transitioned between other songs, but don't. They're probably not meant to be listened to in this way, but ah well.</p>
+			</section>
+		
+			<section class="info-notes">
+				<p class="info-notes-date">2016 August 31</p>
+				<h2 class="info-notes-album"><a href="#falling-in-love-to-voices" onclick="closeInfo();">Falling in Love to&nbsp;Voices</a></h2>
+				<p>An album of songs I wish I had time to finish, but at least recorded on my phone. Featuring calligraphy by Maddie Ulevich.</p>
+			</section>
+		
+			<section class="info-notes">
+				<p class="info-notes-date">2016 August 31</p>
+				<h2 class="info-notes-album"><a href="#time-passes" onclick="closeInfo();">Time Passes</a></h2>
+				<p>Remake of my first album but shorter and different. I tried to make it better, but I really mostly made it shorter and different.</p>
+			</section>
+		
+			<section class="info-notes">
+				<p class="info-notes-date">2014 December 18</p>
+				<h2 class="info-notes-album"><a href="#dano" onclick="closeInfo();">Dano</a></h2>
+				<p>A string quartet adapted from a synthesizer piece, with an album cover of my late grandfather, Pyotr Drozdov.</p><p>Unfortunately, I do not know who performed the piece. I remember that only two of the musicians had met before the recording session, and that those two were married.</p>
+			</section>
+		
+			<section class="info-notes">
+				<p class="info-notes-date">2014 December 18</p>
+				<h2 class="info-notes-album"><a href="#something-happens" onclick="closeInfo();">Something Happens</a></h2>
+				<p>A score to a film that doesn’t exist, something about J. Alfred Prufrock and love songs. Does that still make it a score?</p>
+			</section>
+		
+			<section class="info-notes">
+				<p class="info-notes-date">2014 August 8</p>
+				<h2 class="info-notes-album"><a href="#granola" onclick="closeInfo();">Granola</a></h2>
+				<p>Lola was a project conducted at NYU’s Clive Davis Institute of Recorded Music. The group consisted of Gabriel Drozdov, Joaquin Friedman, Pavlina Osta, and Jourdan Kelli. Written, performed, and produced by Gabriel Drozdov except where noted.</p>
+			</section>
+		
+			<section class="info-notes">
+				<p class="info-notes-date">2014 May 19</p>
+				<h2 class="info-notes-album"><a href="#to-home" onclick="closeInfo();">To Home</a></h2>
+				<p>A concept album about Mason and Erin. The story is told Mason's perspective through five parts and a bonus EP. The parts are as follows: ONE [tracks 1–3],TWO [tracks 4–6], THREE [tracks 7–10], FOUR[tracks 11–14], FIVE [tracks 15–18], and MORE [tracks 19–22].</p>
+			</section>
+		
+				</div>
+			</div>
+		
+			<div class="container">
+				<header class="header">
+					<div class="logo-container">
+						<div class="logo" style="animation-delay: calc(-2s + var(--animation-offset)); color: var(--secondary-alt);"><span>J</span><span>u</span><span>k</span><span>e</span><span>b</span><span>o</span><span>x</span></div>
+						<div class="logo" style="animation-delay: calc(-4s + var(--animation-offset)); color: var(--secondary-alt);"><span>J</span><span>u</span><span>k</span><span>e</span><span>b</span><span>o</span><span>x</span></div>
+						<div class="logo" style="animation-delay: calc(-6s + var(--animation-offset)); color: var(--secondary-alt);"><span>J</span><span>u</span><span>k</span><span>e</span><span>b</span><span>o</span><span>x</span></div>
+						<div class="logo" style="animation-delay: calc(-8s + var(--animation-offset)); color: var(--secondary-alt);"><span>J</span><span>u</span><span>k</span><span>e</span><span>b</span><span>o</span><span>x</span></div>
+						<div class="logo" style="animation-delay: calc(-10s + var(--animation-offset)); color: var(--secondary-alt);"><span>J</span><span>u</span><span>k</span><span>e</span><span>b</span><span>o</span><span>x</span></div>
+						<div class="logo" style="animation-delay: calc(-12s + var(--animation-offset)); color: var(--secondary-alt);"><span>J</span><span>u</span><span>k</span><span>e</span><span>b</span><span>o</span><span>x</span></div>
+						<div class="logo" style="animation-delay: calc(-14s + var(--animation-offset)); color: var(--secondary-alt);"><span>J</span><span>u</span><span>k</span><span>e</span><span>b</span><span>o</span><span>x</span></div>
+						<div class="logo" style="animation-delay: calc(-16s + var(--animation-offset)); color: var(--secondary-alt);"><span>J</span><span>u</span><span>k</span><span>e</span><span>b</span><span>o</span><span>x</span></div>
+						<div class="logo" style="animation-delay: calc(-18s + var(--animation-offset)); color: var(--secondary-alt);"><span>J</span><span>u</span><span>k</span><span>e</span><span>b</span><span>o</span><span>x</span></div>
+						<div class="logo" style="animation-delay: calc(-20s + var(--animation-offset)); color: var(--secondary-alt);"><span>J</span><span>u</span><span>k</span><span>e</span><span>b</span><span>o</span><span>x</span></div>
+						<div class="logo" style="animation-delay: calc(-22s + var(--animation-offset)); color: var(--secondary-alt);"><span>J</span><span>u</span><span>k</span><span>e</span><span>b</span><span>o</span><span>x</span></div>
+						<div class="logo" style="animation-delay: calc(-24s + var(--animation-offset)); color: var(--secondary-alt);"><span>J</span><span>u</span><span>k</span><span>e</span><span>b</span><span>o</span><span>x</span></div>
+						<div class="logo" style="animation-delay: calc(-26s + var(--animation-offset)); color: var(--secondary-alt);"><span>J</span><span>u</span><span>k</span><span>e</span><span>b</span><span>o</span><span>x</span></div>
+						<div class="logo" style="animation-delay: calc(-28s + var(--animation-offset)); color: var(--secondary-alt);"><span>J</span><span>u</span><span>k</span><span>e</span><span>b</span><span>o</span><span>x</span></div>
+						<h1 class="logo"><span>J</span><span>u</span><span>k</span><span>e</span><span>b</span><span>o</span><span>x</span></h1>
+					</div>
+		
+					<div class="player" data-active="0">
+						<div class="player-song">
+							No Song Playing
+						</div>
+						<div class="player-album">
+							No Album Selected
+						</div>
+				
+						<div class="player-controls">
+							<div class="player-section" id="player-buttons">
+								<button class="player-button" id="player-back" onclick="prevSong();">
+									<svg width="24" height="24" viewBox="0 0 24 24"><path d="M13,12l11,7V5l-11,7ZM13,5v14L3,12l10-7ZM0,6h3v12H0V6Z"/></svg>
+								</button>
+								<button class="player-button" id="player-playpause" onclick="togglePlayPause();" data-active="1">
+									<svg viewBox="0 0 24 24" class="player-playpause-1"><path d="M9,22h-5V2h5v20ZM20,2h-5v20h5V2Z"/></svg>
+									<svg width="24" height="24" viewBox="0 0 24 24" class="player-playpause-2"><path d="M3 22v-20l18 10-18 10z"/></svg>
+								</button>
+								<button class="player-button" id="player-forward" onclick="nextSong();">
+									<svg width="24" height="24" viewBox="0 0 24 24"><path d="M11 12l-11 7v-14l11 7zm0-7v14l10-7-10-7zm13 1h-3v12h3v-12z"/></svg>
+								</button>
+							</div>
+			
+							<div class="player-section" id="player-playbar">
+								<div class="player-time">00:00</div>
+								<input type="range" class="player-playbar" min="0" max="100" value="0" oninput="skipToTime(this.value);">
+								<div class="player-duration">00:00</div>
+							</div>
+				
+							<div class="player-section" id="player-volume">
+								<button class="player-button" id="player-mute" onclick="toggleMute();" data-active="0">
+									<svg width="24" height="24" viewBox="0 0 24 24" class="player-mute-1"><path d="M19 7.358v15.642l-8-5v-.785l8-9.857zm3-6.094l-1.548-1.264-3.446 4.247-6.006 3.753v3.646l-2 2.464v-6.11h-4v10h.843l-3.843 4.736 1.548 1.264 18.452-22.736z"/></svg>
+									<svg width="24" height="24" viewBox="0 0 24 24" class="player-mute-2"><path d="M6 7l8-5v20l-8-5v-10zm-6 10h4v-10h-4v10zm20.264-13.264l-1.497 1.497c1.847 1.783 2.983 4.157 2.983 6.767 0 2.61-1.135 4.984-2.983 6.766l1.498 1.498c2.305-2.153 3.735-5.055 3.735-8.264s-1.43-6.11-3.736-8.264zm-.489 8.264c0-2.084-.915-3.967-2.384-5.391l-1.503 1.503c1.011 1.049 1.637 2.401 1.637 3.888 0 1.488-.623 2.841-1.634 3.891l1.503 1.503c1.468-1.424 2.381-3.309 2.381-5.394z"/></svg>
+								</button>
+								<input type="range" class="player-volume" min="0" max="100" value="80" oninput="changeVolume(this.value/100);">
+							</div>
+						</div>
+				
+						<div class="player-toggles">
+							<div class="player-toggle" id="repeat">
+								<label class="player-toggle-label">Repeat</label>
+								<button class="player-toggle-button" id="repeat-none" data-active="1" onclick="setRepeat('none');">
+									None
+								</button>
+								<button class="player-toggle-button" id="repeat-song" onclick="setRepeat('song');">
+									Song
+								</button>
+								<button class="player-toggle-button" id="repeat-album" onclick="setRepeat('album');">
+									Album
+								</button>
+							</div>
+							<div class="player-toggle" id="shuffle">
+								<label class="player-toggle-label">Shuffle</label>
+								<button class="player-toggle-button" id="shuffle-none" data-active="1" onclick="setShuffle('none');">
+									None
+								</button>
+								<button class="player-toggle-button" id="shuffle-album" onclick="setShuffle('album');">
+									Album
+								</button>
+								<button class="player-toggle-button" id="shuffle-all" onclick="setShuffle('all');">
+									All
+								</button>
+							</div>
+						</div>
+					</div>
+				</header>
+		
+				<main class="music" data-active="0">
+					<button class="music-close" onclick="closeMusic();">Close</button>
+					
+			<section class="album" id="to-home-to-home" data-active="0">
+				<a class="album-header" href="#to-home-to-home">
+					<div class="album-header-cover">
+						<img src="music/to-home-to-home/to-home-to-home.jpg">
+					</div>
+					<div class="album-header-info">
+						<p class="album-header-info-date">2021 December 28</p>
+						<h2 class="album-header-info-title">To Home?? To&nbsp;Home!!</h2>
+					</div>
+				</a>
+				<ul class="album-songs">
+					
+				<li class="song" onclick="playSong('to-home-to-home', 'Mason the Killer'); generateQueue();" data-active="0" data-song="to-home-to-home Mason the Killer">
+					<span class="song-number">1</span>
+					<span class="song-name">Mason the Killer</span>
+					<span class="song-duration">06:44</span>
+				</li>
+			
+				<li class="song" onclick="playSong('to-home-to-home', 'Through the Eyes of a Vacationer'); generateQueue();" data-active="0" data-song="to-home-to-home Through the Eyes of a Vacationer">
+					<span class="song-number">2</span>
+					<span class="song-name">Through the Eyes of a Vacationer</span>
+					<span class="song-duration">04:00</span>
+				</li>
+			
+				<li class="song" onclick="playSong('to-home-to-home', 'Wouldn’t Know'); generateQueue();" data-active="0" data-song="to-home-to-home Wouldn’t Know">
+					<span class="song-number">3</span>
+					<span class="song-name">Wouldn’t Know</span>
+					<span class="song-duration">05:34</span>
+				</li>
+			
+				<li class="song" onclick="playSong('to-home-to-home', 'Forever'); generateQueue();" data-active="0" data-song="to-home-to-home Forever">
+					<span class="song-number">4</span>
+					<span class="song-name">Forever</span>
+					<span class="song-duration">09:04</span>
+				</li>
+			
+				<li class="song" onclick="playSong('to-home-to-home', 'Boxfish, Or, How Could I See This In A Different Light?'); generateQueue();" data-active="0" data-song="to-home-to-home Boxfish, Or, How Could I See This In A Different Light?">
+					<span class="song-number">5</span>
+					<span class="song-name">Boxfish, Or, How Could I See This In A Different Light?</span>
+					<span class="song-duration">08:15</span>
+				</li>
+			
+				<li class="song" onclick="playSong('to-home-to-home', 'A Complex of Noise'); generateQueue();" data-active="0" data-song="to-home-to-home A Complex of Noise">
+					<span class="song-number">6</span>
+					<span class="song-name">A Complex of Noise</span>
+					<span class="song-duration">07:13</span>
+				</li>
+			
+				<li class="song" onclick="playSong('to-home-to-home', 'To Home'); generateQueue();" data-active="0" data-song="to-home-to-home To Home">
+					<span class="song-number">7</span>
+					<span class="song-name">To Home</span>
+					<span class="song-duration">06:47</span>
+				</li>
+			
+				<li class="song" onclick="playSong('to-home-to-home', 'In a Cloud'); generateQueue();" data-active="0" data-song="to-home-to-home In a Cloud">
+					<span class="song-number">8</span>
+					<span class="song-name">In a Cloud</span>
+					<span class="song-duration">07:42</span>
+				</li>
+			
+				<li class="song" onclick="playSong('to-home-to-home', 'Estate'); generateQueue();" data-active="0" data-song="to-home-to-home Estate">
+					<span class="song-number">9</span>
+					<span class="song-name">Estate</span>
+					<span class="song-duration">04:53</span>
+				</li>
+			
+				<li class="song" onclick="playSong('to-home-to-home', 'Atlanta'); generateQueue();" data-active="0" data-song="to-home-to-home Atlanta">
+					<span class="song-number">10</span>
+					<span class="song-name">Atlanta</span>
+					<span class="song-duration">04:30</span>
+				</li>
+			
+				<li class="song" onclick="playSong('to-home-to-home', 'Life is a Nervous Twitch'); generateQueue();" data-active="0" data-song="to-home-to-home Life is a Nervous Twitch">
+					<span class="song-number">11</span>
+					<span class="song-name">Life is a Nervous Twitch</span>
+					<span class="song-duration">05:16</span>
+				</li>
+			
+				<li class="song" onclick="playSong('to-home-to-home', 'My Happiest Days Are Filled With Noise'); generateQueue();" data-active="0" data-song="to-home-to-home My Happiest Days Are Filled With Noise">
+					<span class="song-number">12</span>
+					<span class="song-name">My Happiest Days Are Filled With Noise</span>
+					<span class="song-duration">06:02</span>
+				</li>
+			
+				<li class="song" onclick="playSong('to-home-to-home', 'Planet, Maybe'); generateQueue();" data-active="0" data-song="to-home-to-home Planet, Maybe">
+					<span class="song-number">13</span>
+					<span class="song-name">Planet, Maybe</span>
+					<span class="song-duration">01:59</span>
+				</li>
+			
+				<li class="song" onclick="playSong('to-home-to-home', 'O, Isn’t It Fantastic?'); generateQueue();" data-active="0" data-song="to-home-to-home O, Isn’t It Fantastic?">
+					<span class="song-number">14</span>
+					<span class="song-name">O, Isn’t It Fantastic?</span>
+					<span class="song-duration">03:18</span>
+				</li>
+			
+				<li class="song" onclick="playSong('to-home-to-home', 'Flourish'); generateQueue();" data-active="0" data-song="to-home-to-home Flourish">
+					<span class="song-number">15</span>
+					<span class="song-name">Flourish</span>
+					<span class="song-duration">04:39</span>
+				</li>
+			
+				<li class="song" onclick="playSong('to-home-to-home', 'A Low-Hung Head'); generateQueue();" data-active="0" data-song="to-home-to-home A Low-Hung Head">
+					<span class="song-number">16</span>
+					<span class="song-name">A Low-Hung Head</span>
+					<span class="song-duration">07:13</span>
+				</li>
+			
+				<li class="song" onclick="playSong('to-home-to-home', 'Grizzly Bear'); generateQueue();" data-active="0" data-song="to-home-to-home Grizzly Bear">
+					<span class="song-number">17</span>
+					<span class="song-name">Grizzly Bear</span>
+					<span class="song-duration">03:25</span>
+				</li>
+			
+				<li class="song" onclick="playSong('to-home-to-home', 'Decider'); generateQueue();" data-active="0" data-song="to-home-to-home Decider">
+					<span class="song-number">18</span>
+					<span class="song-name">Decider</span>
+					<span class="song-duration">04:54</span>
+				</li>
+			
+				<li class="song" onclick="playSong('to-home-to-home', 'Where I Better Last!'); generateQueue();" data-active="0" data-song="to-home-to-home Where I Better Last!">
+					<span class="song-number">19</span>
+					<span class="song-name">Where I Better Last!</span>
+					<span class="song-duration">03:00</span>
+				</li>
+			
+				<li class="song" onclick="playSong('to-home-to-home', 'Sure'); generateQueue();" data-active="0" data-song="to-home-to-home Sure">
+					<span class="song-number">20</span>
+					<span class="song-name">Sure</span>
+					<span class="song-duration">04:04</span>
+				</li>
+			
+				<li class="song" onclick="playSong('to-home-to-home', 'More'); generateQueue();" data-active="0" data-song="to-home-to-home More">
+					<span class="song-number">21</span>
+					<span class="song-name">More</span>
+					<span class="song-duration">03:44</span>
+				</li>
+			
+				<li class="song" onclick="playSong('to-home-to-home', 'Mushroom'); generateQueue();" data-active="0" data-song="to-home-to-home Mushroom">
+					<span class="song-number">22</span>
+					<span class="song-name">Mushroom</span>
+					<span class="song-duration">06:46</span>
+				</li>
+			
+				<li class="song" onclick="playSong('to-home-to-home', 'Don’t Go Alone [Bonus Track]'); generateQueue();" data-active="0" data-song="to-home-to-home Don’t Go Alone [Bonus Track]">
+					<span class="song-number">23</span>
+					<span class="song-name">Don’t Go Alone [Bonus Track]</span>
+					<span class="song-duration">03:07</span>
+				</li>
+			
+				<li class="song" onclick="playSong('to-home-to-home', 'Summary of Plot [Bonus Track]'); generateQueue();" data-active="0" data-song="to-home-to-home Summary of Plot [Bonus Track]">
+					<span class="song-number">24</span>
+					<span class="song-name">Summary of Plot [Bonus Track]</span>
+					<span class="song-duration">01:06</span>
+				</li>
+			
+				<li class="song" onclick="playSong('to-home-to-home', 'Tybalt (Put Down Your Weapon) [Bonus Track]'); generateQueue();" data-active="0" data-song="to-home-to-home Tybalt (Put Down Your Weapon) [Bonus Track]">
+					<span class="song-number">25</span>
+					<span class="song-name">Tybalt (Put Down Your Weapon) [Bonus Track]</span>
+					<span class="song-duration">02:49</span>
+				</li>
+			
+				<li class="song" onclick="playSong('to-home-to-home', 'Three Unrelated Parts [Bonus Track]'); generateQueue();" data-active="0" data-song="to-home-to-home Three Unrelated Parts [Bonus Track]">
+					<span class="song-number">26</span>
+					<span class="song-name">Three Unrelated Parts [Bonus Track]</span>
+					<span class="song-duration">01:00</span>
+				</li>
+			
+				<li class="song" onclick="playSong('to-home-to-home', 'Scrapped [Bonus Track]'); generateQueue();" data-active="0" data-song="to-home-to-home Scrapped [Bonus Track]">
+					<span class="song-number">27</span>
+					<span class="song-name">Scrapped [Bonus Track]</span>
+					<span class="song-duration">00:40</span>
+				</li>
+			
+				<li class="song" onclick="playSong('to-home-to-home', 'Sweet Obsolete [Bonus Track]'); generateQueue();" data-active="0" data-song="to-home-to-home Sweet Obsolete [Bonus Track]">
+					<span class="song-number">28</span>
+					<span class="song-name">Sweet Obsolete [Bonus Track]</span>
+					<span class="song-duration">02:32</span>
+				</li>
+			
+				<li class="song" onclick="playSong('to-home-to-home', 'Track 17 [Bonus Track]'); generateQueue();" data-active="0" data-song="to-home-to-home Track 17 [Bonus Track]">
+					<span class="song-number">29</span>
+					<span class="song-name">Track 17 [Bonus Track]</span>
+					<span class="song-duration">03:12</span>
+				</li>
+			
+				<li class="song" onclick="playSong('to-home-to-home', 'What Am I Doing, What Have I Done [Bonus Track]'); generateQueue();" data-active="0" data-song="to-home-to-home What Am I Doing, What Have I Done [Bonus Track]">
+					<span class="song-number">30</span>
+					<span class="song-name">What Am I Doing, What Have I Done [Bonus Track]</span>
+					<span class="song-duration">02:51</span>
+				</li>
+			
+				<li class="song" onclick="playSong('to-home-to-home', 'On a Budget [Bonus Track]'); generateQueue();" data-active="0" data-song="to-home-to-home On a Budget [Bonus Track]">
+					<span class="song-number">31</span>
+					<span class="song-name">On a Budget [Bonus Track]</span>
+					<span class="song-duration">01:42</span>
+				</li>
+			
+				<li class="song" onclick="playSong('to-home-to-home', 'Ghost Commercial [Bonus Track]'); generateQueue();" data-active="0" data-song="to-home-to-home Ghost Commercial [Bonus Track]">
+					<span class="song-number">32</span>
+					<span class="song-name">Ghost Commercial [Bonus Track]</span>
+					<span class="song-duration">02:09</span>
+				</li>
+			
+				<li class="song" onclick="playSong('to-home-to-home', 'End to an End [Bonus Track]'); generateQueue();" data-active="0" data-song="to-home-to-home End to an End [Bonus Track]">
+					<span class="song-number">33</span>
+					<span class="song-name">End to an End [Bonus Track]</span>
+					<span class="song-duration">02:09</span>
+				</li>
+			
+				<li class="song" onclick="playSong('to-home-to-home', 'Harmony [Bonus Track]'); generateQueue();" data-active="0" data-song="to-home-to-home Harmony [Bonus Track]">
+					<span class="song-number">34</span>
+					<span class="song-name">Harmony [Bonus Track]</span>
+					<span class="song-duration">01:51</span>
+				</li>
+			
+				</ul>
+			</section>
+		
+			<section class="album" id="2018-21-pretty-much-everything" data-active="0">
+				<a class="album-header" href="#2018-21-pretty-much-everything">
+					<div class="album-header-cover">
+						<img src="music/2018-21-pretty-much-everything/2018-21-pretty-much-everything.jpg">
+					</div>
+					<div class="album-header-info">
+						<p class="album-header-info-date">2021 June 13</p>
+						<h2 class="album-header-info-title">2018-21 pretty much everything</h2>
+					</div>
+				</a>
+				<ul class="album-songs">
+					
+				<li class="song" onclick="playSong('2018-21-pretty-much-everything', '2018 04 06 kiwi'); generateQueue();" data-active="0" data-song="2018-21-pretty-much-everything 2018 04 06 kiwi">
+					<span class="song-number">1</span>
+					<span class="song-name">2018 04 06 kiwi</span>
+					<span class="song-duration">01:51</span>
+				</li>
+			
+				<li class="song" onclick="playSong('2018-21-pretty-much-everything', '2018 05 03 table lines'); generateQueue();" data-active="0" data-song="2018-21-pretty-much-everything 2018 05 03 table lines">
+					<span class="song-number">2</span>
+					<span class="song-name">2018 05 03 table lines</span>
+					<span class="song-duration">01:00</span>
+				</li>
+			
+				<li class="song" onclick="playSong('2018-21-pretty-much-everything', '2018 07 05 beat1'); generateQueue();" data-active="0" data-song="2018-21-pretty-much-everything 2018 07 05 beat1">
+					<span class="song-number">3</span>
+					<span class="song-name">2018 07 05 beat1</span>
+					<span class="song-duration">01:21</span>
+				</li>
+			
+				<li class="song" onclick="playSong('2018-21-pretty-much-everything', '2018 07 05 dance beat'); generateQueue();" data-active="0" data-song="2018-21-pretty-much-everything 2018 07 05 dance beat">
+					<span class="song-number">4</span>
+					<span class="song-name">2018 07 05 dance beat</span>
+					<span class="song-duration">01:15</span>
+				</li>
+			
+				<li class="song" onclick="playSong('2018-21-pretty-much-everything', '2018 07 05 living creatures'); generateQueue();" data-active="0" data-song="2018-21-pretty-much-everything 2018 07 05 living creatures">
+					<span class="song-number">5</span>
+					<span class="song-name">2018 07 05 living creatures</span>
+					<span class="song-duration">00:31</span>
+				</li>
+			
+				<li class="song" onclick="playSong('2018-21-pretty-much-everything', '2018 07 12 spider'); generateQueue();" data-active="0" data-song="2018-21-pretty-much-everything 2018 07 12 spider">
+					<span class="song-number">6</span>
+					<span class="song-name">2018 07 12 spider</span>
+					<span class="song-duration">01:30</span>
+				</li>
+			
+				<li class="song" onclick="playSong('2018-21-pretty-much-everything', '2018 07 12 test2'); generateQueue();" data-active="0" data-song="2018-21-pretty-much-everything 2018 07 12 test2">
+					<span class="song-number">7</span>
+					<span class="song-name">2018 07 12 test2</span>
+					<span class="song-duration">01:53</span>
+				</li>
+			
+				<li class="song" onclick="playSong('2018-21-pretty-much-everything', '2018 08 01 bumbum'); generateQueue();" data-active="0" data-song="2018-21-pretty-much-everything 2018 08 01 bumbum">
+					<span class="song-number">8</span>
+					<span class="song-name">2018 08 01 bumbum</span>
+					<span class="song-duration">00:50</span>
+				</li>
+			
+				<li class="song" onclick="playSong('2018-21-pretty-much-everything', '2018 08 04 oh'); generateQueue();" data-active="0" data-song="2018-21-pretty-much-everything 2018 08 04 oh">
+					<span class="song-number">9</span>
+					<span class="song-name">2018 08 04 oh</span>
+					<span class="song-duration">00:51</span>
+				</li>
+			
+				<li class="song" onclick="playSong('2018-21-pretty-much-everything', '2018 08 21 sword'); generateQueue();" data-active="0" data-song="2018-21-pretty-much-everything 2018 08 21 sword">
+					<span class="song-number">10</span>
+					<span class="song-name">2018 08 21 sword</span>
+					<span class="song-duration">02:44</span>
+				</li>
+			
+				<li class="song" onclick="playSong('2018-21-pretty-much-everything', '2018 09 02 do do do do do DA DA DA'); generateQueue();" data-active="0" data-song="2018-21-pretty-much-everything 2018 09 02 do do do do do DA DA DA">
+					<span class="song-number">11</span>
+					<span class="song-name">2018 09 02 do do do do do DA DA DA</span>
+					<span class="song-duration">00:47</span>
+				</li>
+			
+				<li class="song" onclick="playSong('2018-21-pretty-much-everything', '2018 09 05 BE BE BE BE'); generateQueue();" data-active="0" data-song="2018-21-pretty-much-everything 2018 09 05 BE BE BE BE">
+					<span class="song-number">12</span>
+					<span class="song-name">2018 09 05 BE BE BE BE</span>
+					<span class="song-duration">02:27</span>
+				</li>
+			
+				<li class="song" onclick="playSong('2018-21-pretty-much-everything', '2018 09 05 from madrid maybe'); generateQueue();" data-active="0" data-song="2018-21-pretty-much-everything 2018 09 05 from madrid maybe">
+					<span class="song-number">13</span>
+					<span class="song-name">2018 09 05 from madrid maybe</span>
+					<span class="song-duration">01:24</span>
+				</li>
+			
+				<li class="song" onclick="playSong('2018-21-pretty-much-everything', '2018 09 05 wowzers'); generateQueue();" data-active="0" data-song="2018-21-pretty-much-everything 2018 09 05 wowzers">
+					<span class="song-number">14</span>
+					<span class="song-name">2018 09 05 wowzers</span>
+					<span class="song-duration">00:30</span>
+				</li>
+			
+				<li class="song" onclick="playSong('2018-21-pretty-much-everything', '2018 09 16 how to start'); generateQueue();" data-active="0" data-song="2018-21-pretty-much-everything 2018 09 16 how to start">
+					<span class="song-number">15</span>
+					<span class="song-name">2018 09 16 how to start</span>
+					<span class="song-duration">00:59</span>
+				</li>
+			
+				<li class="song" onclick="playSong('2018-21-pretty-much-everything', '2018 10 29 plug it in'); generateQueue();" data-active="0" data-song="2018-21-pretty-much-everything 2018 10 29 plug it in">
+					<span class="song-number">16</span>
+					<span class="song-name">2018 10 29 plug it in</span>
+					<span class="song-duration">00:23</span>
+				</li>
+			
+				<li class="song" onclick="playSong('2018-21-pretty-much-everything', '2018 11 06 dum dum da dum'); generateQueue();" data-active="0" data-song="2018-21-pretty-much-everything 2018 11 06 dum dum da dum">
+					<span class="song-number">17</span>
+					<span class="song-name">2018 11 06 dum dum da dum</span>
+					<span class="song-duration">01:24</span>
+				</li>
+			
+				<li class="song" onclick="playSong('2018-21-pretty-much-everything', '2018 11 11 people talking'); generateQueue();" data-active="0" data-song="2018-21-pretty-much-everything 2018 11 11 people talking">
+					<span class="song-number">18</span>
+					<span class="song-name">2018 11 11 people talking</span>
+					<span class="song-duration">00:40</span>
+				</li>
+			
+				<li class="song" onclick="playSong('2018-21-pretty-much-everything', '2018 11 11 untitled'); generateQueue();" data-active="0" data-song="2018-21-pretty-much-everything 2018 11 11 untitled">
+					<span class="song-number">19</span>
+					<span class="song-name">2018 11 11 untitled</span>
+					<span class="song-duration">00:21</span>
+				</li>
+			
+				<li class="song" onclick="playSong('2018-21-pretty-much-everything', '2018 11 13 hey there'); generateQueue();" data-active="0" data-song="2018-21-pretty-much-everything 2018 11 13 hey there">
+					<span class="song-number">20</span>
+					<span class="song-name">2018 11 13 hey there</span>
+					<span class="song-duration">01:54</span>
+				</li>
+			
+				<li class="song" onclick="playSong('2018-21-pretty-much-everything', '2018 11 14 finding out'); generateQueue();" data-active="0" data-song="2018-21-pretty-much-everything 2018 11 14 finding out">
+					<span class="song-number">21</span>
+					<span class="song-name">2018 11 14 finding out</span>
+					<span class="song-duration">00:37</span>
+				</li>
+			
+				<li class="song" onclick="playSong('2018-21-pretty-much-everything', '2018 11 23 snaps'); generateQueue();" data-active="0" data-song="2018-21-pretty-much-everything 2018 11 23 snaps">
+					<span class="song-number">22</span>
+					<span class="song-name">2018 11 23 snaps</span>
+					<span class="song-duration">00:28</span>
+				</li>
+			
+				<li class="song" onclick="playSong('2018-21-pretty-much-everything', '2018 11 23 splinters'); generateQueue();" data-active="0" data-song="2018-21-pretty-much-everything 2018 11 23 splinters">
+					<span class="song-number">23</span>
+					<span class="song-name">2018 11 23 splinters</span>
+					<span class="song-duration">00:41</span>
+				</li>
+			
+				<li class="song" onclick="playSong('2018-21-pretty-much-everything', '2018 11 24 doing something'); generateQueue();" data-active="0" data-song="2018-21-pretty-much-everything 2018 11 24 doing something">
+					<span class="song-number">24</span>
+					<span class="song-name">2018 11 24 doing something</span>
+					<span class="song-duration">08:05</span>
+				</li>
+			
+				<li class="song" onclick="playSong('2018-21-pretty-much-everything', '2018 12 30 mouthsong'); generateQueue();" data-active="0" data-song="2018-21-pretty-much-everything 2018 12 30 mouthsong">
+					<span class="song-number">25</span>
+					<span class="song-name">2018 12 30 mouthsong</span>
+					<span class="song-duration">00:32</span>
+				</li>
+			
+				<li class="song" onclick="playSong('2018-21-pretty-much-everything', '2019 01 03 doubles'); generateQueue();" data-active="0" data-song="2018-21-pretty-much-everything 2019 01 03 doubles">
+					<span class="song-number">26</span>
+					<span class="song-name">2019 01 03 doubles</span>
+					<span class="song-duration">00:35</span>
+				</li>
+			
+				<li class="song" onclick="playSong('2018-21-pretty-much-everything', '2019 06 21 untitled'); generateQueue();" data-active="0" data-song="2018-21-pretty-much-everything 2019 06 21 untitled">
+					<span class="song-number">27</span>
+					<span class="song-name">2019 06 21 untitled</span>
+					<span class="song-duration">00:56</span>
+				</li>
+			
+				<li class="song" onclick="playSong('2018-21-pretty-much-everything', '2019 06 29 untitled2'); generateQueue();" data-active="0" data-song="2018-21-pretty-much-everything 2019 06 29 untitled2">
+					<span class="song-number">28</span>
+					<span class="song-name">2019 06 29 untitled2</span>
+					<span class="song-duration">00:25</span>
+				</li>
+			
+				<li class="song" onclick="playSong('2018-21-pretty-much-everything', '2019 07 13 about'); generateQueue();" data-active="0" data-song="2018-21-pretty-much-everything 2019 07 13 about">
+					<span class="song-number">29</span>
+					<span class="song-name">2019 07 13 about</span>
+					<span class="song-duration">01:36</span>
+				</li>
+			
+				<li class="song" onclick="playSong('2018-21-pretty-much-everything', '2019 12 14 no'); generateQueue();" data-active="0" data-song="2018-21-pretty-much-everything 2019 12 14 no">
+					<span class="song-number">30</span>
+					<span class="song-name">2019 12 14 no</span>
+					<span class="song-duration">00:20</span>
+				</li>
+			
+				<li class="song" onclick="playSong('2018-21-pretty-much-everything', '2019 12 15 baby turn the LIGHTS'); generateQueue();" data-active="0" data-song="2018-21-pretty-much-everything 2019 12 15 baby turn the LIGHTS">
+					<span class="song-number">31</span>
+					<span class="song-name">2019 12 15 baby turn the LIGHTS</span>
+					<span class="song-duration">00:48</span>
+				</li>
+			
+				<li class="song" onclick="playSong('2018-21-pretty-much-everything', '2019 12 21 christmas'); generateQueue();" data-active="0" data-song="2018-21-pretty-much-everything 2019 12 21 christmas">
+					<span class="song-number">32</span>
+					<span class="song-name">2019 12 21 christmas</span>
+					<span class="song-duration">00:39</span>
+				</li>
+			
+				<li class="song" onclick="playSong('2018-21-pretty-much-everything', '2019 12 22 clicks clacks'); generateQueue();" data-active="0" data-song="2018-21-pretty-much-everything 2019 12 22 clicks clacks">
+					<span class="song-number">33</span>
+					<span class="song-name">2019 12 22 clicks clacks</span>
+					<span class="song-duration">01:34</span>
+				</li>
+			
+				<li class="song" onclick="playSong('2018-21-pretty-much-everything', '2019 12 23 the whale'); generateQueue();" data-active="0" data-song="2018-21-pretty-much-everything 2019 12 23 the whale">
+					<span class="song-number">34</span>
+					<span class="song-name">2019 12 23 the whale</span>
+					<span class="song-duration">00:48</span>
+				</li>
+			
+				<li class="song" onclick="playSong('2018-21-pretty-much-everything', '2020 04 06 milk'); generateQueue();" data-active="0" data-song="2018-21-pretty-much-everything 2020 04 06 milk">
+					<span class="song-number">35</span>
+					<span class="song-name">2020 04 06 milk</span>
+					<span class="song-duration">01:19</span>
+				</li>
+			
+				<li class="song" onclick="playSong('2018-21-pretty-much-everything', '2020 04 08 save once'); generateQueue();" data-active="0" data-song="2018-21-pretty-much-everything 2020 04 08 save once">
+					<span class="song-number">36</span>
+					<span class="song-name">2020 04 08 save once</span>
+					<span class="song-duration">03:40</span>
+				</li>
+			
+				<li class="song" onclick="playSong('2018-21-pretty-much-everything', '2020 05 04 from phone'); generateQueue();" data-active="0" data-song="2018-21-pretty-much-everything 2020 05 04 from phone">
+					<span class="song-number">37</span>
+					<span class="song-name">2020 05 04 from phone</span>
+					<span class="song-duration">01:20</span>
+				</li>
+			
+				<li class="song" onclick="playSong('2018-21-pretty-much-everything', '2020 05 04 giant test'); generateQueue();" data-active="0" data-song="2018-21-pretty-much-everything 2020 05 04 giant test">
+					<span class="song-number">38</span>
+					<span class="song-name">2020 05 04 giant test</span>
+					<span class="song-duration">04:41</span>
+				</li>
+			
+				<li class="song" onclick="playSong('2018-21-pretty-much-everything', '2020 06 01 tiny little feet walking in foggy woods and everything is bluish green'); generateQueue();" data-active="0" data-song="2018-21-pretty-much-everything 2020 06 01 tiny little feet walking in foggy woods and everything is bluish green">
+					<span class="song-number">39</span>
+					<span class="song-name">2020 06 01 tiny little feet walking in foggy woods and everything is bluish green</span>
+					<span class="song-duration">01:05</span>
+				</li>
+			
+				<li class="song" onclick="playSong('2018-21-pretty-much-everything', '2020 06 13 rolling right past you wearing my neon blue heelys'); generateQueue();" data-active="0" data-song="2018-21-pretty-much-everything 2020 06 13 rolling right past you wearing my neon blue heelys">
+					<span class="song-number">40</span>
+					<span class="song-name">2020 06 13 rolling right past you wearing my neon blue heelys</span>
+					<span class="song-duration">01:30</span>
+				</li>
+			
+				<li class="song" onclick="playSong('2018-21-pretty-much-everything', '2020 06 16 marching through the kitchen'); generateQueue();" data-active="0" data-song="2018-21-pretty-much-everything 2020 06 16 marching through the kitchen">
+					<span class="song-number">41</span>
+					<span class="song-name">2020 06 16 marching through the kitchen</span>
+					<span class="song-duration">01:30</span>
+				</li>
+			
+				<li class="song" onclick="playSong('2018-21-pretty-much-everything', '2020 06 25 short sweet'); generateQueue();" data-active="0" data-song="2018-21-pretty-much-everything 2020 06 25 short sweet">
+					<span class="song-number">42</span>
+					<span class="song-name">2020 06 25 short sweet</span>
+					<span class="song-duration">01:40</span>
+				</li>
+			
+				<li class="song" onclick="playSong('2018-21-pretty-much-everything', '2020 07 25 snaps+melodica'); generateQueue();" data-active="0" data-song="2018-21-pretty-much-everything 2020 07 25 snaps+melodica">
+					<span class="song-number">43</span>
+					<span class="song-name">2020 07 25 snaps+melodica</span>
+					<span class="song-duration">00:32</span>
+				</li>
+			
+				<li class="song" onclick="playSong('2018-21-pretty-much-everything', '2020 08 05 i dont wanna be violent'); generateQueue();" data-active="0" data-song="2018-21-pretty-much-everything 2020 08 05 i dont wanna be violent">
+					<span class="song-number">44</span>
+					<span class="song-name">2020 08 05 i dont wanna be violent</span>
+					<span class="song-duration">01:45</span>
+				</li>
+			
+				<li class="song" onclick="playSong('2018-21-pretty-much-everything', '2020 08 22 microwave'); generateQueue();" data-active="0" data-song="2018-21-pretty-much-everything 2020 08 22 microwave">
+					<span class="song-number">45</span>
+					<span class="song-name">2020 08 22 microwave</span>
+					<span class="song-duration">00:21</span>
+				</li>
+			
+				<li class="song" onclick="playSong('2018-21-pretty-much-everything', '2020 09 07 guitar loop'); generateQueue();" data-active="0" data-song="2018-21-pretty-much-everything 2020 09 07 guitar loop">
+					<span class="song-number">46</span>
+					<span class="song-name">2020 09 07 guitar loop</span>
+					<span class="song-duration">01:07</span>
+				</li>
+			
+				<li class="song" onclick="playSong('2018-21-pretty-much-everything', '2020 09 09 weeds'); generateQueue();" data-active="0" data-song="2018-21-pretty-much-everything 2020 09 09 weeds">
+					<span class="song-number">47</span>
+					<span class="song-name">2020 09 09 weeds</span>
+					<span class="song-duration">02:18</span>
+				</li>
+			
+				<li class="song" onclick="playSong('2018-21-pretty-much-everything', '2020 09 15 uh huh'); generateQueue();" data-active="0" data-song="2018-21-pretty-much-everything 2020 09 15 uh huh">
+					<span class="song-number">48</span>
+					<span class="song-name">2020 09 15 uh huh</span>
+					<span class="song-duration">01:45</span>
+				</li>
+			
+				<li class="song" onclick="playSong('2018-21-pretty-much-everything', '2020 09 20 some sort of digital loop'); generateQueue();" data-active="0" data-song="2018-21-pretty-much-everything 2020 09 20 some sort of digital loop">
+					<span class="song-number">49</span>
+					<span class="song-name">2020 09 20 some sort of digital loop</span>
+					<span class="song-duration">00:29</span>
+				</li>
+			
+				<li class="song" onclick="playSong('2018-21-pretty-much-everything', '2020 09 27 i wanna play guitar plz'); generateQueue();" data-active="0" data-song="2018-21-pretty-much-everything 2020 09 27 i wanna play guitar plz">
+					<span class="song-number">50</span>
+					<span class="song-name">2020 09 27 i wanna play guitar plz</span>
+					<span class="song-duration">01:26</span>
+				</li>
+			
+				<li class="song" onclick="playSong('2018-21-pretty-much-everything', '2020 10 08 likarino'); generateQueue();" data-active="0" data-song="2018-21-pretty-much-everything 2020 10 08 likarino">
+					<span class="song-number">51</span>
+					<span class="song-name">2020 10 08 likarino</span>
+					<span class="song-duration">00:38</span>
+				</li>
+			
+				<li class="song" onclick="playSong('2018-21-pretty-much-everything', '2020 10 22 that country'); generateQueue();" data-active="0" data-song="2018-21-pretty-much-everything 2020 10 22 that country">
+					<span class="song-number">52</span>
+					<span class="song-name">2020 10 22 that country</span>
+					<span class="song-duration">03:14</span>
+				</li>
+			
+				<li class="song" onclick="playSong('2018-21-pretty-much-everything', '2020 10 24 election day'); generateQueue();" data-active="0" data-song="2018-21-pretty-much-everything 2020 10 24 election day">
+					<span class="song-number">53</span>
+					<span class="song-name">2020 10 24 election day</span>
+					<span class="song-duration">01:08</span>
+				</li>
+			
+				<li class="song" onclick="playSong('2018-21-pretty-much-everything', '2021 01 03 dadunsch'); generateQueue();" data-active="0" data-song="2018-21-pretty-much-everything 2021 01 03 dadunsch">
+					<span class="song-number">54</span>
+					<span class="song-name">2021 01 03 dadunsch</span>
+					<span class="song-duration">01:41</span>
+				</li>
+			
+				<li class="song" onclick="playSong('2018-21-pretty-much-everything', '2021 03 26 got things to do'); generateQueue();" data-active="0" data-song="2018-21-pretty-much-everything 2021 03 26 got things to do">
+					<span class="song-number">55</span>
+					<span class="song-name">2021 03 26 got things to do</span>
+					<span class="song-duration">01:00</span>
+				</li>
+			
+				<li class="song" onclick="playSong('2018-21-pretty-much-everything', '2021 03 26 oh boy here he comes'); generateQueue();" data-active="0" data-song="2018-21-pretty-much-everything 2021 03 26 oh boy here he comes">
+					<span class="song-number">56</span>
+					<span class="song-name">2021 03 26 oh boy here he comes</span>
+					<span class="song-duration">01:20</span>
+				</li>
+			
+				<li class="song" onclick="playSong('2018-21-pretty-much-everything', '2021 04 19 dogs'); generateQueue();" data-active="0" data-song="2018-21-pretty-much-everything 2021 04 19 dogs">
+					<span class="song-number">57</span>
+					<span class="song-name">2021 04 19 dogs</span>
+					<span class="song-duration">00:42</span>
+				</li>
+			
+				<li class="song" onclick="playSong('2018-21-pretty-much-everything', '2021 05 11 alright'); generateQueue();" data-active="0" data-song="2018-21-pretty-much-everything 2021 05 11 alright">
+					<span class="song-number">58</span>
+					<span class="song-name">2021 05 11 alright</span>
+					<span class="song-duration">00:36</span>
+				</li>
+			
+				</ul>
+			</section>
+		
+			<section class="album" id="karaoke-superstar" data-active="0">
+				<a class="album-header" href="#karaoke-superstar">
+					<div class="album-header-cover">
+						<img src="music/karaoke-superstar/karaoke-superstar.jpg">
+					</div>
+					<div class="album-header-info">
+						<p class="album-header-info-date">2019 May 10</p>
+						<h2 class="album-header-info-title">Karaoke Superstar</h2>
+					</div>
+				</a>
+				<ul class="album-songs">
+					
+				<li class="song" onclick="playSong('karaoke-superstar', 'Biking'); generateQueue();" data-active="0" data-song="karaoke-superstar Biking">
+					<span class="song-number">1</span>
+					<span class="song-name">Biking</span>
+					<span class="song-duration">00:56</span>
+				</li>
+			
+				<li class="song" onclick="playSong('karaoke-superstar', 'Watching'); generateQueue();" data-active="0" data-song="karaoke-superstar Watching">
+					<span class="song-number">2</span>
+					<span class="song-name">Watching</span>
+					<span class="song-duration">00:29</span>
+				</li>
+			
+				<li class="song" onclick="playSong('karaoke-superstar', 'Shopping'); generateQueue();" data-active="0" data-song="karaoke-superstar Shopping">
+					<span class="song-number">3</span>
+					<span class="song-name">Shopping</span>
+					<span class="song-duration">01:26</span>
+				</li>
+			
+				<li class="song" onclick="playSong('karaoke-superstar', 'Walking'); generateQueue();" data-active="0" data-song="karaoke-superstar Walking">
+					<span class="song-number">4</span>
+					<span class="song-name">Walking</span>
+					<span class="song-duration">03:20</span>
+				</li>
+			
+				</ul>
+			</section>
+		
+			<section class="album" id="eurydice" data-active="0">
+				<a class="album-header" href="#eurydice">
+					<div class="album-header-cover">
+						<img src="music/eurydice/eurydice.jpg">
+					</div>
+					<div class="album-header-info">
+						<p class="album-header-info-date">2019 April 12</p>
+						<h2 class="album-header-info-title">Eurydice</h2>
+					</div>
+				</a>
+				<ul class="album-songs">
+					
+				<li class="song" onclick="playSong('eurydice', 'Walk In'); generateQueue();" data-active="0" data-song="eurydice Walk In">
+					<span class="song-number">1</span>
+					<span class="song-name">Walk In</span>
+					<span class="song-duration">03:27</span>
+				</li>
+			
+				<li class="song" onclick="playSong('eurydice', 'String at the Ocean'); generateQueue();" data-active="0" data-song="eurydice String at the Ocean">
+					<span class="song-number">2</span>
+					<span class="song-name">String at the Ocean</span>
+					<span class="song-duration">01:28</span>
+				</li>
+			
+				<li class="song" onclick="playSong('eurydice', 'Apple Tree'); generateQueue();" data-active="0" data-song="eurydice Apple Tree">
+					<span class="song-number">3</span>
+					<span class="song-name">Apple Tree</span>
+					<span class="song-duration">01:05</span>
+				</li>
+			
+				<li class="song" onclick="playSong('eurydice', 'Wedding by the Water'); generateQueue();" data-active="0" data-song="eurydice Wedding by the Water">
+					<span class="song-number">4</span>
+					<span class="song-name">Wedding by the Water</span>
+					<span class="song-duration">02:54</span>
+				</li>
+			
+				<li class="song" onclick="playSong('eurydice', 'High Home'); generateQueue();" data-active="0" data-song="eurydice High Home">
+					<span class="song-number">5</span>
+					<span class="song-name">High Home</span>
+					<span class="song-duration">02:04</span>
+				</li>
+			
+				<li class="song" onclick="playSong('eurydice', 'Descent'); generateQueue();" data-active="0" data-song="eurydice Descent">
+					<span class="song-number">6</span>
+					<span class="song-name">Descent</span>
+					<span class="song-duration">00:52</span>
+				</li>
+			
+				<li class="song" onclick="playSong('eurydice', 'Arrival'); generateQueue();" data-active="0" data-song="eurydice Arrival">
+					<span class="song-number">7</span>
+					<span class="song-name">Arrival</span>
+					<span class="song-duration">02:21</span>
+				</li>
+			
+				<li class="song" onclick="playSong('eurydice', 'Orpheus'); generateQueue();" data-active="0" data-song="eurydice Orpheus">
+					<span class="song-number">8</span>
+					<span class="song-name">Orpheus</span>
+					<span class="song-duration">01:27</span>
+				</li>
+			
+				<li class="song" onclick="playSong('eurydice', 'Chamber Music'); generateQueue();" data-active="0" data-song="eurydice Chamber Music">
+					<span class="song-number">9</span>
+					<span class="song-name">Chamber Music</span>
+					<span class="song-duration">03:26</span>
+				</li>
+			
+				<li class="song" onclick="playSong('eurydice', 'Graveyard'); generateQueue();" data-active="0" data-song="eurydice Graveyard">
+					<span class="song-number">10</span>
+					<span class="song-name">Graveyard</span>
+					<span class="song-duration">02:24</span>
+				</li>
+			
+				<li class="song" onclick="playSong('eurydice', 'Little Steps'); generateQueue();" data-active="0" data-song="eurydice Little Steps">
+					<span class="song-number">11</span>
+					<span class="song-name">Little Steps</span>
+					<span class="song-duration">01:13</span>
+				</li>
+			
+				<li class="song" onclick="playSong('eurydice', 'Feeling (a Little) Better Today'); generateQueue();" data-active="0" data-song="eurydice Feeling (a Little) Better Today">
+					<span class="song-number">12</span>
+					<span class="song-name">Feeling (a Little) Better Today</span>
+					<span class="song-duration">01:05</span>
+				</li>
+			
+				<li class="song" onclick="playSong('eurydice', 'Lou'); generateQueue();" data-active="0" data-song="eurydice Lou">
+					<span class="song-number">13</span>
+					<span class="song-name">Lou</span>
+					<span class="song-duration">02:24</span>
+				</li>
+			
+				<li class="song" onclick="playSong('eurydice', 'Waterworks'); generateQueue();" data-active="0" data-song="eurydice Waterworks">
+					<span class="song-number">14</span>
+					<span class="song-name">Waterworks</span>
+					<span class="song-duration">02:03</span>
+				</li>
+			
+				<li class="song" onclick="playSong('eurydice', 'Ascent'); generateQueue();" data-active="0" data-song="eurydice Ascent">
+					<span class="song-number">15</span>
+					<span class="song-name">Ascent</span>
+					<span class="song-duration">01:47</span>
+				</li>
+			
+				<li class="song" onclick="playSong('eurydice', 'Walk Out'); generateQueue();" data-active="0" data-song="eurydice Walk Out">
+					<span class="song-number">16</span>
+					<span class="song-name">Walk Out</span>
+					<span class="song-duration">03:41</span>
+				</li>
+			
+				<li class="song" onclick="playSong('eurydice', 'Orpheus [Demo]'); generateQueue();" data-active="0" data-song="eurydice Orpheus [Demo]">
+					<span class="song-number">17</span>
+					<span class="song-name">Orpheus [Demo]</span>
+					<span class="song-duration">00:49</span>
+				</li>
+			
+				<li class="song" onclick="playSong('eurydice', 'Descent [Demo]'); generateQueue();" data-active="0" data-song="eurydice Descent [Demo]">
+					<span class="song-number">18</span>
+					<span class="song-name">Descent [Demo]</span>
+					<span class="song-duration">01:00</span>
+				</li>
+			
+				<li class="song" onclick="playSong('eurydice', 'Elevator [Demo]'); generateQueue();" data-active="0" data-song="eurydice Elevator [Demo]">
+					<span class="song-number">19</span>
+					<span class="song-name">Elevator [Demo]</span>
+					<span class="song-duration">00:21</span>
+				</li>
+			
+				<li class="song" onclick="playSong('eurydice', 'Vanishing'); generateQueue();" data-active="0" data-song="eurydice Vanishing">
+					<span class="song-number">20</span>
+					<span class="song-name">Vanishing</span>
+					<span class="song-duration">00:37</span>
+				</li>
+			
+				<li class="song" onclick="playSong('eurydice', 'Lou [Demo]'); generateQueue();" data-active="0" data-song="eurydice Lou [Demo]">
+					<span class="song-number">21</span>
+					<span class="song-name">Lou [Demo]</span>
+					<span class="song-duration">01:25</span>
+				</li>
+			
+				</ul>
+			</section>
+		
+			<section class="album" id="rhinoceros" data-active="0">
+				<a class="album-header" href="#rhinoceros">
+					<div class="album-header-cover">
+						<img src="music/rhinoceros/rhinoceros.jpg">
+					</div>
+					<div class="album-header-info">
+						<p class="album-header-info-date">2018 May 3</p>
+						<h2 class="album-header-info-title">Rhinoceros</h2>
+					</div>
+				</a>
+				<ul class="album-songs">
+					
+				<li class="song" onclick="playSong('rhinoceros', 'Pre-show Stomp-and-Go'); generateQueue();" data-active="0" data-song="rhinoceros Pre-show Stomp-and-Go">
+					<span class="song-number">1</span>
+					<span class="song-name">Pre-show Stomp-and-Go</span>
+					<span class="song-duration">01:16</span>
+				</li>
+			
+				<li class="song" onclick="playSong('rhinoceros', 'Steps (and Stomps)'); generateQueue();" data-active="0" data-song="rhinoceros Steps (and Stomps)">
+					<span class="song-number">2</span>
+					<span class="song-name">Steps (and Stomps)</span>
+					<span class="song-duration">01:30</span>
+				</li>
+			
+				<li class="song" onclick="playSong('rhinoceros', 'Syll-O-Gism'); generateQueue();" data-active="0" data-song="rhinoceros Syll-O-Gism">
+					<span class="song-number">3</span>
+					<span class="song-name">Syll-O-Gism</span>
+					<span class="song-duration">03:16</span>
+				</li>
+			
+				<li class="song" onclick="playSong('rhinoceros', 'Stampede'); generateQueue();" data-active="0" data-song="rhinoceros Stampede">
+					<span class="song-number">4</span>
+					<span class="song-name">Stampede</span>
+					<span class="song-duration">01:06</span>
+				</li>
+			
+				<li class="song" onclick="playSong('rhinoceros', 'One or Two or Two or One'); generateQueue();" data-active="0" data-song="rhinoceros One or Two or Two or One">
+					<span class="song-number">5</span>
+					<span class="song-name">One or Two or Two or One</span>
+					<span class="song-duration">01:34</span>
+				</li>
+			
+				<li class="song" onclick="playSong('rhinoceros', 'Feline Funeral'); generateQueue();" data-active="0" data-song="rhinoceros Feline Funeral">
+					<span class="song-number">6</span>
+					<span class="song-name">Feline Funeral</span>
+					<span class="song-duration">01:07</span>
+				</li>
+			
+				<li class="song" onclick="playSong('rhinoceros', 'Radio Oh Oh'); generateQueue();" data-active="0" data-song="rhinoceros Radio Oh Oh">
+					<span class="song-number">7</span>
+					<span class="song-name">Radio Oh Oh</span>
+					<span class="song-duration">04:10</span>
+				</li>
+			
+				<li class="song" onclick="playSong('rhinoceros', 'Uh Oh Rhino'); generateQueue();" data-active="0" data-song="rhinoceros Uh Oh Rhino">
+					<span class="song-number">8</span>
+					<span class="song-name">Uh Oh Rhino</span>
+					<span class="song-duration">01:37</span>
+				</li>
+			
+				<li class="song" onclick="playSong('rhinoceros', 'Mid-show Bungalow'); generateQueue();" data-active="0" data-song="rhinoceros Mid-show Bungalow">
+					<span class="song-number">9</span>
+					<span class="song-name">Mid-show Bungalow</span>
+					<span class="song-duration">02:46</span>
+				</li>
+			
+				<li class="song" onclick="playSong('rhinoceros', 'Rhino Rhythm'); generateQueue();" data-active="0" data-song="rhinoceros Rhino Rhythm">
+					<span class="song-number">10</span>
+					<span class="song-name">Rhino Rhythm</span>
+					<span class="song-duration">02:27</span>
+				</li>
+			
+				<li class="song" onclick="playSong('rhinoceros', 'Do Rhinos Dream of Stomping Feet?'); generateQueue();" data-active="0" data-song="rhinoceros Do Rhinos Dream of Stomping Feet?">
+					<span class="song-number">11</span>
+					<span class="song-name">Do Rhinos Dream of Stomping Feet?</span>
+					<span class="song-duration">0:46</span>
+				</li>
+			
+				<li class="song" onclick="playSong('rhinoceros', 'Rhino Melody'); generateQueue();" data-active="0" data-song="rhinoceros Rhino Melody">
+					<span class="song-number">12</span>
+					<span class="song-name">Rhino Melody</span>
+					<span class="song-duration">02:38</span>
+				</li>
+			
+				<li class="song" onclick="playSong('rhinoceros', 'Post-show Take-It-Slow'); generateQueue();" data-active="0" data-song="rhinoceros Post-show Take-It-Slow">
+					<span class="song-number">13</span>
+					<span class="song-name">Post-show Take-It-Slow</span>
+					<span class="song-duration">02:40</span>
+				</li>
+			
+				</ul>
+			</section>
+		
+			<section class="album" id="99-histories" data-active="0">
+				<a class="album-header" href="#99-histories">
+					<div class="album-header-cover">
+						<img src="music/99-histories/99-histories.jpg">
+					</div>
+					<div class="album-header-info">
+						<p class="album-header-info-date">2018 February 28</p>
+						<h2 class="album-header-info-title">99 Histories</h2>
+					</div>
+				</a>
+				<ul class="album-songs">
+					
+				<li class="song" onclick="playSong('99-histories', 'To Whom It May Concern'); generateQueue();" data-active="0" data-song="99-histories To Whom It May Concern">
+					<span class="song-number">1</span>
+					<span class="song-name">To Whom It May Concern</span>
+					<span class="song-duration">03:19</span>
+				</li>
+			
+				<li class="song" onclick="playSong('99-histories', 'Roundabouts'); generateQueue();" data-active="0" data-song="99-histories Roundabouts">
+					<span class="song-number">2</span>
+					<span class="song-name">Roundabouts</span>
+					<span class="song-duration">00:45</span>
+				</li>
+			
+				<li class="song" onclick="playSong('99-histories', 'Chung'); generateQueue();" data-active="0" data-song="99-histories Chung">
+					<span class="song-number">3</span>
+					<span class="song-name">Chung</span>
+					<span class="song-duration">01:30</span>
+				</li>
+			
+				<li class="song" onclick="playSong('99-histories', 'Overtones'); generateQueue();" data-active="0" data-song="99-histories Overtones">
+					<span class="song-number">4</span>
+					<span class="song-name">Overtones</span>
+					<span class="song-duration">01:22</span>
+				</li>
+			
+				<li class="song" onclick="playSong('99-histories', 'Letters'); generateQueue();" data-active="0" data-song="99-histories Letters">
+					<span class="song-number">5</span>
+					<span class="song-name">Letters</span>
+					<span class="song-duration">02:20</span>
+				</li>
+			
+				<li class="song" onclick="playSong('99-histories', 'Reverse'); generateQueue();" data-active="0" data-song="99-histories Reverse">
+					<span class="song-number">6</span>
+					<span class="song-name">Reverse</span>
+					<span class="song-duration">01:21</span>
+				</li>
+			
+				<li class="song" onclick="playSong('99-histories', 'What Didn’t Happen'); generateQueue();" data-active="0" data-song="99-histories What Didn’t Happen">
+					<span class="song-number">7</span>
+					<span class="song-name">What Didn’t Happen</span>
+					<span class="song-duration">01:01</span>
+				</li>
+			
+				<li class="song" onclick="playSong('99-histories', 'Trills'); generateQueue();" data-active="0" data-song="99-histories Trills">
+					<span class="song-number">8</span>
+					<span class="song-name">Trills</span>
+					<span class="song-duration">01:06</span>
+				</li>
+			
+				<li class="song" onclick="playSong('99-histories', 'The Rocking Horse Winner'); generateQueue();" data-active="0" data-song="99-histories The Rocking Horse Winner">
+					<span class="song-number">9</span>
+					<span class="song-name">The Rocking Horse Winner</span>
+					<span class="song-duration">03:33</span>
+				</li>
+			
+				<li class="song" onclick="playSong('99-histories', 'Week Two'); generateQueue();" data-active="0" data-song="99-histories Week Two">
+					<span class="song-number">10</span>
+					<span class="song-name">Week Two</span>
+					<span class="song-duration">02:09</span>
+				</li>
+			
+				<li class="song" onclick="playSong('99-histories', 'What Didn’t Happen (Reprise)'); generateQueue();" data-active="0" data-song="99-histories What Didn’t Happen (Reprise)">
+					<span class="song-number">11</span>
+					<span class="song-name">What Didn’t Happen (Reprise)</span>
+					<span class="song-duration">00:50</span>
+				</li>
+			
+				<li class="song" onclick="playSong('99-histories', 'Prelude'); generateQueue();" data-active="0" data-song="99-histories Prelude">
+					<span class="song-number">12</span>
+					<span class="song-name">Prelude</span>
+					<span class="song-duration">00:26</span>
+				</li>
+			
+				</ul>
+			</section>
+		
+			<section class="album" id="moonbug" data-active="0">
+				<a class="album-header" href="#moonbug">
+					<div class="album-header-cover">
+						<img src="music/moonbug/moonbug.jpg">
+					</div>
+					<div class="album-header-info">
+						<p class="album-header-info-date">2017 July 23</p>
+						<h2 class="album-header-info-title">Moonbug</h2>
+					</div>
+				</a>
+				<ul class="album-songs">
+					
+				<li class="song" onclick="playSong('moonbug', 'Moose'); generateQueue();" data-active="0" data-song="moonbug Moose">
+					<span class="song-number">1</span>
+					<span class="song-name">Moose</span>
+					<span class="song-duration">00:44</span>
+				</li>
+			
+				<li class="song" onclick="playSong('moonbug', 'Tomato'); generateQueue();" data-active="0" data-song="moonbug Tomato">
+					<span class="song-number">2</span>
+					<span class="song-name">Tomato</span>
+					<span class="song-duration">02:37</span>
+				</li>
+			
+				<li class="song" onclick="playSong('moonbug', 'Bug'); generateQueue();" data-active="0" data-song="moonbug Bug">
+					<span class="song-number">3</span>
+					<span class="song-name">Bug</span>
+					<span class="song-duration">02:52</span>
+				</li>
+			
+				<li class="song" onclick="playSong('moonbug', 'Etc'); generateQueue();" data-active="0" data-song="moonbug Etc">
+					<span class="song-number">4</span>
+					<span class="song-name">Etc</span>
+					<span class="song-duration">01:57</span>
+				</li>
+			
+				<li class="song" onclick="playSong('moonbug', 'Onstage'); generateQueue();" data-active="0" data-song="moonbug Onstage">
+					<span class="song-number">5</span>
+					<span class="song-name">Onstage</span>
+					<span class="song-duration">04:16</span>
+				</li>
+			
+				<li class="song" onclick="playSong('moonbug', 'Hint'); generateQueue();" data-active="0" data-song="moonbug Hint">
+					<span class="song-number">6</span>
+					<span class="song-name">Hint</span>
+					<span class="song-duration">02:06</span>
+				</li>
+			
+				<li class="song" onclick="playSong('moonbug', 'Moon'); generateQueue();" data-active="0" data-song="moonbug Moon">
+					<span class="song-number">7</span>
+					<span class="song-name">Moon</span>
+					<span class="song-duration">02:41</span>
+				</li>
+			
+				<li class="song" onclick="playSong('moonbug', 'Nice'); generateQueue();" data-active="0" data-song="moonbug Nice">
+					<span class="song-number">8</span>
+					<span class="song-name">Nice</span>
+					<span class="song-duration">02:37</span>
+				</li>
+			
+				<li class="song" onclick="playSong('moonbug', 'Region'); generateQueue();" data-active="0" data-song="moonbug Region">
+					<span class="song-number">9</span>
+					<span class="song-name">Region</span>
+					<span class="song-duration">01:33</span>
+				</li>
+			
+				<li class="song" onclick="playSong('moonbug', 'Goose'); generateQueue();" data-active="0" data-song="moonbug Goose">
+					<span class="song-number">10</span>
+					<span class="song-name">Goose</span>
+					<span class="song-duration">01:45</span>
+				</li>
+			
+				</ul>
+			</section>
+		
+			<section class="album" id="falling-in-love-to-voices" data-active="0">
+				<a class="album-header" href="#falling-in-love-to-voices">
+					<div class="album-header-cover">
+						<img src="music/falling-in-love-to-voices/falling-in-love-to-voices.jpg">
+					</div>
+					<div class="album-header-info">
+						<p class="album-header-info-date">2016 August 31</p>
+						<h2 class="album-header-info-title">Falling in Love to&nbsp;Voices</h2>
+					</div>
+				</a>
+				<ul class="album-songs">
+					
+				<li class="song" onclick="playSong('falling-in-love-to-voices', 'Sing to Music'); generateQueue();" data-active="0" data-song="falling-in-love-to-voices Sing to Music">
+					<span class="song-number">1</span>
+					<span class="song-name">Sing to Music</span>
+					<span class="song-duration">01:39</span>
+				</li>
+			
+				<li class="song" onclick="playSong('falling-in-love-to-voices', 'Rest in Place'); generateQueue();" data-active="0" data-song="falling-in-love-to-voices Rest in Place">
+					<span class="song-number">2</span>
+					<span class="song-name">Rest in Place</span>
+					<span class="song-duration">00:44</span>
+				</li>
+			
+				<li class="song" onclick="playSong('falling-in-love-to-voices', 'Bidding Forgotten Words'); generateQueue();" data-active="0" data-song="falling-in-love-to-voices Bidding Forgotten Words">
+					<span class="song-number">3</span>
+					<span class="song-name">Bidding Forgotten Words</span>
+					<span class="song-duration">00:58</span>
+				</li>
+			
+				<li class="song" onclick="playSong('falling-in-love-to-voices', 'I Listen to Hear the Voice'); generateQueue();" data-active="0" data-song="falling-in-love-to-voices I Listen to Hear the Voice">
+					<span class="song-number">4</span>
+					<span class="song-name">I Listen to Hear the Voice</span>
+					<span class="song-duration">00:14</span>
+				</li>
+			
+				<li class="song" onclick="playSong('falling-in-love-to-voices', 'Aerosol for the Room'); generateQueue();" data-active="0" data-song="falling-in-love-to-voices Aerosol for the Room">
+					<span class="song-number">5</span>
+					<span class="song-name">Aerosol for the Room</span>
+					<span class="song-duration">00:30</span>
+				</li>
+			
+				<li class="song" onclick="playSong('falling-in-love-to-voices', 'Clicking Sticks for Clacks'); generateQueue();" data-active="0" data-song="falling-in-love-to-voices Clicking Sticks for Clacks">
+					<span class="song-number">6</span>
+					<span class="song-name">Clicking Sticks for Clacks</span>
+					<span class="song-duration">00:30</span>
+				</li>
+			
+				<li class="song" onclick="playSong('falling-in-love-to-voices', 'Music Writes Mood'); generateQueue();" data-active="0" data-song="falling-in-love-to-voices Music Writes Mood">
+					<span class="song-number">7</span>
+					<span class="song-name">Music Writes Mood</span>
+					<span class="song-duration">00:37</span>
+				</li>
+			
+				<li class="song" onclick="playSong('falling-in-love-to-voices', 'I’ve Tried Very Hard'); generateQueue();" data-active="0" data-song="falling-in-love-to-voices I’ve Tried Very Hard">
+					<span class="song-number">8</span>
+					<span class="song-name">I’ve Tried Very Hard</span>
+					<span class="song-duration">00:56</span>
+				</li>
+			
+				<li class="song" onclick="playSong('falling-in-love-to-voices', 'Rounder and Plumper than Before'); generateQueue();" data-active="0" data-song="falling-in-love-to-voices Rounder and Plumper than Before">
+					<span class="song-number">9</span>
+					<span class="song-name">Rounder and Plumper than Before</span>
+					<span class="song-duration">00:29</span>
+				</li>
+			
+				<li class="song" onclick="playSong('falling-in-love-to-voices', 'For Dog’s Love'); generateQueue();" data-active="0" data-song="falling-in-love-to-voices For Dog’s Love">
+					<span class="song-number">10</span>
+					<span class="song-name">For Dog’s Love</span>
+					<span class="song-duration">00:24</span>
+				</li>
+			
+				<li class="song" onclick="playSong('falling-in-love-to-voices', 'Forget It, I Forgot'); generateQueue();" data-active="0" data-song="falling-in-love-to-voices Forget It, I Forgot">
+					<span class="song-number">11</span>
+					<span class="song-name">Forget It, I Forgot</span>
+					<span class="song-duration">00:18</span>
+				</li>
+			
+				<li class="song" onclick="playSong('falling-in-love-to-voices', 'Grazing Indoor Meadows'); generateQueue();" data-active="0" data-song="falling-in-love-to-voices Grazing Indoor Meadows">
+					<span class="song-number">12</span>
+					<span class="song-name">Grazing Indoor Meadows</span>
+					<span class="song-duration">00:18</span>
+				</li>
+			
+				<li class="song" onclick="playSong('falling-in-love-to-voices', 'Disappointing Children and Litters'); generateQueue();" data-active="0" data-song="falling-in-love-to-voices Disappointing Children and Litters">
+					<span class="song-number">13</span>
+					<span class="song-name">Disappointing Children and Litters</span>
+					<span class="song-duration">00:34</span>
+				</li>
+			
+				<li class="song" onclick="playSong('falling-in-love-to-voices', 'Alone Amongst'); generateQueue();" data-active="0" data-song="falling-in-love-to-voices Alone Amongst">
+					<span class="song-number">14</span>
+					<span class="song-name">Alone Amongst</span>
+					<span class="song-duration">00:08</span>
+				</li>
+			
+				<li class="song" onclick="playSong('falling-in-love-to-voices', 'Upwards from Here'); generateQueue();" data-active="0" data-song="falling-in-love-to-voices Upwards from Here">
+					<span class="song-number">15</span>
+					<span class="song-name">Upwards from Here</span>
+					<span class="song-duration">00:25</span>
+				</li>
+			
+				<li class="song" onclick="playSong('falling-in-love-to-voices', 'Who Is Making Me Feel Bad'); generateQueue();" data-active="0" data-song="falling-in-love-to-voices Who Is Making Me Feel Bad">
+					<span class="song-number">16</span>
+					<span class="song-name">Who Is Making Me Feel Bad</span>
+					<span class="song-duration">00:35</span>
+				</li>
+			
+				<li class="song" onclick="playSong('falling-in-love-to-voices', 'Back Aches from Tall to Short'); generateQueue();" data-active="0" data-song="falling-in-love-to-voices Back Aches from Tall to Short">
+					<span class="song-number">17</span>
+					<span class="song-name">Back Aches from Tall to Short</span>
+					<span class="song-duration">01:33</span>
+				</li>
+			
+				<li class="song" onclick="playSong('falling-in-love-to-voices', 'The Books Fall onto Floors'); generateQueue();" data-active="0" data-song="falling-in-love-to-voices The Books Fall onto Floors">
+					<span class="song-number">18</span>
+					<span class="song-name">The Books Fall onto Floors</span>
+					<span class="song-duration">00:21</span>
+				</li>
+			
+				<li class="song" onclick="playSong('falling-in-love-to-voices', 'Heads Made for You'); generateQueue();" data-active="0" data-song="falling-in-love-to-voices Heads Made for You">
+					<span class="song-number">19</span>
+					<span class="song-name">Heads Made for You</span>
+					<span class="song-duration">00:16</span>
+				</li>
+			
+				<li class="song" onclick="playSong('falling-in-love-to-voices', 'Bending for Lovers'); generateQueue();" data-active="0" data-song="falling-in-love-to-voices Bending for Lovers">
+					<span class="song-number">20</span>
+					<span class="song-name">Bending for Lovers</span>
+					<span class="song-duration">01:21</span>
+				</li>
+			
+				<li class="song" onclick="playSong('falling-in-love-to-voices', 'Puddles Flow into Puzzles'); generateQueue();" data-active="0" data-song="falling-in-love-to-voices Puddles Flow into Puzzles">
+					<span class="song-number">21</span>
+					<span class="song-name">Puddles Flow into Puzzles</span>
+					<span class="song-duration">01:45</span>
+				</li>
+			
+				<li class="song" onclick="playSong('falling-in-love-to-voices', 'They’ll Give Me It Back'); generateQueue();" data-active="0" data-song="falling-in-love-to-voices They’ll Give Me It Back">
+					<span class="song-number">22</span>
+					<span class="song-name">They’ll Give Me It Back</span>
+					<span class="song-duration">00:31</span>
+				</li>
+			
+				<li class="song" onclick="playSong('falling-in-love-to-voices', 'Putting On the Collar'); generateQueue();" data-active="0" data-song="falling-in-love-to-voices Putting On the Collar">
+					<span class="song-number">23</span>
+					<span class="song-name">Putting On the Collar</span>
+					<span class="song-duration">00:57</span>
+				</li>
+			
+				<li class="song" onclick="playSong('falling-in-love-to-voices', 'Many Tiny Pianos'); generateQueue();" data-active="0" data-song="falling-in-love-to-voices Many Tiny Pianos">
+					<span class="song-number">24</span>
+					<span class="song-name">Many Tiny Pianos</span>
+					<span class="song-duration">00:19</span>
+				</li>
+			
+				<li class="song" onclick="playSong('falling-in-love-to-voices', 'Twice Cooked, Eaten Once'); generateQueue();" data-active="0" data-song="falling-in-love-to-voices Twice Cooked, Eaten Once">
+					<span class="song-number">25</span>
+					<span class="song-name">Twice Cooked, Eaten Once</span>
+					<span class="song-duration">00:19</span>
+				</li>
+			
+				<li class="song" onclick="playSong('falling-in-love-to-voices', 'Shirt Brushes Against the Wall'); generateQueue();" data-active="0" data-song="falling-in-love-to-voices Shirt Brushes Against the Wall">
+					<span class="song-number">26</span>
+					<span class="song-name">Shirt Brushes Against the Wall</span>
+					<span class="song-duration">00:28</span>
+				</li>
+			
+				<li class="song" onclick="playSong('falling-in-love-to-voices', 'More Space and Words'); generateQueue();" data-active="0" data-song="falling-in-love-to-voices More Space and Words">
+					<span class="song-number">27</span>
+					<span class="song-name">More Space and Words</span>
+					<span class="song-duration">01:09</span>
+				</li>
+			
+				<li class="song" onclick="playSong('falling-in-love-to-voices', 'Loving and Kind'); generateQueue();" data-active="0" data-song="falling-in-love-to-voices Loving and Kind">
+					<span class="song-number">28</span>
+					<span class="song-name">Loving and Kind</span>
+					<span class="song-duration">01:17</span>
+				</li>
+			
+				</ul>
+			</section>
+		
+			<section class="album" id="time-passes" data-active="0">
+				<a class="album-header" href="#time-passes">
+					<div class="album-header-cover">
+						<img src="music/time-passes/time-passes.jpg">
+					</div>
+					<div class="album-header-info">
+						<p class="album-header-info-date">2016 August 31</p>
+						<h2 class="album-header-info-title">Time Passes</h2>
+					</div>
+				</a>
+				<ul class="album-songs">
+					
+				<li class="song" onclick="playSong('time-passes', 'To Home'); generateQueue();" data-active="0" data-song="time-passes To Home">
+					<span class="song-number">1</span>
+					<span class="song-name">To Home</span>
+					<span class="song-duration">07:44</span>
+				</li>
+			
+				<li class="song" onclick="playSong('time-passes', 'In a Cloud'); generateQueue();" data-active="0" data-song="time-passes In a Cloud">
+					<span class="song-number">2</span>
+					<span class="song-name">In a Cloud</span>
+					<span class="song-duration">06:51</span>
+				</li>
+			
+				<li class="song" onclick="playSong('time-passes', 'Maryland'); generateQueue();" data-active="0" data-song="time-passes Maryland">
+					<span class="song-number">3</span>
+					<span class="song-name">Maryland</span>
+					<span class="song-duration">04:35</span>
+				</li>
+			
+				<li class="song" onclick="playSong('time-passes', 'As It Is Seen (Censored)'); generateQueue();" data-active="0" data-song="time-passes As It Is Seen (Censored)">
+					<span class="song-number">4</span>
+					<span class="song-name">As It Is Seen (Censored)</span>
+					<span class="song-duration">02:29</span>
+				</li>
+			
+				<li class="song" onclick="playSong('time-passes', 'Mouse'); generateQueue();" data-active="0" data-song="time-passes Mouse">
+					<span class="song-number">5</span>
+					<span class="song-name">Mouse</span>
+					<span class="song-duration">06:26</span>
+				</li>
+			
+				<li class="song" onclick="playSong('time-passes', 'Forever'); generateQueue();" data-active="0" data-song="time-passes Forever">
+					<span class="song-number">6</span>
+					<span class="song-name">Forever</span>
+					<span class="song-duration">08:06</span>
+				</li>
+			
+				<li class="song" onclick="playSong('time-passes', 'O, Isn’t It Wonderful?'); generateQueue();" data-active="0" data-song="time-passes O, Isn’t It Wonderful?">
+					<span class="song-number">7</span>
+					<span class="song-name">O, Isn’t It Wonderful?</span>
+					<span class="song-duration">03:44</span>
+				</li>
+			
+				<li class="song" onclick="playSong('time-passes', 'A Low-Hung Head'); generateQueue();" data-active="0" data-song="time-passes A Low-Hung Head">
+					<span class="song-number">8</span>
+					<span class="song-name">A Low-Hung Head</span>
+					<span class="song-duration">07:40</span>
+				</li>
+			
+				<li class="song" onclick="playSong('time-passes', 'Time Passes'); generateQueue();" data-active="0" data-song="time-passes Time Passes">
+					<span class="song-number">9</span>
+					<span class="song-name">Time Passes</span>
+					<span class="song-duration">07:18</span>
+				</li>
+			
+				<li class="song" onclick="playSong('time-passes', 'A Low-Hung Head [Bonus Track]'); generateQueue();" data-active="0" data-song="time-passes A Low-Hung Head [Bonus Track]">
+					<span class="song-number">10</span>
+					<span class="song-name">A Low-Hung Head [Bonus Track]</span>
+					<span class="song-duration">07:41</span>
+				</li>
+			
+				</ul>
+			</section>
+		
+			<section class="album" id="dano" data-active="0">
+				<a class="album-header" href="#dano">
+					<div class="album-header-cover">
+						<img src="music/dano/dano.jpg">
+					</div>
+					<div class="album-header-info">
+						<p class="album-header-info-date">2014 December 18</p>
+						<h2 class="album-header-info-title">Dano</h2>
+					</div>
+				</a>
+				<ul class="album-songs">
+					
+				<li class="song" onclick="playSong('dano', 'Dano'); generateQueue();" data-active="0" data-song="dano Dano">
+					<span class="song-number">1</span>
+					<span class="song-name">Dano</span>
+					<span class="song-duration">04:59</span>
+				</li>
+			
+				<li class="song" onclick="playSong('dano', 'Turn Into Stone'); generateQueue();" data-active="0" data-song="dano Turn Into Stone">
+					<span class="song-number">2</span>
+					<span class="song-name">Turn Into Stone</span>
+					<span class="song-duration">08:14</span>
+				</li>
+			
+				<li class="song" onclick="playSong('dano', 'Violer'); generateQueue();" data-active="0" data-song="dano Violer">
+					<span class="song-number">3</span>
+					<span class="song-name">Violer</span>
+					<span class="song-duration">09:38</span>
+				</li>
+			
+				</ul>
+			</section>
+		
+			<section class="album" id="something-happens" data-active="0">
+				<a class="album-header" href="#something-happens">
+					<div class="album-header-cover">
+						<img src="music/something-happens/something-happens.jpg">
+					</div>
+					<div class="album-header-info">
+						<p class="album-header-info-date">2014 December 18</p>
+						<h2 class="album-header-info-title">Something Happens</h2>
+					</div>
+				</a>
+				<ul class="album-songs">
+					
+				<li class="song" onclick="playSong('something-happens', 'Main Theme'); generateQueue();" data-active="0" data-song="something-happens Main Theme">
+					<span class="song-number">1</span>
+					<span class="song-name">Main Theme</span>
+					<span class="song-duration">02:32</span>
+				</li>
+			
+				<li class="song" onclick="playSong('something-happens', 'Come Into The Room'); generateQueue();" data-active="0" data-song="something-happens Come Into The Room">
+					<span class="song-number">2</span>
+					<span class="song-name">Come Into The Room</span>
+					<span class="song-duration">03:32</span>
+				</li>
+			
+				<li class="song" onclick="playSong('something-happens', 'Traveller’s Song'); generateQueue();" data-active="0" data-song="something-happens Traveller’s Song">
+					<span class="song-number">3</span>
+					<span class="song-name">Traveller’s Song</span>
+					<span class="song-duration">02:37</span>
+				</li>
+			
+				<li class="song" onclick="playSong('something-happens', 'Molloy and Malone'); generateQueue();" data-active="0" data-song="something-happens Molloy and Malone">
+					<span class="song-number">4</span>
+					<span class="song-name">Molloy and Malone</span>
+					<span class="song-duration">06:56</span>
+				</li>
+			
+				<li class="song" onclick="playSong('something-happens', 'The Party'); generateQueue();" data-active="0" data-song="something-happens The Party">
+					<span class="song-number">5</span>
+					<span class="song-name">The Party</span>
+					<span class="song-duration">04:15</span>
+				</li>
+			
+				<li class="song" onclick="playSong('something-happens', 'End of the Night'); generateQueue();" data-active="0" data-song="something-happens End of the Night">
+					<span class="song-number">6</span>
+					<span class="song-name">End of the Night</span>
+					<span class="song-duration">03:03</span>
+				</li>
+			
+				<li class="song" onclick="playSong('something-happens', 'Not By My Hand'); generateQueue();" data-active="0" data-song="something-happens Not By My Hand">
+					<span class="song-number">7</span>
+					<span class="song-name">Not By My Hand</span>
+					<span class="song-duration">09:00</span>
+				</li>
+			
+				</ul>
+			</section>
+		
+			<section class="album" id="granola" data-active="0">
+				<a class="album-header" href="#granola">
+					<div class="album-header-cover">
+						<img src="music/granola/granola.jpg">
+					</div>
+					<div class="album-header-info">
+						<p class="album-header-info-date">2014 August 8</p>
+						<h2 class="album-header-info-title">Granola</h2>
+					</div>
+				</a>
+				<ul class="album-songs">
+					
+				<li class="song" onclick="playSong('granola', 'In Dublin'); generateQueue();" data-active="0" data-song="granola In Dublin">
+					<span class="song-number">1</span>
+					<span class="song-name">In Dublin</span>
+					<span class="song-duration">00:53</span>
+				</li>
+			
+				<li class="song" onclick="playSong('granola', 'Pander'); generateQueue();" data-active="0" data-song="granola Pander">
+					<span class="song-number">2</span>
+					<span class="song-name">Pander</span>
+					<span class="song-duration">03:54</span>
+				</li>
+			
+				<li class="song" onclick="playSong('granola', 'Dirk Diggler'); generateQueue();" data-active="0" data-song="granola Dirk Diggler">
+					<span class="song-number">3</span>
+					<span class="song-name">Dirk Diggler</span>
+					<span class="song-duration">00:16</span>
+				</li>
+			
+				<li class="song" onclick="playSong('granola', 'Leopaleo'); generateQueue();" data-active="0" data-song="granola Leopaleo">
+					<span class="song-number">4</span>
+					<span class="song-name">Leopaleo</span>
+					<span class="song-duration">04:28</span>
+				</li>
+			
+				<li class="song" onclick="playSong('granola', 'Jen Gender'); generateQueue();" data-active="0" data-song="granola Jen Gender">
+					<span class="song-number">5</span>
+					<span class="song-name">Jen Gender</span>
+					<span class="song-duration">00:47</span>
+				</li>
+			
+				<li class="song" onclick="playSong('granola', 'Bouillabaisse'); generateQueue();" data-active="0" data-song="granola Bouillabaisse">
+					<span class="song-number">6</span>
+					<span class="song-name">Bouillabaisse</span>
+					<span class="song-duration">02:12</span>
+				</li>
+			
+				<li class="song" onclick="playSong('granola', 'Empty Bowl'); generateQueue();" data-active="0" data-song="granola Empty Bowl">
+					<span class="song-number">7</span>
+					<span class="song-name">Empty Bowl</span>
+					<span class="song-duration">01:11</span>
+				</li>
+			
+				<li class="song" onclick="playSong('granola', 'Temporary Bride'); generateQueue();" data-active="0" data-song="granola Temporary Bride">
+					<span class="song-number">8</span>
+					<span class="song-name">Temporary Bride</span>
+					<span class="song-duration">02:46</span>
+				</li>
+			
+				<li class="song" onclick="playSong('granola', 'The Outsider'); generateQueue();" data-active="0" data-song="granola The Outsider">
+					<span class="song-number">9</span>
+					<span class="song-name">The Outsider</span>
+					<span class="song-duration">02:47</span>
+				</li>
+			
+				<li class="song" onclick="playSong('granola', 'Nola'); generateQueue();" data-active="0" data-song="granola Nola">
+					<span class="song-number">10</span>
+					<span class="song-name">Nola</span>
+					<span class="song-duration">01:14</span>
+				</li>
+			
+				</ul>
+			</section>
+		
+			<section class="album" id="to-home" data-active="0">
+				<a class="album-header" href="#to-home">
+					<div class="album-header-cover">
+						<img src="music/to-home/to-home.jpg">
+					</div>
+					<div class="album-header-info">
+						<p class="album-header-info-date">2014 May 19</p>
+						<h2 class="album-header-info-title">To Home</h2>
+					</div>
+				</a>
+				<ul class="album-songs">
+					
+				<li class="song" onclick="playSong('to-home', 'Mason the Killer'); generateQueue();" data-active="0" data-song="to-home Mason the Killer">
+					<span class="song-number">1</span>
+					<span class="song-name">Mason the Killer</span>
+					<span class="song-duration">07:07</span>
+				</li>
+			
+				<li class="song" onclick="playSong('to-home', 'Through the Eyes of a Vacationer'); generateQueue();" data-active="0" data-song="to-home Through the Eyes of a Vacationer">
+					<span class="song-number">2</span>
+					<span class="song-name">Through the Eyes of a Vacationer</span>
+					<span class="song-duration">07:08</span>
+				</li>
+			
+				<li class="song" onclick="playSong('to-home', 'Wouldn’t Know'); generateQueue();" data-active="0" data-song="to-home Wouldn’t Know">
+					<span class="song-number">3</span>
+					<span class="song-name">Wouldn’t Know</span>
+					<span class="song-duration">05:35</span>
+				</li>
+			
+				<li class="song" onclick="playSong('to-home', 'Forever'); generateQueue();" data-active="0" data-song="to-home Forever">
+					<span class="song-number">4</span>
+					<span class="song-name">Forever</span>
+					<span class="song-duration">09:01</span>
+				</li>
+			
+				<li class="song" onclick="playSong('to-home', 'Boxfish, Or, How Could I See This In A Different Light?'); generateQueue();" data-active="0" data-song="to-home Boxfish, Or, How Could I See This In A Different Light?">
+					<span class="song-number">5</span>
+					<span class="song-name">Boxfish, Or, How Could I See This In A Different Light?</span>
+					<span class="song-duration">08:09</span>
+				</li>
+			
+				<li class="song" onclick="playSong('to-home', 'A Complex of Noise'); generateQueue();" data-active="0" data-song="to-home A Complex of Noise">
+					<span class="song-number">6</span>
+					<span class="song-name">A Complex of Noise</span>
+					<span class="song-duration">07:17</span>
+				</li>
+			
+				<li class="song" onclick="playSong('to-home', 'To Home'); generateQueue();" data-active="0" data-song="to-home To Home">
+					<span class="song-number">7</span>
+					<span class="song-name">To Home</span>
+					<span class="song-duration">06:49</span>
+				</li>
+			
+				<li class="song" onclick="playSong('to-home', 'In a Cloud'); generateQueue();" data-active="0" data-song="to-home In a Cloud">
+					<span class="song-number">8</span>
+					<span class="song-name">In a Cloud</span>
+					<span class="song-duration">07:44</span>
+				</li>
+			
+				<li class="song" onclick="playSong('to-home', 'Estate'); generateQueue();" data-active="0" data-song="to-home Estate">
+					<span class="song-number">9</span>
+					<span class="song-name">Estate</span>
+					<span class="song-duration">04:50</span>
+				</li>
+			
+				<li class="song" onclick="playSong('to-home', 'Atlanta'); generateQueue();" data-active="0" data-song="to-home Atlanta">
+					<span class="song-number">10</span>
+					<span class="song-name">Atlanta</span>
+					<span class="song-duration">04:32</span>
+				</li>
+			
+				<li class="song" onclick="playSong('to-home', 'Life is a Nervous Twitch'); generateQueue();" data-active="0" data-song="to-home Life is a Nervous Twitch">
+					<span class="song-number">11</span>
+					<span class="song-name">Life is a Nervous Twitch</span>
+					<span class="song-duration">05:48</span>
+				</li>
+			
+				<li class="song" onclick="playSong('to-home', 'My Happiest Days Are Filled With Noise'); generateQueue();" data-active="0" data-song="to-home My Happiest Days Are Filled With Noise">
+					<span class="song-number">12</span>
+					<span class="song-name">My Happiest Days Are Filled With Noise</span>
+					<span class="song-duration">05:57</span>
+				</li>
+			
+				<li class="song" onclick="playSong('to-home', 'Planet, Maybe'); generateQueue();" data-active="0" data-song="to-home Planet, Maybe">
+					<span class="song-number">13</span>
+					<span class="song-name">Planet, Maybe</span>
+					<span class="song-duration">01:59</span>
+				</li>
+			
+				<li class="song" onclick="playSong('to-home', 'O, Isn’t It Fantastic?'); generateQueue();" data-active="0" data-song="to-home O, Isn’t It Fantastic?">
+					<span class="song-number">14</span>
+					<span class="song-name">O, Isn’t It Fantastic?</span>
+					<span class="song-duration">03:20</span>
+				</li>
+			
+				<li class="song" onclick="playSong('to-home', 'Flourish'); generateQueue();" data-active="0" data-song="to-home Flourish">
+					<span class="song-number">15</span>
+					<span class="song-name">Flourish</span>
+					<span class="song-duration">04:40</span>
+				</li>
+			
+				<li class="song" onclick="playSong('to-home', 'A Low-Hung Head'); generateQueue();" data-active="0" data-song="to-home A Low-Hung Head">
+					<span class="song-number">16</span>
+					<span class="song-name">A Low-Hung Head</span>
+					<span class="song-duration">07:14</span>
+				</li>
+			
+				<li class="song" onclick="playSong('to-home', 'Grizzly Bear'); generateQueue();" data-active="0" data-song="to-home Grizzly Bear">
+					<span class="song-number">17</span>
+					<span class="song-name">Grizzly Bear</span>
+					<span class="song-duration">03:33</span>
+				</li>
+			
+				<li class="song" onclick="playSong('to-home', 'Decider'); generateQueue();" data-active="0" data-song="to-home Decider">
+					<span class="song-number">18</span>
+					<span class="song-name">Decider</span>
+					<span class="song-duration">04:55</span>
+				</li>
+			
+				<li class="song" onclick="playSong('to-home', 'Where I Better Last!'); generateQueue();" data-active="0" data-song="to-home Where I Better Last!">
+					<span class="song-number">19</span>
+					<span class="song-name">Where I Better Last!</span>
+					<span class="song-duration">03:02</span>
+				</li>
+			
+				<li class="song" onclick="playSong('to-home', 'Sure'); generateQueue();" data-active="0" data-song="to-home Sure">
+					<span class="song-number">20</span>
+					<span class="song-name">Sure</span>
+					<span class="song-duration">04:05</span>
+				</li>
+			
+				<li class="song" onclick="playSong('to-home', 'More'); generateQueue();" data-active="0" data-song="to-home More">
+					<span class="song-number">21</span>
+					<span class="song-name">More</span>
+					<span class="song-duration">03:45</span>
+				</li>
+			
+				<li class="song" onclick="playSong('to-home', 'Mushroom'); generateQueue();" data-active="0" data-song="to-home Mushroom">
+					<span class="song-number">22</span>
+					<span class="song-name">Mushroom</span>
+					<span class="song-duration">06:49</span>
+				</li>
+			
+				</ul>
+			</section>
+		
+				</main>
+			</div>
+		
+			<script src="script.js"></script>
+		</body>
+		</html>
+	

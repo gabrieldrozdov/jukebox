@@ -1,0 +1,1292 @@
+{
+	"to-home-to-home": {
+		"name": "To Home?? To&nbsp;Home!!",
+		"date": "2021 December 28",
+		"cover": "to-home-to-home.jpg",
+		"desc": "<p>I wrote a concept album, “To Home”, in 2015 before I graduated from high school. I knew nothing about music production or engineering. I could write faster than I could record—I ended up adding an additional four songs to the album, as well as wrote and recorded tens more that wouldn't make the cut. I wrote lyrics for the whole album and sang them—my voice wasn't good, and I grew tired. I released the album in 2015, but that album is something I no longer wish to share. None of the vocal recordings sounded particularly professional, or refined, or good. I tried again in 2016 by making a shorter, refined version of the same album, this time called “Time Passes”. That also did not end up particularly good. I still love the underlying songs, though, so I've taken out the vocals and extracted the piano recordings. “To Home?? To Home!!” is a collection of what I played at the time, remastered a bit and put into one place. The lyrics will stay in my head and in a document I made when I was 15, 16, 17 and 18.</p>",
+		"links": [
+		],
+		"songs": [
+			{
+				"name": "Mason the Killer",
+				"duration": "06:44",
+				"file": "01-mason-the-killer.mp3"
+			},
+			{
+				"name": "Through the Eyes of a Vacationer",
+				"duration": "04:00",
+				"file": "02-through-the-eyes-of-a-vacationer.mp3"
+			},
+			{
+				"name": "Wouldn’t Know",
+				"duration": "05:34",
+				"file": "03-wouldnt-know.mp3"
+			},
+			{
+				"name": "Forever",
+				"duration": "09:04",
+				"file": "04-forever.mp3"
+			},
+			{
+				"name": "Boxfish, Or, How Could I See This In A Different Light?",
+				"duration": "08:15",
+				"file": "05-boxfish.mp3"
+			},
+			{
+				"name": "A Complex of Noise",
+				"duration": "07:13",
+				"file": "06-a-complex-of-noise.mp3"
+			},
+			{
+				"name": "To Home",
+				"duration": "06:47",
+				"file": "07-to-home.mp3"
+			},
+			{
+				"name": "In a Cloud",
+				"duration": "07:42",
+				"file": "08-in-a-cloud.mp3"
+			},
+			{
+				"name": "Estate",
+				"duration": "04:53",
+				"file": "09-estate.mp3"
+			},
+			{
+				"name": "Atlanta",
+				"duration": "04:30",
+				"file": "10-atlanta.mp3"
+			},
+			{
+				"name": "Life is a Nervous Twitch",
+				"duration": "05:16",
+				"file": "11-life-is-a-nervous-twitch.mp3"
+			},
+			{
+				"name": "My Happiest Days Are Filled With Noise",
+				"duration": "06:02",
+				"file": "12-my-happiest-days-are-filled-with-noise.mp3"
+			},
+			{
+				"name": "Planet, Maybe",
+				"duration": "01:59",
+				"file": "13-planet-maybe.mp3"
+			},
+			{
+				"name": "O, Isn’t It Fantastic?",
+				"duration": "03:18",
+				"file": "14-o-isnt-it-fantastic.mp3"
+			},
+			{
+				"name": "Flourish",
+				"duration": "04:39",
+				"file": "15-flourish.mp3"
+			},
+			{
+				"name": "A Low-Hung Head",
+				"duration": "07:13",
+				"file": "16-a-low-hung-head.mp3"
+			},
+			{
+				"name": "Grizzly Bear",
+				"duration": "03:25",
+				"file": "17-grizzly-bear.mp3"
+			},
+			{
+				"name": "Decider",
+				"duration": "04:54",
+				"file": "18-decider.mp3"
+			},
+			{
+				"name": "Where I Better Last!",
+				"duration": "03:00",
+				"file": "19-where-i-better-last.mp3"
+			},
+			{
+				"name": "Sure",
+				"duration": "04:04",
+				"file": "20-sure.mp3"
+			},
+			{
+				"name": "More",
+				"duration": "03:44",
+				"file": "21-more.mp3"
+			},
+			{
+				"name": "Mushroom",
+				"duration": "06:46",
+				"file": "22-mushroom.mp3"
+			},
+			{
+				"name": "Don’t Go Alone [Bonus Track]",
+				"duration": "03:07",
+				"file": "23-dont-go-alone-bonus-track.mp3"
+			},
+			{
+				"name": "Summary of Plot [Bonus Track]",
+				"duration": "01:06",
+				"file": "24-summary-of-plot-bonus-track.mp3"
+			},
+			{
+				"name": "Tybalt (Put Down Your Weapon) [Bonus Track]",
+				"duration": "02:49",
+				"file": "25-tybalt-put-down-your-weapon-bonus-track.mp3"
+			},
+			{
+				"name": "Three Unrelated Parts [Bonus Track]",
+				"duration": "01:00",
+				"file": "26-three-unrelated-parts-bonus-track.mp3"
+			},
+			{
+				"name": "Scrapped [Bonus Track]",
+				"duration": "00:40",
+				"file": "27-scrapped-bonus-track.mp3"
+			},
+			{
+				"name": "Sweet Obsolete [Bonus Track]",
+				"duration": "02:32",
+				"file": "28-sweet-obsolete-bonus-track.mp3"
+			},
+			{
+				"name": "Track 17 [Bonus Track]",
+				"duration": "03:12",
+				"file": "29-track-17-bonus-track.mp3"
+			},
+			{
+				"name": "What Am I Doing, What Have I Done [Bonus Track]",
+				"duration": "02:51",
+				"file": "30-what-am-i-doing-what-have-i-done-bonus-track.mp3"
+			},
+			{
+				"name": "On a Budget [Bonus Track]",
+				"duration": "01:42",
+				"file": "31-on-a-budget-bonus-track.mp3"
+			},
+			{
+				"name": "Ghost Commercial [Bonus Track]",
+				"duration": "02:09",
+				"file": "32-ghost-commercial-bonus-track.mp3"
+			},
+			{
+				"name": "End to an End [Bonus Track]",
+				"duration": "02:09",
+				"file": "33-end-to-an-end-bonus-track.mp3"
+			},
+			{
+				"name": "Harmony [Bonus Track]",
+				"duration": "01:51",
+				"file": "34-harmony-bonus-track.mp3"
+			}
+		]
+	},
+	"2018-21-pretty-much-everything": {
+		"name": "2018-21 pretty much everything",
+		"date": "2021 June 13",
+		"cover": "2018-21-pretty-much-everything.jpg",
+		"desc": "<p>Pretty much everything.</p>",
+		"links": [
+		],
+		"songs": [
+			{
+				"name": "2018 04 06 kiwi",
+				"duration": "01:51",
+				"file": "01-2018-04-06-kiwi.mp3"
+			},
+			{
+				"name": "2018 05 03 table lines",
+				"duration": "01:00",
+				"file": "02-2018-05-03-table-lines.mp3"
+			},
+			{
+				"name": "2018 07 05 beat1",
+				"duration": "01:21",
+				"file": "03-2018-07-05-beat1.mp3"
+			},
+			{
+				"name": "2018 07 05 dance beat",
+				"duration": "01:15",
+				"file": "04-2018-07-05-dance-beat.mp3"
+			},
+			{
+				"name": "2018 07 05 living creatures",
+				"duration": "00:31",
+				"file": "05-2018-07-05-living-creatures.mp3"
+			},
+			{
+				"name": "2018 07 12 spider",
+				"duration": "01:30",
+				"file": "06-2018-07-12-spider.mp3"
+			},
+			{
+				"name": "2018 07 12 test2",
+				"duration": "01:53",
+				"file": "07-2018-07-12-test2.mp3"
+			},
+			{
+				"name": "2018 08 01 bumbum",
+				"duration": "00:50",
+				"file": "08-2018-08-01-bumbum.mp3"
+			},
+			{
+				"name": "2018 08 04 oh",
+				"duration": "00:51",
+				"file": "09-2018-08-04-oh.mp3"
+			},
+			{
+				"name": "2018 08 21 sword",
+				"duration": "02:44",
+				"file": "10-2018-08-21-sword.mp3"
+			},
+			{
+				"name": "2018 09 02 do do do do do DA DA DA",
+				"duration": "00:47",
+				"file": "11-2018-09-02-do-do-do-do-do-da-da-da.mp3"
+			},
+			{
+				"name": "2018 09 05 BE BE BE BE",
+				"duration": "02:27",
+				"file": "12-2018-09-05-be-be-be-be.mp3"
+			},
+			{
+				"name": "2018 09 05 from madrid maybe",
+				"duration": "01:24",
+				"file": "13-2018-09-05-from-madrid-maybe.mp3"
+			},
+			{
+				"name": "2018 09 05 wowzers",
+				"duration": "00:30",
+				"file": "14-2018-09-05-wowzers.mp3"
+			},
+			{
+				"name": "2018 09 16 how to start",
+				"duration": "00:59",
+				"file": "15-2018-09-16-how-to-start.mp3"
+			},
+			{
+				"name": "2018 10 29 plug it in",
+				"duration": "00:23",
+				"file": "16-2018-10-29-plug-it-in.mp3"
+			},
+			{
+				"name": "2018 11 06 dum dum da dum",
+				"duration": "01:24",
+				"file": "17-2018-11-06-dum-dum-da-dum.mp3"
+			},
+			{
+				"name": "2018 11 11 people talking",
+				"duration": "00:40",
+				"file": "18-2018-11-11-people-talking.mp3"
+			},
+			{
+				"name": "2018 11 11 untitled",
+				"duration": "00:21",
+				"file": "19-2018-11-11-untitled.mp3"
+			},
+			{
+				"name": "2018 11 13 hey there",
+				"duration": "01:54",
+				"file": "20-2018-11-13-hey-there.mp3"
+			},
+			{
+				"name": "2018 11 14 finding out",
+				"duration": "00:37",
+				"file": "21-2018-11-14-finding-out.mp3"
+			},
+			{
+				"name": "2018 11 23 snaps",
+				"duration": "00:28",
+				"file": "22-2018-11-23-snaps.mp3"
+			},
+			{
+				"name": "2018 11 23 splinters",
+				"duration": "00:41",
+				"file": "23-2018-11-23-splinters.mp3"
+			},
+			{
+				"name": "2018 11 24 doing something",
+				"duration": "08:05",
+				"file": "24-2018-11-24-doing-something.mp3"
+			},
+			{
+				"name": "2018 12 30 mouthsong",
+				"duration": "00:32",
+				"file": "25-2018-12-30-mouthsong.mp3"
+			},
+			{
+				"name": "2019 01 03 doubles",
+				"duration": "00:35",
+				"file": "26-2019-01-03-doubles.mp3"
+			},
+			{
+				"name": "2019 06 21 untitled",
+				"duration": "00:56",
+				"file": "27-2019-06-21-untitled.mp3"
+			},
+			{
+				"name": "2019 06 29 untitled2",
+				"duration": "00:25",
+				"file": "28-2019-06-29-untitled2.mp3"
+			},
+			{
+				"name": "2019 07 13 about",
+				"duration": "01:36",
+				"file": "29-2019-07-13-about.mp3"
+			},
+			{
+				"name": "2019 12 14 no",
+				"duration": "00:20",
+				"file": "30-2019-12-14-no.mp3"
+			},
+			{
+				"name": "2019 12 15 baby turn the LIGHTS",
+				"duration": "00:48",
+				"file": "31-2019-12-15-baby-turn-the-lights.mp3"
+			},
+			{
+				"name": "2019 12 21 christmas",
+				"duration": "00:39",
+				"file": "32-2019-12-21-christmas.mp3"
+			},
+			{
+				"name": "2019 12 22 clicks clacks",
+				"duration": "01:34",
+				"file": "33-2019-12-22-clicks-clacks.mp3"
+			},
+			{
+				"name": "2019 12 23 the whale",
+				"duration": "00:48",
+				"file": "34-2019-12-23-the-whale.mp3"
+			},
+			{
+				"name": "2020 04 06 milk",
+				"duration": "01:19",
+				"file": "35-2020-04-06-milk.mp3"
+			},
+			{
+				"name": "2020 04 08 save once",
+				"duration": "03:40",
+				"file": "36-2020-04-08-save-once.mp3"
+			},
+			{
+				"name": "2020 05 04 from phone",
+				"duration": "01:20",
+				"file": "37-2020-05-04-from-phone.mp3"
+			},
+			{
+				"name": "2020 05 04 giant test",
+				"duration": "04:41",
+				"file": "38-2020-05-04-giant-test.mp3"
+			},
+			{
+				"name": "2020 06 01 tiny little feet walking in foggy woods and everything is bluish green",
+				"duration": "01:05",
+				"file": "39-2020-06-01-tiny-little-feet-walking-in-foggy-woods-and-everything-is-bluish-green.mp3"
+			},
+			{
+				"name": "2020 06 13 rolling right past you wearing my neon blue heelys",
+				"duration": "01:30",
+				"file": "40-2020-06-13-rolling-right-past-you-wearing-my-neon-blue-heelys.mp3"
+			},
+			{
+				"name": "2020 06 16 marching through the kitchen",
+				"duration": "01:30",
+				"file": "41-2020-06-16-marching-through-the-kitchen.mp3"
+			},
+			{
+				"name": "2020 06 25 short sweet",
+				"duration": "01:40",
+				"file": "42-2020-06-25-short-sweet.mp3"
+			},
+			{
+				"name": "2020 07 25 snaps+melodica",
+				"duration": "00:32",
+				"file": "43-2020-07-25-snaps-melodica.mp3"
+			},
+			{
+				"name": "2020 08 05 i dont wanna be violent",
+				"duration": "01:45",
+				"file": "44-2020-08-05-i-dont-wanna-be-violent.mp3"
+			},
+			{
+				"name": "2020 08 22 microwave",
+				"duration": "00:21",
+				"file": "45-2020-08-22-microwave.mp3"
+			},
+			{
+				"name": "2020 09 07 guitar loop",
+				"duration": "01:07",
+				"file": "46-2020-09-07-guitar-loop.mp3"
+			},
+			{
+				"name": "2020 09 09 weeds",
+				"duration": "02:18",
+				"file": "47-2020-09-09-weeds.mp3"
+			},
+			{
+				"name": "2020 09 15 uh huh",
+				"duration": "01:45",
+				"file": "48-2020-09-15-uh-huh.mp3"
+			},
+			{
+				"name": "2020 09 20 some sort of digital loop",
+				"duration": "00:29",
+				"file": "49-2020-09-20-some-sort-of-digital-loop.mp3"
+			},
+			{
+				"name": "2020 09 27 i wanna play guitar plz",
+				"duration": "01:26",
+				"file": "50-2020-09-27-i-wanna-play-guitar-plz.mp3"
+			},
+			{
+				"name": "2020 10 08 likarino",
+				"duration": "00:38",
+				"file": "51-2020-10-08-likarino.mp3"
+			},
+			{
+				"name": "2020 10 22 that country",
+				"duration": "03:14",
+				"file": "52-2020-10-22-that-country.mp3"
+			},
+			{
+				"name": "2020 10 24 election day",
+				"duration": "01:08",
+				"file": "53-2020-10-24-election-day.mp3"
+			},
+			{
+				"name": "2021 01 03 dadunsch",
+				"duration": "01:41",
+				"file": "54-2021-01-03-dadunsch.mp3"
+			},
+			{
+				"name": "2021 03 26 got things to do",
+				"duration": "01:00",
+				"file": "55-2021-03-26-got-things-to-do.mp3"
+			},
+			{
+				"name": "2021 03 26 oh boy here he comes",
+				"duration": "01:20",
+				"file": "56-2021-03-26-oh-boy-here-he-comes.mp3"
+			},
+			{
+				"name": "2021 04 19 dogs",
+				"duration": "00:42",
+				"file": "57-2021-04-19-dogs.mp3"
+			},
+			{
+				"name": "2021 05 11 alright",
+				"duration": "00:36",
+				"file": "58-2021-05-11-alright.mp3"
+			}
+		]
+	},
+	"karaoke-superstar": {
+		"name": "Karaoke Superstar",
+		"date": "2019 May 10",
+		"cover": "karaoke-superstar.jpg",
+		"desc": "<p>Compositions for Wilson Lai’s senior thesis film at Wesleyan University.</p>",
+		"links": [
+		],
+		"songs": [
+			{
+				"name": "Biking",
+				"duration": "00:56",
+				"file": "01-biking.mp3"
+			},
+			{
+				"name": "Watching",
+				"duration": "00:29",
+				"file": "02-watching.mp3"
+			},
+			{
+				"name": "Shopping",
+				"duration": "01:26",
+				"file": "03-shopping.mp3"
+			},
+			{
+				"name": "Walking",
+				"duration": "03:20",
+				"file": "04-walking.mp3"
+			}
+		]
+	},
+	"eurydice": {
+		"name": "Eurydice",
+		"date": "2019 April 12",
+		"cover": "eurydice.jpg",
+		"desc": "<p>Sound design for Wesleyan University's production of Eurydice directed by Corey Sorenson. Featuring samples from “Don’t Sit Under the Apple Tree” by Glenn Miller, “La Vie en rose”, “String Quartet in F Major” by Ravel, and “A New Satiesfaction” by Made in Berlin string quartet.</p>",
+		"links": [
+		],
+		"songs": [
+			{
+				"name": "Walk In",
+				"duration": "03:27",
+				"file": "01-walk-in.mp3"
+			},
+			{
+				"name": "String at the Ocean",
+				"duration": "01:28",
+				"file": "02-string-at-the-ocean.mp3"
+			},
+			{
+				"name": "Apple Tree",
+				"duration": "01:05",
+				"file": "03-apple-tree.mp3"
+			},
+			{
+				"name": "Wedding by the Water",
+				"duration": "02:54",
+				"file": "04-wedding-by-the-water.mp3"
+			},
+			{
+				"name": "High Home",
+				"duration": "02:04",
+				"file": "05-high-home.mp3"
+			},
+			{
+				"name": "Descent",
+				"duration": "00:52",
+				"file": "06-descent.mp3"
+			},
+			{
+				"name": "Arrival",
+				"duration": "02:21",
+				"file": "07-arrival.mp3"
+			},
+			{
+				"name": "Orpheus",
+				"duration": "01:27",
+				"file": "08-orpheus.mp3"
+			},
+			{
+				"name": "Chamber Music",
+				"duration": "03:26",
+				"file": "09-chamber-music.mp3"
+			},
+			{
+				"name": "Graveyard",
+				"duration": "02:24",
+				"file": "10-graveyard.mp3"
+			},
+			{
+				"name": "Little Steps",
+				"duration": "01:13",
+				"file": "11-little-steps.mp3"
+			},
+			{
+				"name": "Feeling (a Little) Better Today",
+				"duration": "01:05",
+				"file": "12-feeling-a-little-better-today.mp3"
+			},
+			{
+				"name": "Lou",
+				"duration": "02:24",
+				"file": "13-lou.mp3"
+			},
+			{
+				"name": "Waterworks",
+				"duration": "02:03",
+				"file": "14-waterworks.mp3"
+			},
+			{
+				"name": "Ascent",
+				"duration": "01:47",
+				"file": "15-ascent.mp3"
+			},
+			{
+				"name": "Walk Out",
+				"duration": "03:41",
+				"file": "16-walk-out.mp3"
+			},
+			{
+				"name": "Orpheus [Demo]",
+				"duration": "00:49",
+				"file": "17-orpheus-demo.mp3"
+			},
+			{
+				"name": "Descent [Demo]",
+				"duration": "01:00",
+				"file": "18-descent-demo.mp3"
+			},
+			{
+				"name": "Elevator [Demo]",
+				"duration": "00:21",
+				"file": "19-elevator-demo.mp3"
+			},
+			{
+				"name": "Vanishing",
+				"duration": "00:37",
+				"file": "20-vanishing.mp3"
+			},
+			{
+				"name": "Lou [Demo]",
+				"duration": "01:25",
+				"file": "21-lou-demo.mp3"
+			}
+		]
+	},
+	"rhinoceros": {
+		"name": "Rhinoceros",
+		"date": "2018 May 3",
+		"cover": "rhinoceros.jpg",
+		"desc": "<p>Sound design for Second Stage's production of Rhinoceros directed by Jordan Tragash at Wesleyan University.</p>",
+		"links": [
+		],
+		"songs": [
+			{
+				"name": "Pre-show Stomp-and-Go",
+				"duration": "01:16",
+				"file": "01-pre-show-stomp-and-go.mp3"
+			},
+			{
+				"name": "Steps (and Stomps)",
+				"duration": "01:30",
+				"file": "02-steps-and-stomps.mp3"
+			},
+			{
+				"name": "Syll-O-Gism",
+				"duration": "03:16",
+				"file": "03-syll-o-gism.mp3"
+			},
+			{
+				"name": "Stampede",
+				"duration": "01:06",
+				"file": "04-stampede.mp3"
+			},
+			{
+				"name": "One or Two or Two or One",
+				"duration": "01:34",
+				"file": "05-one-or-two-or-two-or-one.mp3"
+			},
+			{
+				"name": "Feline Funeral",
+				"duration": "01:07",
+				"file": "06-feline-funeral.mp3"
+			},
+			{
+				"name": "Radio Oh Oh",
+				"duration": "04:10",
+				"file": "07-radio-oh-oh.mp3"
+			},
+			{
+				"name": "Uh Oh Rhino",
+				"duration": "01:37",
+				"file": "08-uh-oh-rhino.mp3"
+			},
+			{
+				"name": "Mid-show Bungalow",
+				"duration": "02:46",
+				"file": "09-mid-show-bungalow.mp3"
+			},
+			{
+				"name": "Rhino Rhythm",
+				"duration": "02:27",
+				"file": "10-rhino-rhythm.mp3"
+			},
+			{
+				"name": "Do Rhinos Dream of Stomping Feet?",
+				"duration": "0:46",
+				"file": "11-do-rhinos-dream-of-stomping-feet.mp3"
+			},
+			{
+				"name": "Rhino Melody",
+				"duration": "02:38",
+				"file": "12-rhino-melody.mp3"
+			},
+			{
+				"name": "Post-show Take-It-Slow",
+				"duration": "02:40",
+				"file": "13-post-show-take-it-slow.mp3"
+			}
+		]
+	},
+	"99-histories": {
+		"name": "99 Histories",
+		"date": "2018 February 28",
+		"cover": "99-histories.jpg",
+		"desc": "<p>Sound design for Eva Yichen Lou's senior thesis at Wesleyan University. Cello performed by Aïli Niimura. Featuring Prelude to Bach's Cello Suite No.1 in G.</p>",
+		"links": [
+		],
+		"songs": [
+			{
+				"name": "To Whom It May Concern",
+				"duration": "03:19",
+				"file": "01-to-whom-it-may-concern.mp3"
+			},
+			{
+				"name": "Roundabouts",
+				"duration": "00:45",
+				"file": "02-roundabouts.mp3"
+			},
+			{
+				"name": "Chung",
+				"duration": "01:30",
+				"file": "03-chung.mp3"
+			},
+			{
+				"name": "Overtones",
+				"duration": "01:22",
+				"file": "04-overtones.mp3"
+			},
+			{
+				"name": "Letters",
+				"duration": "02:20",
+				"file": "05-letters.mp3"
+			},
+			{
+				"name": "Reverse",
+				"duration": "01:21",
+				"file": "06-reverse.mp3"
+			},
+			{
+				"name": "What Didn’t Happen",
+				"duration": "01:01",
+				"file": "07-what-didnt-happen.mp3"
+			},
+			{
+				"name": "Trills",
+				"duration": "01:06",
+				"file": "08-trills.mp3"
+			},
+			{
+				"name": "The Rocking Horse Winner",
+				"duration": "03:33",
+				"file": "09-the-rocking-horse-winner.mp3"
+			},
+			{
+				"name": "Week Two",
+				"duration": "02:09",
+				"file": "10-week-two.mp3"
+			},
+			{
+				"name": "What Didn’t Happen (Reprise)",
+				"duration": "00:50",
+				"file": "11-what-didnt-happen-reprise.mp3"
+			},
+			{
+				"name": "Prelude",
+				"duration": "00:26",
+				"file": "12-prelude.mp3"
+			}
+		]
+	},
+	"moonbug": {
+		"name": "Moonbug",
+		"date": "2017 July 23",
+		"cover": "moonbug.jpg",
+		"desc": "<p>Songs that might've transitioned between other songs, but don't. They're probably not meant to be listened to in this way, but ah well.</p>",
+		"links": [
+		],
+		"songs": [
+			{
+				"name": "Moose",
+				"duration": "00:44",
+				"file": "01-moose.mp3"
+			},
+			{
+				"name": "Tomato",
+				"duration": "02:37",
+				"file": "02-tomato.mp3"
+			},
+			{
+				"name": "Bug",
+				"duration": "02:52",
+				"file": "03-bug.mp3"
+			},
+			{
+				"name": "Etc",
+				"duration": "01:57",
+				"file": "04-etc.mp3"
+			},
+			{
+				"name": "Onstage",
+				"duration": "04:16",
+				"file": "05-onstage.mp3"
+			},
+			{
+				"name": "Hint",
+				"duration": "02:06",
+				"file": "06-hint.mp3"
+			},
+			{
+				"name": "Moon",
+				"duration": "02:41",
+				"file": "07-moon.mp3"
+			},
+			{
+				"name": "Nice",
+				"duration": "02:37",
+				"file": "08-nice.mp3"
+			},
+			{
+				"name": "Region",
+				"duration": "01:33",
+				"file": "09-region.mp3"
+			},
+			{
+				"name": "Goose",
+				"duration": "01:45",
+				"file": "10-goose.mp3"
+			}
+		]
+	},
+	"falling-in-love-to-voices": {
+		"name": "Falling in Love to&nbsp;Voices",
+		"date": "2016 August 31",
+		"cover": "falling-in-love-to-voices.jpg",
+		"desc": "<p>An album of songs I wish I had time to finish, but at least recorded on my phone. Featuring calligraphy by Maddie Ulevich.</p>",
+		"links": [
+		],
+		"songs": [
+			{
+				"name": "Sing to Music",
+				"duration": "01:39",
+				"file": "01-sing-to-music.mp3"
+			},
+			{
+				"name": "Rest in Place",
+				"duration": "00:44",
+				"file": "02-rest-in-place.mp3"
+			},
+			{
+				"name": "Bidding Forgotten Words",
+				"duration": "00:58",
+				"file": "03-bidding-forgotten-words.mp3"
+			},
+			{
+				"name": "I Listen to Hear the Voice",
+				"duration": "00:14",
+				"file": "04-i-listen-to-hear-the-voice.mp3"
+			},
+			{
+				"name": "Aerosol for the Room",
+				"duration": "00:30",
+				"file": "05-aerosol-for-the-room.mp3"
+			},
+			{
+				"name": "Clicking Sticks for Clacks",
+				"duration": "00:30",
+				"file": "06-clicking-sticks-for-clacks.mp3"
+			},
+			{
+				"name": "Music Writes Mood",
+				"duration": "00:37",
+				"file": "07-music-writes-mood.mp3"
+			},
+			{
+				"name": "I’ve Tried Very Hard",
+				"duration": "00:56",
+				"file": "08-ive-tried-very-hard.mp3"
+			},
+			{
+				"name": "Rounder and Plumper than Before",
+				"duration": "00:29",
+				"file": "09-rounder-and-plumper-than-before.mp3"
+			},
+			{
+				"name": "For Dog’s Love",
+				"duration": "00:24",
+				"file": "10-for-dogs-love.mp3"
+			},
+			{
+				"name": "Forget It, I Forgot",
+				"duration": "00:18",
+				"file": "11-forget-it-i-forgot.mp3"
+			},
+			{
+				"name": "Grazing Indoor Meadows",
+				"duration": "00:18",
+				"file": "12-grazing-indoor-meadows.mp3"
+			},
+			{
+				"name": "Disappointing Children and Litters",
+				"duration": "00:34",
+				"file": "13-disappointing-children-and-litters.mp3"
+			},
+			{
+				"name": "Alone Amongst",
+				"duration": "00:08",
+				"file": "14-alone-amongst.mp3"
+			},
+			{
+				"name": "Upwards from Here",
+				"duration": "00:25",
+				"file": "15-upwards-from-here.mp3"
+			},
+			{
+				"name": "Who Is Making Me Feel Bad",
+				"duration": "00:35",
+				"file": "16-who-is-making-me-feel-bad.mp3"
+			},
+			{
+				"name": "Back Aches from Tall to Short",
+				"duration": "01:33",
+				"file": "17-back-aches-from-tall-to-short.mp3"
+			},
+			{
+				"name": "The Books Fall onto Floors",
+				"duration": "00:21",
+				"file": "18-the-books-fall-onto-floors.mp3"
+			},
+			{
+				"name": "Heads Made for You",
+				"duration": "00:16",
+				"file": "19-heads-made-for-you.mp3"
+			},
+			{
+				"name": "Bending for Lovers",
+				"duration": "01:21",
+				"file": "20-bending-for-lovers.mp3"
+			},
+			{
+				"name": "Puddles Flow into Puzzles",
+				"duration": "01:45",
+				"file": "21-puddles-flow-into-puzzles.mp3"
+			},
+			{
+				"name": "They’ll Give Me It Back",
+				"duration": "00:31",
+				"file": "22-theyll-give-me-it-back.mp3"
+			},
+			{
+				"name": "Putting On the Collar",
+				"duration": "00:57",
+				"file": "23-putting-on-the-collar.mp3"
+			},
+			{
+				"name": "Many Tiny Pianos",
+				"duration": "00:19",
+				"file": "24-many-tiny-pianos.mp3"
+			},
+			{
+				"name": "Twice Cooked, Eaten Once",
+				"duration": "00:19",
+				"file": "25-twice-cooked-eaten-once.mp3"
+			},
+			{
+				"name": "Shirt Brushes Against the Wall",
+				"duration": "00:28",
+				"file": "26-shirt-brushes-against-the-wall.mp3"
+			},
+			{
+				"name": "More Space and Words",
+				"duration": "01:09",
+				"file": "27-more-space-and-words.mp3"
+			},
+			{
+				"name": "Loving and Kind",
+				"duration": "01:17",
+				"file": "28-loving-and-kind.mp3"
+			}
+		]
+	},
+	"time-passes": {
+		"name": "Time Passes",
+		"date": "2016 August 31",
+		"cover": "time-passes.jpg",
+		"desc": "<p>Remake of my first album but shorter and different. I tried to make it better, but I really mostly made it shorter and different.</p>",
+		"links": [
+		],
+		"songs": [
+			{
+				"name": "To Home",
+				"duration": "07:44",
+				"file": "01-to-home.mp3"
+			},
+			{
+				"name": "In a Cloud",
+				"duration": "06:51",
+				"file": "02-in-a-cloud.mp3"
+			},
+			{
+				"name": "Maryland",
+				"duration": "04:35",
+				"file": "03-maryland.mp3"
+			},
+			{
+				"name": "As It Is Seen (Censored)",
+				"duration": "02:29",
+				"file": "04-as-it-is-seen-censored.mp3"
+			},
+			{
+				"name": "Mouse",
+				"duration": "06:26",
+				"file": "05-mouse.mp3"
+			},
+			{
+				"name": "Forever",
+				"duration": "08:06",
+				"file": "06-forever.mp3"
+			},
+			{
+				"name": "O, Isn’t It Wonderful?",
+				"duration": "03:44",
+				"file": "07-o-isnt-it-wonderful.mp3"
+			},
+			{
+				"name": "A Low-Hung Head",
+				"duration": "07:40",
+				"file": "08-a-low-hung-head.mp3"
+			},
+			{
+				"name": "Time Passes",
+				"duration": "07:18",
+				"file": "09-time-passes.mp3"
+			},
+			{
+				"name": "A Low-Hung Head [Bonus Track]",
+				"duration": "07:41",
+				"file": "10-a-low-hung-head-bonus-track.mp3"
+			}
+		]
+	},
+	"dano": {
+		"name": "Dano",
+		"date": "2014 December 18",
+		"cover": "dano.jpg",
+		"desc": "<p>A string quartet adapted from a synthesizer piece, with an album cover of my late grandfather, Pyotr Drozdov.</p><p>Unfortunately, I do not know who performed the piece. I remember that only two of the musicians had met before the recording session, and that those two were married.</p>",
+		"links": [
+		],
+		"songs": [
+			{
+				"name": "Dano",
+				"duration": "04:59",
+				"file": "01-dano.mp3"
+			},
+			{
+				"name": "Turn Into Stone",
+				"duration": "08:14",
+				"file": "02-turn-into-stone.mp3"
+			},
+			{
+				"name": "Violer",
+				"duration": "09:38",
+				"file": "03-violer.mp3"
+			}
+		]
+	},
+	"something-happens": {
+		"name": "Something Happens",
+		"date": "2014 December 18",
+		"cover": "something-happens.jpg",
+		"desc": "<p>A score to a film that doesn’t exist, something about J. Alfred Prufrock and love songs. Does that still make it a score?</p>",
+		"links": [
+		],
+		"songs": [
+			{
+				"name": "Main Theme",
+				"duration": "02:32",
+				"file": "01-main-theme.mp3"
+			},
+			{
+				"name": "Come Into The Room",
+				"duration": "03:32",
+				"file": "02-come-into-the-room.mp3"
+			},
+			{
+				"name": "Traveller’s Song",
+				"duration": "02:37",
+				"file": "03-travellers-song.mp3"
+			},
+			{
+				"name": "Molloy and Malone",
+				"duration": "06:56",
+				"file": "04-molloy-and-malone.mp3"
+			},
+			{
+				"name": "The Party",
+				"duration": "04:15",
+				"file": "05-the-party.mp3"
+			},
+			{
+				"name": "End of the Night",
+				"duration": "03:03",
+				"file": "06-end-of-the-night.mp3"
+			},
+			{
+				"name": "Not By My Hand",
+				"duration": "09:00",
+				"file": "07-not-by-my-hand.mp3"
+			}
+		]
+	},
+	"granola": {
+		"name": "Granola",
+		"date": "2014 August 8",
+		"cover": "granola.jpg",
+		"desc": "<p>Lola was a project conducted at NYU’s Clive Davis Institute of Recorded Music. The group consisted of Gabriel Drozdov, Joaquin Friedman, Pavlina Osta, and Jourdan Kelli. Written, performed, and produced by Gabriel Drozdov except where noted.</p>",
+		"links": [
+		],
+		"songs": [
+			{
+				"name": "In Dublin",
+				"duration": "00:53",
+				"file": "01-in-dublin.mp3"
+			},
+			{
+				"name": "Pander",
+				"duration": "03:54",
+				"file": "02-pander.mp3"
+			},
+			{
+				"name": "Dirk Diggler",
+				"duration": "00:16",
+				"file": "03-dirk-diggler.mp3"
+			},
+			{
+				"name": "Leopaleo",
+				"duration": "04:28",
+				"file": "04-leopaleo.mp3"
+			},
+			{
+				"name": "Jen Gender",
+				"duration": "00:47",
+				"file": "05-jen-gender.mp3"
+			},
+			{
+				"name": "Bouillabaisse",
+				"duration": "02:12",
+				"file": "06-bouillabaisse.mp3"
+			},
+			{
+				"name": "Empty Bowl",
+				"duration": "01:11",
+				"file": "07-empty-bowl.mp3"
+			},
+			{
+				"name": "Temporary Bride",
+				"duration": "02:46",
+				"file": "08-temporary-bride.mp3"
+			},
+			{
+				"name": "The Outsider",
+				"duration": "02:47",
+				"file": "09-the-outsider.mp3"
+			},
+			{
+				"name": "Nola",
+				"duration": "01:14",
+				"file": "10-nola.mp3"
+			}
+		]
+	},
+	"to-home": {
+		"name": "To Home",
+		"date": "2014 May 19",
+		"cover": "to-home.jpg",
+		"desc": "<p>A concept album about Mason and Erin. The story is told Mason's perspective through five parts and a bonus EP. The parts are as follows: ONE [tracks 1–3],TWO [tracks 4–6], THREE [tracks 7–10], FOUR[tracks 11–14], FIVE [tracks 15–18], and MORE [tracks 19–22].</p>",
+		"links": [
+		],
+		"songs": [
+			{
+				"name": "Mason the Killer",
+				"duration": "07:07",
+				"file": "01-mason-the-killer.mp3"
+			},
+			{
+				"name": "Through the Eyes of a Vacationer",
+				"duration": "07:08",
+				"file": "02-through-the-eyes-of-a-vacationer.mp3"
+			},
+			{
+				"name": "Wouldn’t Know",
+				"duration": "05:35",
+				"file": "03-wouldnt-know.mp3"
+			},
+			{
+				"name": "Forever",
+				"duration": "09:01",
+				"file": "04-forever.mp3"
+			},
+			{
+				"name": "Boxfish, Or, How Could I See This In A Different Light?",
+				"duration": "08:09",
+				"file": "05-boxfish-or-how-could-i-see-this-in-a-different-light.mp3"
+			},
+			{
+				"name": "A Complex of Noise",
+				"duration": "07:17",
+				"file": "06-a-complex-of-noise.mp3"
+			},
+			{
+				"name": "To Home",
+				"duration": "06:49",
+				"file": "07-to-home.mp3"
+			},
+			{
+				"name": "In a Cloud",
+				"duration": "07:44",
+				"file": "08-in-a-cloud.mp3"
+			},
+			{
+				"name": "Estate",
+				"duration": "04:50",
+				"file": "09-estate.mp3"
+			},
+			{
+				"name": "Atlanta",
+				"duration": "04:32",
+				"file": "10-atlanta.mp3"
+			},
+			{
+				"name": "Life is a Nervous Twitch",
+				"duration": "05:48",
+				"file": "11-life-is-a-nervous-twitch.mp3"
+			},
+			{
+				"name": "My Happiest Days Are Filled With Noise",
+				"duration": "05:57",
+				"file": "12-my-happiest-days-are-filled-with-noise.mp3"
+			},
+			{
+				"name": "Planet, Maybe",
+				"duration": "01:59",
+				"file": "13-planet-maybe.mp3"
+			},
+			{
+				"name": "O, Isn’t It Fantastic?",
+				"duration": "03:20",
+				"file": "14-o-isnt-it-fantastic.mp3"
+			},
+			{
+				"name": "Flourish",
+				"duration": "04:40",
+				"file": "15-flourish.mp3"
+			},
+			{
+				"name": "A Low-Hung Head",
+				"duration": "07:14",
+				"file": "16-a-low-hung-head.mp3"
+			},
+			{
+				"name": "Grizzly Bear",
+				"duration": "03:33",
+				"file": "17-grizzly-bear.mp3"
+			},
+			{
+				"name": "Decider",
+				"duration": "04:55",
+				"file": "18-decider.mp3"
+			},
+			{
+				"name": "Where I Better Last!",
+				"duration": "03:02",
+				"file": "19-where-i-better-last.mp3"
+			},
+			{
+				"name": "Sure",
+				"duration": "04:05",
+				"file": "20-sure.mp3"
+			},
+			{
+				"name": "More",
+				"duration": "03:45",
+				"file": "21-more.mp3"
+			},
+			{
+				"name": "Mushroom",
+				"duration": "06:49",
+				"file": "22-mushroom.mp3"
+			}
+		]
+	}
+}
