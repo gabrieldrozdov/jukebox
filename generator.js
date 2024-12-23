@@ -58,6 +58,7 @@ function generateHTML() {
 				<p class="info-notes-date">${album['date']}</p>
 				<h2 class="info-notes-album"><a href="#${key}" onclick="closeInfo(); openMusic();">${album['name']}</a></h2>
 				${album['desc']}
+				${linksHTML}
 			</section>
 		`;
 	}
@@ -92,7 +93,7 @@ function generateHTML() {
 				<div class="info-content">
 					<section class="info-content-intro">
 						<p>
-							Oh hi there. Gabriel Drozdov, a.k.a. Barco Loudly, here. I’ve been making music for a while. Here’s all of it.
+							Oh hi there. <a href='https://gabrieldrozdov.com/' target='_blank'>Gabriel Drozdov</a>, a.k.a. <a href="https://barcoloudly.com/" target="_blank">Barco Loudly</a>, here. I’ve been making music for a while. Here’s all of it.
 						</p>
 						<p>
 							This music is mine. If you want royalty-free tracks for whatever, check out <a href="https://bgm.barcoloudly.com/" target="_blank">BGM</a>. If you want musical toys, go to <a href="https://barcoloudly.com/" target="_blank">Barco Loudly</a>. If you want your own website (like to work together), reach out to <a href="https://noreplica.com/" target="_blank">No Replica</a>.
@@ -105,20 +106,20 @@ function generateHTML() {
 			<div class="container">
 				<header class="header">
 					<div class="logo-container">
-						<div class="logo" style="animation-delay: calc(-2s + var(--animation-offset)); color: var(--secondary-alt);"><span>J</span><span>u</span><span>k</span><span>e</span><span>b</span><span>o</span><span>x</span></div>
-						<div class="logo" style="animation-delay: calc(-4s + var(--animation-offset)); color: var(--secondary-alt);"><span>J</span><span>u</span><span>k</span><span>e</span><span>b</span><span>o</span><span>x</span></div>
-						<div class="logo" style="animation-delay: calc(-6s + var(--animation-offset)); color: var(--secondary-alt);"><span>J</span><span>u</span><span>k</span><span>e</span><span>b</span><span>o</span><span>x</span></div>
-						<div class="logo" style="animation-delay: calc(-8s + var(--animation-offset)); color: var(--secondary-alt);"><span>J</span><span>u</span><span>k</span><span>e</span><span>b</span><span>o</span><span>x</span></div>
-						<div class="logo" style="animation-delay: calc(-10s + var(--animation-offset)); color: var(--secondary-alt);"><span>J</span><span>u</span><span>k</span><span>e</span><span>b</span><span>o</span><span>x</span></div>
-						<div class="logo" style="animation-delay: calc(-12s + var(--animation-offset)); color: var(--secondary-alt);"><span>J</span><span>u</span><span>k</span><span>e</span><span>b</span><span>o</span><span>x</span></div>
-						<div class="logo" style="animation-delay: calc(-14s + var(--animation-offset)); color: var(--secondary-alt);"><span>J</span><span>u</span><span>k</span><span>e</span><span>b</span><span>o</span><span>x</span></div>
-						<div class="logo" style="animation-delay: calc(-16s + var(--animation-offset)); color: var(--secondary-alt);"><span>J</span><span>u</span><span>k</span><span>e</span><span>b</span><span>o</span><span>x</span></div>
-						<div class="logo" style="animation-delay: calc(-18s + var(--animation-offset)); color: var(--secondary-alt);"><span>J</span><span>u</span><span>k</span><span>e</span><span>b</span><span>o</span><span>x</span></div>
-						<div class="logo" style="animation-delay: calc(-20s + var(--animation-offset)); color: var(--secondary-alt);"><span>J</span><span>u</span><span>k</span><span>e</span><span>b</span><span>o</span><span>x</span></div>
-						<div class="logo" style="animation-delay: calc(-22s + var(--animation-offset)); color: var(--secondary-alt);"><span>J</span><span>u</span><span>k</span><span>e</span><span>b</span><span>o</span><span>x</span></div>
-						<div class="logo" style="animation-delay: calc(-24s + var(--animation-offset)); color: var(--secondary-alt);"><span>J</span><span>u</span><span>k</span><span>e</span><span>b</span><span>o</span><span>x</span></div>
-						<div class="logo" style="animation-delay: calc(-26s + var(--animation-offset)); color: var(--secondary-alt);"><span>J</span><span>u</span><span>k</span><span>e</span><span>b</span><span>o</span><span>x</span></div>
-						<div class="logo" style="animation-delay: calc(-28s + var(--animation-offset)); color: var(--secondary-alt);"><span>J</span><span>u</span><span>k</span><span>e</span><span>b</span><span>o</span><span>x</span></div>
+						<div class="logo" style="animation-delay: calc(-2s + var(--animation-offset));"><span>J</span><span>u</span><span>k</span><span>e</span><span>b</span><span>o</span><span>x</span></div>
+						<div class="logo" style="animation-delay: calc(-4s + var(--animation-offset));"><span>J</span><span>u</span><span>k</span><span>e</span><span>b</span><span>o</span><span>x</span></div>
+						<div class="logo" style="animation-delay: calc(-6s + var(--animation-offset));"><span>J</span><span>u</span><span>k</span><span>e</span><span>b</span><span>o</span><span>x</span></div>
+						<div class="logo" style="animation-delay: calc(-8s + var(--animation-offset));"><span>J</span><span>u</span><span>k</span><span>e</span><span>b</span><span>o</span><span>x</span></div>
+						<div class="logo" style="animation-delay: calc(-10s + var(--animation-offset));"><span>J</span><span>u</span><span>k</span><span>e</span><span>b</span><span>o</span><span>x</span></div>
+						<div class="logo" style="animation-delay: calc(-12s + var(--animation-offset));"><span>J</span><span>u</span><span>k</span><span>e</span><span>b</span><span>o</span><span>x</span></div>
+						<div class="logo" style="animation-delay: calc(-14s + var(--animation-offset));"><span>J</span><span>u</span><span>k</span><span>e</span><span>b</span><span>o</span><span>x</span></div>
+						<div class="logo" style="animation-delay: calc(-16s + var(--animation-offset));"><span>J</span><span>u</span><span>k</span><span>e</span><span>b</span><span>o</span><span>x</span></div>
+						<div class="logo" style="animation-delay: calc(-18s + var(--animation-offset));"><span>J</span><span>u</span><span>k</span><span>e</span><span>b</span><span>o</span><span>x</span></div>
+						<div class="logo" style="animation-delay: calc(-20s + var(--animation-offset));"><span>J</span><span>u</span><span>k</span><span>e</span><span>b</span><span>o</span><span>x</span></div>
+						<div class="logo" style="animation-delay: calc(-22s + var(--animation-offset));"><span>J</span><span>u</span><span>k</span><span>e</span><span>b</span><span>o</span><span>x</span></div>
+						<div class="logo" style="animation-delay: calc(-24s + var(--animation-offset));"><span>J</span><span>u</span><span>k</span><span>e</span><span>b</span><span>o</span><span>x</span></div>
+						<div class="logo" style="animation-delay: calc(-26s + var(--animation-offset));"><span>J</span><span>u</span><span>k</span><span>e</span><span>b</span><span>o</span><span>x</span></div>
+						<div class="logo" style="animation-delay: calc(-28s + var(--animation-offset));"><span>J</span><span>u</span><span>k</span><span>e</span><span>b</span><span>o</span><span>x</span></div>
 						<h1 class="logo"><span>J</span><span>u</span><span>k</span><span>e</span><span>b</span><span>o</span><span>x</span></h1>
 					</div>
 		

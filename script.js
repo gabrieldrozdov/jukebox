@@ -40,7 +40,7 @@ function setColor() {
 	}
 	updateColor();
 }
-setInterval(setColor, 100);
+setInterval(setColor, 200);
 
 // Update color
 function updateColor() {
@@ -180,7 +180,9 @@ let songNumber = 0;
 let totalSongs = 0;
 let playing = false;
 function playSong(albumKey, songName) {
-	closeMusic();
+	// closeMusic();
+	baseHue = Math.round(Math.random()*360);
+
 	triggerPlayPause();
 	document.querySelector('.player').dataset.active = 1;
 
@@ -210,6 +212,19 @@ function playSong(albumKey, songName) {
 	playerTime.innerHTML = "00:00";
 	const playerDuration = document.querySelector('.player-duration');
 	playerDuration.innerHTML = currentSongData['duration'];
+
+	// Update artwork
+	let logoTemp = "";
+	root.style.setProperty('--logoscale', 1/(songName.length/7));
+	for (let letter of songName) {
+		if (letter == " ") {
+			letter = "&nbsp;";
+		}
+		logoTemp += `<span>${letter}</span>`;
+	}
+	for (let logo of document.querySelectorAll('.logo')) {
+		logo.innerHTML = logoTemp;
+	}
 
 	// Play song
 	player.src = `music/${currentAlbum}/${currentSongData['file']}`;
