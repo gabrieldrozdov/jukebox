@@ -56,7 +56,7 @@ function generateHTML() {
 		infoNotes += `
 			<section class="info-notes">
 				<p class="info-notes-date">${album['date']}</p>
-				<h2 class="info-notes-album"><a href="#${key}" onclick="closeInfo();">${album['name']}</a></h2>
+				<h2 class="info-notes-album"><a href="#${key}" onclick="closeInfo(); openMusic();">${album['name']}</a></h2>
 				${album['desc']}
 			</section>
 		`;
