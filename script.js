@@ -227,23 +227,25 @@ let currentAlbum = "";
 let currentSong = "";
 let currentAlbumData = [];
 let songNumber = 0;
-let totalSongs = 0;
 let playing = false;
 function playSong(albumKey, songName) {
-	// closeMusic();
-	// baseHue = Math.round(Math.random()*360);
+	// Set album link
+	const albumLink = document.querySelector('.player-album');
+	albumLink.href = `#${albumKey}`;
 
+	// Activate player
 	triggerPlayPause();
 	document.querySelector('.player').dataset.active = 1;
 
+	// Update variables
 	currentAlbum = albumKey;
 	currentSong = songName;
 	let album = catalog[albumKey];
 
+	// Get song data
 	let currentSongData;
 	songNumber = 0;
 	currentAlbumData = album['songs'];
-	totalSongs = album['songs'].length;
 	for (let song of album['songs']) {
 		if (song['name'] == songName) {
 			currentSongData = song;
@@ -455,7 +457,7 @@ function changeVolume(newVolume) {
 }
 
 // Repeat and shuffle
-let settingRepeat = 'none';
+let settingRepeat = 'all';
 let settingShuffle = 'none';
 function setRepeat(newSetting) {
 	for (let toggle of document.querySelectorAll('#repeat button')) {

@@ -81,28 +81,7 @@ function generateHTML() {
 			<link rel="icon" type="image/png" href="assets/meta/favicon.png" />
 			<link rel="stylesheet" href="style.css">
 		</head>
-		<body>
-			<button class="menu-toggle menu-toggle-info" onclick="openInfo();">Info</button>
-			<button class="menu-toggle menu-toggle-music" onclick="openMusic();">Music</button>
-
-			<div class="info" data-active="0">
-				<button class="info-close" onclick="closeInfo();">Close</button>
-				<nav class="nav">
-					${navHTML}
-				</nav>
-				<div class="info-content">
-					<section class="info-content-intro">
-						<p>
-							Oh hi there. <a href='https://gabrieldrozdov.com/' target='_blank'>Gabriel Drozdov</a>, a.k.a. <a href="https://barcoloudly.com/" target="_blank">Barco Loudly</a>, here. I’ve been making music for a while. Here’s all of it.
-						</p>
-						<p>
-							This music is mine. If you want royalty-free tracks for whatever, check out <a href="https://bgm.barcoloudly.com/" target="_blank">BGM</a>. If you want musical toys, go to <a href="https://barcoloudly.com/" target="_blank">Barco Loudly</a>. If you want your own website (like to work together), reach out to <a href="https://noreplica.com/" target="_blank">No Replica</a>.
-						</p>
-					</section>
-					${infoNotes}
-				</div>
-			</div>
-		
+		<body>		
 			<div class="container">
 				<header class="header">
 					<div class="logo-parent">
@@ -112,12 +91,10 @@ function generateHTML() {
 					</div>
 		
 					<div class="player" data-active="0">
-						<div class="player-song">
-							No Song Playing
+						<div class="player-song" onclick="openMusic();">
+							Pick a song!
 						</div>
-						<div class="player-album">
-							No Album Selected
-						</div>
+						<a class="player-album" onclick="openMusic();" href=""></a>
 				
 						<div class="player-controls">
 							<div class="player-section" id="player-buttons">
@@ -151,8 +128,8 @@ function generateHTML() {
 						<div class="player-toggles">
 							<div class="player-toggle" id="repeat">
 								<label class="player-toggle-label">Repeat</label>
-								<button class="player-toggle-button" id="repeat-none" data-active="1" onclick="setRepeat('none');">
-									None
+								<button class="player-toggle-button" id="repeat-all" data-active="1" onclick="setRepeat('all');">
+									All
 								</button>
 								<button class="player-toggle-button" id="repeat-song" onclick="setRepeat('song');">
 									Song
@@ -182,6 +159,29 @@ function generateHTML() {
 					${albumsHTML}
 				</main>
 			</div>
+
+			<button class="menu-toggle menu-toggle-info" onclick="openInfo();">Info</button>
+			<button class="menu-toggle menu-toggle-music" onclick="openMusic();">Music</button>
+
+			<div class="info" data-active="0">
+				<button class="info-close" onclick="closeInfo();">Close</button>
+				<nav class="nav">
+					${navHTML}
+				</nav>
+				<div class="info-content">
+					<section class="info-content-intro">
+						<p>
+							Oh hi there. <a href='https://gabrieldrozdov.com/' target='_blank'>Gabriel Drozdov</a>, a.k.a. <a href="https://barcoloudly.com/" target="_blank">Barco Loudly</a>, here. I’ve been making music for a while. Here’s all of it.
+						</p>
+						<p>
+							This music is mine. If you want royalty-free tracks for whatever, check out <a href="https://bgm.barcoloudly.com/" target="_blank">BGM</a>. If you want musical toys, go to <a href="https://barcoloudly.com/" target="_blank">Barco Loudly</a>. If you want your own website (like to work together), reach out to <a href="https://noreplica.com/" target="_blank">No Replica</a>.
+						</p>
+					</section>
+					${infoNotes}
+				</div>
+			</div>
+
+			<div class="background"></div>
 		
 			<script src="script.js"></script>
 		</body>
