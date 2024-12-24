@@ -23,7 +23,7 @@ function generateHTML() {
 		let songNumber = 1;
 		for (let song of album['songs']) {
 			songsHTML += `
-				<li class="song" onclick="playSong('${key}', '${song['name']}'); generateQueue();" data-active="0" data-song="${key} ${song['name']}">
+				<li class="song" onclick="playSong('${key}', '${song['name']}'); generateQueue(); closeMusic();" data-active="0" data-song="${key} ${song['name']}">
 					<span class="song-number">${songNumber}</span>
 					<span class="song-name">${song['name']}</span>
 					<span class="song-duration">${song['duration']}</span>
@@ -105,22 +105,10 @@ function generateHTML() {
 		
 			<div class="container">
 				<header class="header">
-					<div class="logo-container">
-						<div class="logo" style="animation-delay: calc(-2s + var(--animation-offset));"><span>J</span><span>u</span><span>k</span><span>e</span><span>b</span><span>o</span><span>x</span></div>
-						<div class="logo" style="animation-delay: calc(-4s + var(--animation-offset));"><span>J</span><span>u</span><span>k</span><span>e</span><span>b</span><span>o</span><span>x</span></div>
-						<div class="logo" style="animation-delay: calc(-6s + var(--animation-offset));"><span>J</span><span>u</span><span>k</span><span>e</span><span>b</span><span>o</span><span>x</span></div>
-						<div class="logo" style="animation-delay: calc(-8s + var(--animation-offset));"><span>J</span><span>u</span><span>k</span><span>e</span><span>b</span><span>o</span><span>x</span></div>
-						<div class="logo" style="animation-delay: calc(-10s + var(--animation-offset));"><span>J</span><span>u</span><span>k</span><span>e</span><span>b</span><span>o</span><span>x</span></div>
-						<div class="logo" style="animation-delay: calc(-12s + var(--animation-offset));"><span>J</span><span>u</span><span>k</span><span>e</span><span>b</span><span>o</span><span>x</span></div>
-						<div class="logo" style="animation-delay: calc(-14s + var(--animation-offset));"><span>J</span><span>u</span><span>k</span><span>e</span><span>b</span><span>o</span><span>x</span></div>
-						<div class="logo" style="animation-delay: calc(-16s + var(--animation-offset));"><span>J</span><span>u</span><span>k</span><span>e</span><span>b</span><span>o</span><span>x</span></div>
-						<div class="logo" style="animation-delay: calc(-18s + var(--animation-offset));"><span>J</span><span>u</span><span>k</span><span>e</span><span>b</span><span>o</span><span>x</span></div>
-						<div class="logo" style="animation-delay: calc(-20s + var(--animation-offset));"><span>J</span><span>u</span><span>k</span><span>e</span><span>b</span><span>o</span><span>x</span></div>
-						<div class="logo" style="animation-delay: calc(-22s + var(--animation-offset));"><span>J</span><span>u</span><span>k</span><span>e</span><span>b</span><span>o</span><span>x</span></div>
-						<div class="logo" style="animation-delay: calc(-24s + var(--animation-offset));"><span>J</span><span>u</span><span>k</span><span>e</span><span>b</span><span>o</span><span>x</span></div>
-						<div class="logo" style="animation-delay: calc(-26s + var(--animation-offset));"><span>J</span><span>u</span><span>k</span><span>e</span><span>b</span><span>o</span><span>x</span></div>
-						<div class="logo" style="animation-delay: calc(-28s + var(--animation-offset));"><span>J</span><span>u</span><span>k</span><span>e</span><span>b</span><span>o</span><span>x</span></div>
-						<h1 class="logo"><span>J</span><span>u</span><span>k</span><span>e</span><span>b</span><span>o</span><span>x</span></h1>
+					<div class="logo-parent">
+						<div class="logo-container">
+							<h1 class="logo" data-pos="right">Jukebox</h1>
+						</div>
 					</div>
 		
 					<div class="player" data-active="0">

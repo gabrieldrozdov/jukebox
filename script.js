@@ -34,13 +34,13 @@ window.addEventListener('scroll', setAxes);
 
 // Gradually shift color
 function setColor() {
-	baseHue++;
+	baseHue += .5;
 	if (baseHue >= 360) {
 		baseHue = 0;
 	}
 	updateColor();
 }
-setInterval(setColor, 200);
+setInterval(setColor, 100);
 
 // Update color
 function updateColor() {
@@ -50,13 +50,63 @@ function updateColor() {
 	}
 }
 
+// Generate logo
+function generateLogo(text) {
+	// Transition out old element
+	for (let oldLogo of document.querySelectorAll('.logo-container')) {
+		oldLogo.dataset.pos = 'right';
+		setTimeout(() => {oldLogo.remove()}, 750);
+	}
+
+	// Create new element
+	let newLogo = document.createElement('div');
+	newLogo.classList.add('logo-container');
+	newLogo.dataset.pos = 'left';
+
+	// Build letter spans
+	let logoLetters = "";
+	newLogo.style.setProperty('--logoscale', 1/(text.length/7));
+	for (let letter of text) {
+		if (letter == " ") {
+			letter = "&nbsp;";
+		}
+		logoLetters += `<span>${letter}</span>`;
+	}
+
+	// Build words
+	let logoTemp = `<h1 class="logo" style="z-index: 12;">${logoLetters}</h1>`;
+	for (let i=1; i<12; i++) {
+		logoTemp += `<div class="logo" style="transform: translate(-50%, -50%) rotate(calc(var(--animation-rotation) + ${i*15}deg)); z-index: ${12-i}; filter: hue-rotate(${-i*10}deg)">${logoLetters}</div>`;
+	}
+	newLogo.innerHTML = logoTemp;
+
+	// Add new logo to DOM
+	let logoParent = document.querySelector('.logo-parent');
+	logoParent.appendChild(newLogo);
+
+	// Transition in new element
+	setTimeout(() => {newLogo.dataset.pos = 'center'}, 5);
+}
+generateLogo('Jukebox');
+
 // Update logo rotation
+let baseRotation = 0;
 function updateRotation() {
-	root.style.setProperty('--animation-offset', -percentScrolled*document.documentElement.scrollHeight/100 + "s");
-	if (isNaN(-percentScrolled*document.documentElement.scrollHeight/100)) {
-		root.style.setProperty('--animation-offset', "0s");
+	let newRotation = percentScrolled*document.documentElement.scrollHeight/10+baseRotation;
+	root.style.setProperty('--animation-rotation', newRotation + "deg");
+	if (isNaN(newRotation)) {
+		root.style.setProperty('--animation-rotation', "0deg");
 	}
 }
+function setRotation() {
+	baseRotation += .1;
+	if (baseRotation >= 360) {
+		baseRotation = 0;
+	}
+	updateRotation();
+	requestAnimationFrame(setRotation);
+}
+setRotation();
 window.addEventListener('scroll', updateRotation);
 
 // Nav bouncing animation
@@ -181,7 +231,7 @@ let totalSongs = 0;
 let playing = false;
 function playSong(albumKey, songName) {
 	// closeMusic();
-	baseHue = Math.round(Math.random()*360);
+	// baseHue = Math.round(Math.random()*360);
 
 	triggerPlayPause();
 	document.querySelector('.player').dataset.active = 1;
@@ -214,17 +264,7 @@ function playSong(albumKey, songName) {
 	playerDuration.innerHTML = currentSongData['duration'];
 
 	// Update artwork
-	let logoTemp = "";
-	root.style.setProperty('--logoscale', 1/(songName.length/7));
-	for (let letter of songName) {
-		if (letter == " ") {
-			letter = "&nbsp;";
-		}
-		logoTemp += `<span>${letter}</span>`;
-	}
-	for (let logo of document.querySelectorAll('.logo')) {
-		logo.innerHTML = logoTemp;
-	}
+	generateLogo(songName);
 
 	// Play song
 	player.src = `music/${currentAlbum}/${currentSongData['file']}`;
