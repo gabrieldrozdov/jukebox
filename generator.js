@@ -180,8 +180,6 @@ function generateHTML() {
 					${infoNotes}
 				</div>
 			</div>
-
-			<div class="background"></div>
 		
 			<script src="script.js"></script>
 		</body>
