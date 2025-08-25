@@ -8,7 +8,7 @@ function setRotation() {
 	targetRotation = currentTime*10;
 
 	// Update current rotation to move toward target
-	let delta = ((targetRotation+rotationOffset)-currentRotation)/100;
+	let delta = ((targetRotation+rotationOffset)-currentRotation)/60;
 	currentRotation += delta;
 
 	// Set CSS variable
@@ -51,6 +51,7 @@ function generateLogo(text) {
 	currentRotation = 0;
 	targetRotation = 0;
 	rotationOffset = 0;
+	currentTime = 0;
 
 	// Create new element
 	let newLogo = document.createElement('div');
@@ -79,87 +80,9 @@ function generateLogo(text) {
 	logoParent.appendChild(newLogo);
 
 	// Transition in new element
-	setTimeout(() => {newLogo.dataset.pos = 'center'}, 50);
+	setTimeout(() => {newLogo.dataset.pos = 'center'}, 25);
 }
 generateLogo('Jukebox');
-
-// Nav bouncing animation
-function initializeNav() {
-	const offset = Math.max(100, Math.min(window.innerWidth*.1, 250));
-	const nav = document.querySelector('.nav');
-	for (let navLink of document.querySelectorAll('.nav-link')) {
-		// Position
-		navLink.dataset.posx = Math.random()*(nav.offsetWidth-offset);
-		navLink.dataset.posy = Math.random()*(nav.offsetHeight-offset);
-		navLink.dataset.rot = Math.round(Math.random()*360);
-		navLink.style.transform = `translate(${navLink.dataset.posx}px, ${navLink.dataset.posy}px) rotate(${navLink.dataset.rot}deg)`;
-		if (Math.random() < .5) {
-			navLink.dataset.velx = -1;
-		} else {
-			navLink.dataset.velx = 1;
-		}
-		if (Math.random() < .5) {
-			navLink.dataset.vely = -1;
-		} else {
-			navLink.dataset.vely = 1;
-		}
-
-		// Events
-		navLink.addEventListener('mouseenter', () => {navLink.dataset.pause = 1});
-		navLink.addEventListener('mouseleave', () => {navLink.dataset.pause = 0});
-	}
-	navLoop();
-}
-function navLoop() {
-	const offset = Math.max(100, Math.min(window.innerWidth*.1, 250));
-	const nav = document.querySelector('.nav');
-	for (let navLink of document.querySelectorAll('.nav-link')) {
-		if (parseInt(navLink.dataset.pause) == 1) {
-			continue
-		}
-
-		// X position
-		if (parseInt(navLink.dataset.velx) == 1) {
-			navLink.dataset.posx = parseInt(navLink.dataset.posx)+1;
-		} else {
-			navLink.dataset.posx = parseInt(navLink.dataset.posx)-1;
-		}
-		if (parseInt(navLink.dataset.posx) >= nav.offsetWidth-offset) {
-			navLink.dataset.velx = -1;
-		} else if (parseInt(navLink.dataset.posx) <= 0 ) {
-			navLink.dataset.velx = 1;
-		}
-
-		// Y position
-		if (parseInt(navLink.dataset.velY) == 1) {
-			navLink.dataset.posy = parseInt(navLink.dataset.posy)+1;
-		} else {
-			navLink.dataset.posy = parseInt(navLink.dataset.posy)-1;
-		}
-		if (parseInt(navLink.dataset.posy) >= nav.offsetHeight-offset) {
-			navLink.dataset.velY = -1;
-		} else if (parseInt(navLink.dataset.posy) <= 0 ) {
-			navLink.dataset.velY = 1;
-		}
-
-		// Rotation
-		if (parseInt(navLink.dataset.velx) == 1) {
-			navLink.dataset.rot = parseInt(navLink.dataset.rot)+1;
-		} else {
-			navLink.dataset.rot = parseInt(navLink.dataset.rot)-1;
-		}
-		if (parseInt(navLink.dataset.rot) >= 360) {
-			navLink.dataset.rot = 0;
-		} else if (parseInt(navLink.dataset.rot) <= 0) {
-			navLink.dataset.rot = 360;
-		}
-
-		// Update position
-		navLink.style.transform = `translate(${navLink.dataset.posx}px, ${navLink.dataset.posy}px) rotate(${navLink.dataset.rot}deg)`;
-	}
-	requestAnimationFrame(navLoop);
-}
-initializeNav();
 
 // Player object
 let player = new Audio();
@@ -408,6 +331,7 @@ function togglePlayPause() {
 }
 function triggerPlay() {
 	document.removeEventListener('mouseup', triggerPlay);
+	document.removeEventListener('touchend', triggerPlay);
 	const playButton = document.querySelector('#player-playpause');
 	playing = true;
 	playButton.dataset.active = 1;
@@ -426,6 +350,7 @@ function skipToTime(newTime) {
 	if (playing) {
 		triggerPause();
 		document.addEventListener('mouseup', triggerPlay);
+		document.addEventListener('touchend', triggerPlay);
 	}
 }
 
