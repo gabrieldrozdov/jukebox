@@ -62,6 +62,7 @@ img {
 	text-transform: uppercase;
 	cursor: pointer;
 	outline: 1px solid black;
+	color: black;
 	height: 40px;
 	padding: calc(10px + .2em) 20px 10px 20px;
 	transition: color .1s, background-color .1s;
@@ -577,6 +578,10 @@ body[data-player="0"] .player {
 	color: black;
 	border-bottom: 1px solid black;
 	transition: background-color .1s, padding .1s;
+}
+.song a {
+	color: inherit;
+	text-decoration: none;
 }
 .song:hover {
 	background-color: white;
