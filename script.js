@@ -1,62 +1,56 @@
+// Update logo rotation
+let currentRotation = 0;
+let targetRotation = 0;
+let rotationOffset = 0;
+let currentTime = 0;
+function setRotation() {
+	// Update rotation target
+	targetRotation = currentTime*10;
+
+	// Update current rotation to move toward target
+	let delta = ((targetRotation+rotationOffset)-currentRotation)/100;
+	currentRotation += delta;
+
+	// Set CSS variable
+	const root = document.querySelector('html');
+	root.style.setProperty('--animation-rotation', currentRotation + "deg");
+
+	// Loop
+	requestAnimationFrame(setRotation);
+}
+setRotation();
+
+// Rotate on scroll
+window.addEventListener('wheel', (e) => {
+	if (!initialized) {
+		rotationOffset += e.deltaY/10;
+	}
+})
+
 // Fetch songs
 let catalog;
 fetch('songs.json')
 	.then((response) => response.json())
 	.then((json) => {
 		catalog = json;
+		setTimeout(() => {
+			readURL();
+		}, 50)
 	})
-
-// Change color on scroll
-const root = document.querySelector('html');
-const body = document.querySelector('body');
-let baseHue = 0;
-let percentScrolled = 0;
-function setAxes() {
-	const scrollTop = body.offsetTop;
-	const scrollHeight = body.offsetHeight;
-	const scrollPosition = window.scrollY;
-	const pixelsScrolled = scrollPosition - scrollTop;
-
-	// Calculate the percent scrolled (0–1)
-	percentScrolled = pixelsScrolled/(scrollHeight - window.innerHeight);
-
-	// Correct bounds
-	if (percentScrolled < 0) {
-		percentScrolled = 0;
-	} else if (percentScrolled > 1) {
-		percentScrolled = 1;
-	}
-
-	// Set CSS variable
-	updateColor();
-}
-window.addEventListener('scroll', setAxes);
-
-// Gradually shift color
-function setColor() {
-	baseHue += .5;
-	if (baseHue >= 360) {
-		baseHue = 0;
-	}
-	updateColor();
-}
-setInterval(setColor, 100);
-
-// Update color
-function updateColor() {
-	root.style.setProperty('--base-hue', percentScrolled*document.documentElement.scrollHeight/50+baseHue + "deg");
-	if (isNaN(percentScrolled*document.documentElement.scrollHeight/50+baseHue)) {
-		root.style.setProperty('--base-hue', "0deg");
-	}
-}
 
 // Generate logo
 function generateLogo(text) {
 	// Transition out old element
 	for (let oldLogo of document.querySelectorAll('.logo-container')) {
+		oldLogo.style.setProperty('--animation-rotation', currentRotation + "deg");
 		oldLogo.dataset.pos = 'right';
 		setTimeout(() => {oldLogo.remove()}, 750);
 	}
+
+	// Reset rotation
+	currentRotation = 0;
+	targetRotation = 0;
+	rotationOffset = 0;
 
 	// Create new element
 	let newLogo = document.createElement('div');
@@ -65,7 +59,7 @@ function generateLogo(text) {
 
 	// Build letter spans
 	let logoLetters = "";
-	newLogo.style.setProperty('--logoscale', 1/(text.length/7));
+	newLogo.style.setProperty('--logoscale', 1/(text.length/10));
 	for (let letter of text) {
 		if (letter == " ") {
 			letter = "&nbsp;";
@@ -85,29 +79,9 @@ function generateLogo(text) {
 	logoParent.appendChild(newLogo);
 
 	// Transition in new element
-	setTimeout(() => {newLogo.dataset.pos = 'center'}, 5);
+	setTimeout(() => {newLogo.dataset.pos = 'center'}, 50);
 }
 generateLogo('Jukebox');
-
-// Update logo rotation
-let baseRotation = 0;
-function updateRotation() {
-	let newRotation = percentScrolled*document.documentElement.scrollHeight/10+baseRotation;
-	root.style.setProperty('--animation-rotation', newRotation + "deg");
-	if (isNaN(newRotation)) {
-		root.style.setProperty('--animation-rotation', "0deg");
-	}
-}
-function setRotation() {
-	baseRotation += .1;
-	if (baseRotation >= 360) {
-		baseRotation = 0;
-	}
-	updateRotation();
-	requestAnimationFrame(setRotation);
-}
-setRotation();
-window.addEventListener('scroll', updateRotation);
 
 // Nav bouncing animation
 function initializeNav() {
@@ -189,9 +163,8 @@ initializeNav();
 
 // Player object
 let player = new Audio();
-let currentVolume = .8;
+let currentVolume = 1;
 player.volume = currentVolume;
-let currentTime = 0;
 player.addEventListener('ended', () => {
 	nextSong();
 });
@@ -219,7 +192,12 @@ function refreshCurrentTime() {
 	}
 
 	const playerTime = document.querySelector('.player-time');
-	playerTime.innerText = `${minutes}:${seconds}`;
+	let newTime = `${minutes}:${seconds}`;
+	let durationHTML = "";
+	for (let letter of newTime) {
+		durationHTML += `<span>${letter}</span>`;
+	}
+	playerTime.innerHTML = durationHTML;
 }
 
 // Manually play song
@@ -228,14 +206,11 @@ let currentSong = "";
 let currentAlbumData = [];
 let songNumber = 0;
 let playing = false;
-function playSong(albumKey, songName) {
-	// Set album link
-	const albumLink = document.querySelector('.player-album');
-	albumLink.href = `#${albumKey}`;
-
+let initialized = false;
+function playSong(albumKey, songName, dontPlay) {
 	// Activate player
-	triggerPlayPause();
-	document.querySelector('.player').dataset.active = 1;
+	initialized = true;
+	document.querySelector('body').dataset.player = 1;
 
 	// Update variables
 	currentAlbum = albumKey;
@@ -256,29 +231,40 @@ function playSong(albumKey, songName) {
 	}
 
 	// Update player info
-	const playerSong = document.querySelector('.player-song');
+	const playerDetails = document.querySelector('.player-info-details');
+	const playerSong = document.querySelector('.player-info-song');
+	playerDetails.innerHTML = `<span>${catalog[currentAlbum]['name']}</span> <span>${songNumber+1} of ${catalog[currentAlbum]['songs'].length}</span>`;
 	playerSong.innerHTML = songName;
-	const playerAlbum = document.querySelector('.player-album');
-	playerAlbum.innerHTML = `${catalog[currentAlbum]['name']} | Track&nbsp;${songNumber+1}`;
+
 	const playerTime = document.querySelector('.player-time');
 	playerTime.innerHTML = "00:00";
+	
 	const playerDuration = document.querySelector('.player-duration');
 	playerDuration.innerHTML = currentSongData['duration'];
 
+	// Update player height for mobile artwork position
+	const playerElmnt = document.querySelector('.player');
+	const body = document.querySelector('body');
+	body.style.setProperty('--player-height', `${playerElmnt.offsetHeight}px`);
+
 	// Update artwork
 	generateLogo(songName);
-
-	// Play song
-	player.src = `music/${currentAlbum}/${currentSongData['file']}`;
-	player.play();
-	playing = true;
 
 	// Activate current song
 	for (let song of document.querySelectorAll('.song')) {
 		song.dataset.active = 0;
 	}
-	let song = document.querySelector(`[data-song="${currentAlbum} ${currentSong}"]`);
-	song.dataset.active = 1;
+	let albumElmnt = document.querySelector(`[data-album="${currentAlbum}"]`)
+	let songElmnt = albumElmnt.querySelector(`[data-song="${currentSong}"]`);
+	songElmnt.dataset.active = 1;
+
+	// Play song
+	player.src = `music/${currentAlbum}/${currentSongData['file']}`;
+	if (dontPlay == undefined) {
+		triggerPlay();
+	} else {
+		
+	}
 }
 
 // Song queue
@@ -420,45 +406,54 @@ function togglePlayPause() {
 		playButton.dataset.active = 1;
 	}
 }
-function triggerPlayPause() {
+function triggerPlay() {
+	document.removeEventListener('mouseup', triggerPlay);
 	const playButton = document.querySelector('#player-playpause');
 	playing = true;
 	playButton.dataset.active = 1;
+	player.play();
+}
+function triggerPause() {
+	const playButton = document.querySelector('#player-playpause');
+	playing = false;
+	playButton.dataset.active = 0;
+	player.pause();
 }
 
 // Manually scrub time
 function skipToTime(newTime) {
 	player.currentTime = newTime;
-}
-
-// Volume
-let playerMuted = false;
-function toggleMute() {
-	const muteButton = document.querySelector('#player-mute');
-	const playerVolume = document.querySelector('.player-volume');
-	if (playerMuted) {
-		playerMuted = false;
-		muteButton.dataset.active = 0;
-		player.volume = currentVolume;
-		playerVolume.value = currentVolume*100;
-	} else {
-		playerMuted = true;
-		muteButton.dataset.active = 1;
-		player.volume = 0;
-		playerVolume.value = 0;
+	if (playing) {
+		triggerPause();
+		document.addEventListener('mouseup', triggerPlay);
 	}
-}
-function changeVolume(newVolume) {
-	const muteButton = document.querySelector('#player-mute');
-	playerMuted = false;
-	muteButton.dataset.active = 0;
-	currentVolume = newVolume;
-	player.volume = currentVolume;
 }
 
 // Repeat and shuffle
 let settingRepeat = 'all';
+let settingRepeatOptions = ['all', 'song', 'album'];
 let settingShuffle = 'none';
+let settingShuffleOptions = ['none', 'album', 'all'];
+function toggleRepeat() {
+	let currentSettingIndex = settingRepeatOptions.indexOf(settingRepeat);
+	currentSettingIndex++;
+	if (currentSettingIndex >= settingRepeatOptions.length) {
+		currentSettingIndex = 0;
+	}
+	settingRepeat = settingRepeatOptions[currentSettingIndex];
+	document.querySelector(`#repeat-mode`).innerHTML = settingRepeat;
+	generateQueue();
+}
+function toggleShuffle() {
+	let currentSettingIndex = settingShuffleOptions.indexOf(settingShuffle);
+	currentSettingIndex++;
+	if (currentSettingIndex >= settingShuffleOptions.length) {
+		currentSettingIndex = 0;
+	}
+	settingShuffle = settingShuffleOptions[currentSettingIndex];
+	document.querySelector(`#shuffle-mode`).innerHTML = settingShuffle;
+	generateQueue();
+}
 function setRepeat(newSetting) {
 	for (let toggle of document.querySelectorAll('#repeat button')) {
 		toggle.dataset.active = 0;
@@ -478,17 +473,111 @@ function setShuffle(newSetting) {
 
 // Menus
 function openInfo() {
-	document.querySelector('.info').dataset.active = 1;
+	document.querySelector('body').dataset.info = 1;
 }
 function closeInfo() {
-	document.querySelector('.info').dataset.active = 0;
+	document.querySelector('body').dataset.info = 0;
 }
 function openMusic() {
-	document.querySelector('.music').dataset.active = 1;
+	document.querySelector('body').dataset.music = 1;
 }
 function closeMusic() {
-	document.querySelector('.music').dataset.active = 0;
+	document.querySelector('body').dataset.music = 0;
+}
+
+// Toggle album tracklists
+function toggleAlbum(albumKey) {
+	let album = document.querySelector(`[data-album="${albumKey}"]`);
+	if (parseInt(album.dataset.active) == 1) {
+		album.dataset.active = 0;
+	} else {
+		album.dataset.active = 1;
+	}
+}
+function expandAllAlbums() {
+	for (let album of document.querySelectorAll('.album')) {
+		album.dataset.active = 1;
+	}
+}
+function collapseAllAlbums() {
+	for (let album of document.querySelectorAll('.album')) {
+		album.dataset.active = 0;
+	}
+}
+
+// Read URL and open album
+function readURL() {
+	const urlParams = new URLSearchParams(window.location.search);
+	const album = urlParams.get('album');
+	const track = urlParams.get('track');
+	if (album != undefined) {
+		let activeAlbum = document.querySelector(`[data-album="${album}"]`);
+		if (activeAlbum == undefined) {
+			return
+		}
+
+		activeAlbum.dataset.active = 1;
+		activeAlbum.scrollIntoView();
+	
+		// If track is active, queue it up
+		if (track == undefined) {
+			// Open controls on mobile if no specific track selected
+			let body = document.querySelector(`body`);
+			body.dataset.music = 1;
+		} else {
+			let trackElmnt = activeAlbum.querySelectorAll('.song')[parseInt(track)-1];
+			trackElmnt.scrollIntoView();
+			trackElmnt.dataset.active = 1;
+			playSong(album, trackElmnt.dataset.song, true);
+			generateQueue();
+		}
+	}
+}
+
+// Share URL for albums or songs
+let shareNotice;
+let shareNoticeElmnt = document.querySelector('.copy-notice');
+function shareAlbum(e, album) {
+	e.stopPropagation();
+	clearTimeout(shareNotice);
+	let baseURL = window.location.href.split('?')[0];
+	navigator.clipboard.writeText(`${baseURL}?album=${album}`);
+	shareNoticeElmnt.dataset.active = 1;
+	shareNotice = setTimeout(() => {shareNoticeElmnt.dataset.active = 0}, 1000);
+}
+function shareSong(e, album, trackNumber) {
+	e.stopPropagation();
+	clearTimeout(shareNotice);
+	let baseURL = window.location.href.split('?')[0];
+	navigator.clipboard.writeText(`${baseURL}?album=${album}&track=${trackNumber}`);
+	shareNoticeElmnt.dataset.active = 1;
+	shareNotice = setTimeout(() => {shareNoticeElmnt.dataset.active = 0}, 1000);
+}
+for (let album of document.querySelectorAll('.album')) {
+	let albumShareButton = album.querySelector('.album-share');
+	albumShareButton.addEventListener('click', (e) => {
+		shareAlbum(e, album.dataset.album);
+	})
+
+	let trackNumber = 1;
+	for (let song of album.querySelectorAll('.song')) {
+		let shareButton = song.querySelector('.song-share');
+		const track = trackNumber;
+		shareButton.addEventListener('click', (e) => {
+			shareSong(e, album.dataset.album, track)
+		})
+		trackNumber++;
+	}
+}
+
+// View currently playing song
+function viewCurrentSong() {
+	openMusic();
+	let album = document.querySelector(`[data-album="${currentAlbum}"]`);
+	album.dataset.active = 1;
+	let songElmnt = album.querySelector('[data-active="1"]');
+	songElmnt.scrollIntoView();
 }
 
 // TODO
-// fix glitch with clicking repeat and shuffle before clicking on a song
+// info button on each album to open up album info

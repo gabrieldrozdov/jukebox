@@ -1,181 +1,336 @@
 {
-	"to-home-to-home": {
-		"name": "To Home?? To&nbsp;Home!!",
-		"date": "2021 December 28",
-		"cover": "to-home-to-home.jpg",
-		"desc": "<p>I wrote a concept album, <em>To Home</em>, in 2015 before I graduated from high school. I knew nothing about music production or engineering. I could write faster than I could record—I ended up adding an additional four songs to the album, as well as wrote and recorded tens more that wouldn’t make the cut. I wrote lyrics for the whole album and sang them—my voice wasn’t good, and I grew tired. I released the album in 2015. None of the vocal recordings sounded particularly professional, or refined, or good. I tried again in 2016 by making a shorter, refined version of the same album, this time called <em>Time Passes</em>. That also did not end up particularly good. I still love the underlying songs, though, so I’ve taken out the vocals and extracted the piano recordings. <em>To Home?? To Home!!</em> is a collection of what I played at the time, remastered a bit and put into one place.</p>",
+	"2021-25-even-more-no-one-asked-for": {
+		"name": "2021-25 EVEN MORE NO ONE ASKED FOR",
+		"date": "2025 August 25",
+		"cover": "2021-25-even-more-no-one-asked-for.jpg",
+		"desc": "<p>Pretty much everything.</p>",
 		"links": [
 		],
 		"songs": [
 			{
-				"name": "Mason the Killer",
-				"duration": "06:44",
-				"file": "01-mason-the-killer.mp3"
+				"name": "2021 07 08 BACK TO BLUISH GREEN WOODS",
+				"duration": "02:53",
+				"file": "01-2021-07-08-back-to-bluish-green-woods.mp3"
 			},
 			{
-				"name": "Through the Eyes of a Vacationer",
-				"duration": "04:00",
-				"file": "02-through-the-eyes-of-a-vacationer.mp3"
+				"name": "2021 10 15 COFFEE TAPS",
+				"duration": "02:21",
+				"file": "02-2021-10-15-coffee-taps.mp3"
 			},
 			{
-				"name": "Wouldn’t Know",
-				"duration": "05:34",
-				"file": "03-wouldnt-know.mp3"
+				"name": "2021 10 26 OCTET",
+				"duration": "01:28",
+				"file": "03-2021-10-26-octet.mp3"
 			},
 			{
-				"name": "Forever",
-				"duration": "09:04",
-				"file": "04-forever.mp3"
+				"name": "2021 11 01 TAAAAATATATATATTTTT",
+				"duration": "01:24",
+				"file": "04-2021-11-01-taaaaatatatatattttt.mp3"
 			},
 			{
-				"name": "Boxfish, Or, How Could I See This In A Different Light?",
-				"duration": "08:15",
-				"file": "05-boxfish.mp3"
+				"name": "2021 11 01 TAAAAATATATATATTTTT 2",
+				"duration": "01:39",
+				"file": "05-2021-11-01-taaaaatatatatattttt-2.mp3"
 			},
 			{
-				"name": "A Complex of Noise",
-				"duration": "07:13",
-				"file": "06-a-complex-of-noise.mp3"
+				"name": "2021 11 18 JACKET",
+				"duration": "00:29",
+				"file": "06-2021-11-18-jacket.mp3"
 			},
 			{
-				"name": "To Home",
-				"duration": "06:47",
-				"file": "07-to-home.mp3"
+				"name": "2021 11 18 WALK HMM",
+				"duration": "00:31",
+				"file": "07-2021-11-18-walk-hmm.mp3"
 			},
 			{
-				"name": "In a Cloud",
-				"duration": "07:42",
-				"file": "08-in-a-cloud.mp3"
+				"name": "2021 11 25 PAPER WALK",
+				"duration": "00:51",
+				"file": "08-2021-11-25-paper-walk.mp3"
 			},
 			{
-				"name": "Estate",
-				"duration": "04:53",
-				"file": "09-estate.mp3"
+				"name": "2021 11 26 BRAND NEW",
+				"duration": "00:30",
+				"file": "09-2021-11-26-brand-new.mp3"
 			},
 			{
-				"name": "Atlanta",
-				"duration": "04:30",
-				"file": "10-atlanta.mp3"
-			},
-			{
-				"name": "Life is a Nervous Twitch",
-				"duration": "05:16",
-				"file": "11-life-is-a-nervous-twitch.mp3"
-			},
-			{
-				"name": "My Happiest Days Are Filled With Noise",
-				"duration": "06:02",
-				"file": "12-my-happiest-days-are-filled-with-noise.mp3"
-			},
-			{
-				"name": "Planet, Maybe",
-				"duration": "01:59",
-				"file": "13-planet-maybe.mp3"
-			},
-			{
-				"name": "O, Isn’t It Fantastic?",
-				"duration": "03:18",
-				"file": "14-o-isnt-it-fantastic.mp3"
-			},
-			{
-				"name": "Flourish",
-				"duration": "04:39",
-				"file": "15-flourish.mp3"
-			},
-			{
-				"name": "A Low-Hung Head",
-				"duration": "07:13",
-				"file": "16-a-low-hung-head.mp3"
-			},
-			{
-				"name": "Grizzly Bear",
-				"duration": "03:25",
-				"file": "17-grizzly-bear.mp3"
-			},
-			{
-				"name": "Decider",
-				"duration": "04:54",
-				"file": "18-decider.mp3"
-			},
-			{
-				"name": "Where I Better Last!",
-				"duration": "03:00",
-				"file": "19-where-i-better-last.mp3"
-			},
-			{
-				"name": "Sure",
-				"duration": "04:04",
-				"file": "20-sure.mp3"
-			},
-			{
-				"name": "More",
-				"duration": "03:44",
-				"file": "21-more.mp3"
-			},
-			{
-				"name": "Mushroom",
-				"duration": "06:46",
-				"file": "22-mushroom.mp3"
-			},
-			{
-				"name": "Don’t Go Alone [Bonus Track]",
-				"duration": "03:07",
-				"file": "23-dont-go-alone-bonus-track.mp3"
-			},
-			{
-				"name": "Summary of Plot [Bonus Track]",
-				"duration": "01:06",
-				"file": "24-summary-of-plot-bonus-track.mp3"
-			},
-			{
-				"name": "Tybalt (Put Down Your Weapon) [Bonus Track]",
-				"duration": "02:49",
-				"file": "25-tybalt-put-down-your-weapon-bonus-track.mp3"
-			},
-			{
-				"name": "Three Unrelated Parts [Bonus Track]",
+				"name": "2021 12 02 CLEARLY",
 				"duration": "01:00",
-				"file": "26-three-unrelated-parts-bonus-track.mp3"
+				"file": "10-2021-12-02-clearly.mp3"
 			},
 			{
-				"name": "Scrapped [Bonus Track]",
-				"duration": "00:40",
-				"file": "27-scrapped-bonus-track.mp3"
+				"name": "2021 12 10 NOT MINE THEIRS",
+				"duration": "01:44",
+				"file": "11-2021-12-10-not-mine-theirs.mp3"
 			},
 			{
-				"name": "Sweet Obsolete [Bonus Track]",
+				"name": "2021 12 15 EASILY",
+				"duration": "03:18",
+				"file": "12-2021-12-15-easily.mp3"
+			},
+			{
+				"name": "2021 12 16 DOODLES FOR MUSICALS",
+				"duration": "01:22",
+				"file": "13-2021-12-16-doodles-for-musicals.mp3"
+			},
+			{
+				"name": "2021 12 17 RACK",
+				"duration": "00:54",
+				"file": "14-2021-12-17-rack.mp3"
+			},
+			{
+				"name": "2022 01 01 BACK AT THE DESK",
+				"duration": "00:44",
+				"file": "15-2022-01-01-back-at-the-desk.mp3"
+			},
+			{
+				"name": "2022 01 01 FROM THE THROAT",
+				"duration": "00:35",
+				"file": "16-2022-01-01-from-the-throat.mp3"
+			},
+			{
+				"name": "2022 01 13 PIANO DRAMATICA",
+				"duration": "00:28",
+				"file": "17-2022-01-13-piano-dramatica.mp3"
+			},
+			{
+				"name": "2022 02 22 EASILY 2",
+				"duration": "00:41",
+				"file": "18-2022-02-22-easily-2.mp3"
+			},
+			{
+				"name": "2022 03 15 REAL EYES",
+				"duration": "00:44",
+				"file": "19-2022-03-15-real-eyes.mp3"
+			},
+			{
+				"name": "2022 03 24 5PM",
+				"duration": "00:47",
+				"file": "20-2022-03-24-5pm.mp3"
+			},
+			{
+				"name": "2022 04 19 DAAAAH DAAAAH DAH",
+				"duration": "00:42",
+				"file": "21-2022-04-19-daaaah-daaaah-dah.mp3"
+			},
+			{
+				"name": "2022 04 19 MEEP MOOP",
+				"duration": "02:15",
+				"file": "22-2022-04-19-meep-moop.mp3"
+			},
+			{
+				"name": "2022 04 26 ANIMAL",
+				"duration": "01:19",
+				"file": "23-2022-04-26-animal.mp3"
+			},
+			{
+				"name": "2022 05 03 NOT REALLY ANIMAL",
+				"duration": "01:46",
+				"file": "24-2022-05-03-not-really-animal.mp3"
+			},
+			{
+				"name": "2022 05 18 MURPHED MORPHED",
+				"duration": "00:24",
+				"file": "25-2022-05-18-murphed-morphed.mp3"
+			},
+			{
+				"name": "2022 05 29 NEW HARVEST",
+				"duration": "01:38",
+				"file": "26-2022-05-29-new-harvest.mp3"
+			},
+			{
+				"name": "2022 06 16 OK I RECORDED IT",
+				"duration": "00:33",
+				"file": "27-2022-06-16-ok-i-recorded-it.mp3"
+			},
+			{
+				"name": "2022 07 08 CLUSTER",
+				"duration": "02:13",
+				"file": "28-2022-07-08-cluster.mp3"
+			},
+			{
+				"name": "2022 07 14 FIDDLE",
+				"duration": "00:26",
+				"file": "29-2022-07-14-fiddle.mp3"
+			},
+			{
+				"name": "2022 07 14 MORE ANIMALS",
+				"duration": "01:53",
+				"file": "30-2022-07-14-more-animals.mp3"
+			},
+			{
+				"name": "2022 07 15 OOOOOWEEEEEEAH",
+				"duration": "00:22",
+				"file": "31-2022-07-15-oooooweeeeeeah.mp3"
+			},
+			{
+				"name": "2022 11 18 GRIDSSS",
+				"duration": "01:50",
+				"file": "32-2022-11-18-gridsss.mp3"
+			},
+			{
+				"name": "2022 11 18 SUM MER",
+				"duration": "01:19",
+				"file": "33-2022-11-18-sum-mer.mp3"
+			},
+			{
+				"name": "2022 12 08 LIL SOUNDS",
+				"duration": "00:42",
+				"file": "34-2022-12-08-lil-sounds.mp3"
+			},
+			{
+				"name": "2022 12 14 LOTUS",
+				"duration": "01:37",
+				"file": "35-2022-12-14-lotus.mp3"
+			},
+			{
+				"name": "2023 07 18 NEW IDEA",
+				"duration": "02:28",
+				"file": "36-2023-07-18-new-idea.mp3"
+			},
+			{
+				"name": "2023 07 19 BUILD BUILD BUILD",
+				"duration": "01:14",
+				"file": "37-2023-07-19-build-build-build.mp3"
+			},
+			{
+				"name": "2023 07 19 MMHMM",
+				"duration": "00:53",
+				"file": "38-2023-07-19-mmhmm.mp3"
+			},
+			{
+				"name": "2023 07 28 HAHA",
+				"duration": "00:15",
+				"file": "39-2023-07-28-haha.mp3"
+			},
+			{
+				"name": "2023 07 28 PUHLEZE",
+				"duration": "00:26",
+				"file": "40-2023-07-28-puhleze.mp3"
+			},
+			{
+				"name": "2023 08 02 OH EH AH UH OH",
+				"duration": "01:13",
+				"file": "41-2023-08-02-oh-eh-ah-uh-oh.mp3"
+			},
+			{
+				"name": "2023 10 05 BLABBERMOUTH",
+				"duration": "00:52",
+				"file": "42-2023-10-05-blabbermouth.mp3"
+			},
+			{
+				"name": "2023 10 05 CROSS OUT",
+				"duration": "04:12",
+				"file": "43-2023-10-05-cross-out.mp3"
+			},
+			{
+				"name": "2023 10 06 SOME THING",
+				"duration": "00:24",
+				"file": "44-2023-10-06-some-thing.mp3"
+			},
+			{
+				"name": "2023 10 10 BIG BEAT",
 				"duration": "02:32",
-				"file": "28-sweet-obsolete-bonus-track.mp3"
+				"file": "45-2023-10-10-big-beat.mp3"
 			},
 			{
-				"name": "Track 17 [Bonus Track]",
+				"name": "2023 10 12 ANT",
+				"duration": "03:54",
+				"file": "46-2023-10-12-ant.mp3"
+			},
+			{
+				"name": "2023 10 26 106",
+				"duration": "00:38",
+				"file": "47-2023-10-28-106.mp3"
+			},
+			{
+				"name": "2023 11 22 NO THANKS",
+				"duration": "02:04",
+				"file": "48-2023-11-22-no-thanks.mp3"
+			},
+			{
+				"name": "2023 11 28 IRRELEVANT",
+				"duration": "02:00",
+				"file": "49-2023-11-28-irrelevant.mp3"
+			},
+			{
+				"name": "2023 11 28 UNNAMABLE",
+				"duration": "02:05",
+				"file": "50-2023-11-28-unnamable.mp3"
+			},
+			{
+				"name": "2023 11 28 YES I WILL",
+				"duration": "02:14",
+				"file": "51-2023-11-28-yes-i-will.mp3"
+			},
+			{
+				"name": "2023 11 30 REBECCA SOMETHING",
+				"duration": "00:55",
+				"file": "52-2023-11-30-rebecca-something.mp3"
+			},
+			{
+				"name": "2023 11 30 STEP",
+				"duration": "01:31",
+				"file": "53-2023-11-30-step.mp3"
+			},
+			{
+				"name": "2023 12 22 SICKO",
+				"duration": "01:38",
+				"file": "54-2023-12-22-sicko.mp3"
+			},
+			{
+				"name": "2023 12 24 CHRIMUS",
 				"duration": "03:12",
-				"file": "29-track-17-bonus-track.mp3"
+				"file": "55-2023-12-24-chrimus.mp3"
 			},
 			{
-				"name": "What Am I Doing, What Have I Done [Bonus Track]",
-				"duration": "02:51",
-				"file": "30-what-am-i-doing-what-have-i-done-bonus-track.mp3"
+				"name": "2023 12 24 CHRIMUS 2",
+				"duration": "01:39",
+				"file": "56-2023-12-24-chrimus-2.mp3"
 			},
 			{
-				"name": "On a Budget [Bonus Track]",
+				"name": "2024 02 16 DAY 1",
+				"duration": "00:56",
+				"file": "57-2024-02-16-day-1.mp3"
+			},
+			{
+				"name": "2024 05 23 HAVE IT",
+				"duration": "01:53",
+				"file": "58-2024-05-23-have-it.mp3"
+			},
+			{
+				"name": "2024 05 27 PRAWNHOUSE",
+				"duration": "01:57",
+				"file": "59-2024-05-27-prawnhouse.mp3"
+			},
+			{
+				"name": "2024 11 06 LOS",
+				"duration": "06:40",
+				"file": "60-2024-11-06-los.mp3"
+			},
+			{
+				"name": "2024 12 14 I HAVE NOT IT",
+				"duration": "01:45",
+				"file": "61-2024-12-14-i-have-not-it.mp3"
+			},
+			{
+				"name": "2025 04 25 DRUMSSS",
+				"duration": "00:20",
+				"file": "62-2025-04-25-drumsss.mp3"
+			},
+			{
+				"name": "2025 06 18 ONE TWO",
+				"duration": "02:00",
+				"file": "63-2025-06-18-one-two.mp3"
+			},
+			{
+				"name": "2025 07 25 FUDGE",
 				"duration": "01:42",
-				"file": "31-on-a-budget-bonus-track.mp3"
+				"file": "64-2025-07-25-fudge.mp3"
 			},
 			{
-				"name": "Ghost Commercial [Bonus Track]",
-				"duration": "02:09",
-				"file": "32-ghost-commercial-bonus-track.mp3"
-			},
-			{
-				"name": "End to an End [Bonus Track]",
-				"duration": "02:09",
-				"file": "33-end-to-an-end-bonus-track.mp3"
-			},
-			{
-				"name": "Harmony [Bonus Track]",
-				"duration": "01:51",
-				"file": "34-harmony-bonus-track.mp3"
+				"name": "2023 08 17 PUT YOUR BACK INTO IT",
+				"duration": "01:38",
+				"file": "65-2025-08-17-put-your-back-into-it.mp3"
 			}
 		]
 	},
@@ -1174,6 +1329,186 @@
 				"name": "Nola",
 				"duration": "01:14",
 				"file": "10-nola.mp3"
+			}
+		]
+	},
+	"to-home-instrumentals": {
+		"name": "To Home Instrumentals",
+		"date": "2014 May 19",
+		"cover": "to-home-to-home.jpg",
+		"desc": "2021 December 28 <p>I wrote a concept album, <em>To Home</em>, in 2015 before I graduated from high school. I knew nothing about music production or engineering. I could write faster than I could record—I ended up adding an additional four songs to the album, as well as wrote and recorded tens more that wouldn’t make the cut. I wrote lyrics for the whole album and sang them—my voice wasn’t good, and I grew tired. I released the album in 2015. None of the vocal recordings sounded particularly professional, or refined, or good. I tried again in 2016 by making a shorter, refined version of the same album, this time called <em>Time Passes</em>. That also did not end up particularly good. I still love the underlying songs, though, so I’ve taken out the vocals and extracted the piano recordings. <em>To Home?? To Home!!</em> is a collection of what I played at the time, remastered a bit and put into one place.</p>",
+		"links": [
+		],
+		"songs": [
+			{
+				"name": "Mason the Killer",
+				"duration": "06:44",
+				"file": "01-mason-the-killer.mp3"
+			},
+			{
+				"name": "Through the Eyes of a Vacationer",
+				"duration": "04:00",
+				"file": "02-through-the-eyes-of-a-vacationer.mp3"
+			},
+			{
+				"name": "Wouldn’t Know",
+				"duration": "05:34",
+				"file": "03-wouldnt-know.mp3"
+			},
+			{
+				"name": "Forever",
+				"duration": "09:04",
+				"file": "04-forever.mp3"
+			},
+			{
+				"name": "Boxfish, Or, How Could I See This In A Different Light?",
+				"duration": "08:15",
+				"file": "05-boxfish.mp3"
+			},
+			{
+				"name": "A Complex of Noise",
+				"duration": "07:13",
+				"file": "06-a-complex-of-noise.mp3"
+			},
+			{
+				"name": "To Home",
+				"duration": "06:47",
+				"file": "07-to-home.mp3"
+			},
+			{
+				"name": "In a Cloud",
+				"duration": "07:42",
+				"file": "08-in-a-cloud.mp3"
+			},
+			{
+				"name": "Estate",
+				"duration": "04:53",
+				"file": "09-estate.mp3"
+			},
+			{
+				"name": "Atlanta",
+				"duration": "04:30",
+				"file": "10-atlanta.mp3"
+			},
+			{
+				"name": "Life is a Nervous Twitch",
+				"duration": "05:16",
+				"file": "11-life-is-a-nervous-twitch.mp3"
+			},
+			{
+				"name": "My Happiest Days Are Filled With Noise",
+				"duration": "06:02",
+				"file": "12-my-happiest-days-are-filled-with-noise.mp3"
+			},
+			{
+				"name": "Planet, Maybe",
+				"duration": "01:59",
+				"file": "13-planet-maybe.mp3"
+			},
+			{
+				"name": "O, Isn’t It Fantastic?",
+				"duration": "03:18",
+				"file": "14-o-isnt-it-fantastic.mp3"
+			},
+			{
+				"name": "Flourish",
+				"duration": "04:39",
+				"file": "15-flourish.mp3"
+			},
+			{
+				"name": "A Low-Hung Head",
+				"duration": "07:13",
+				"file": "16-a-low-hung-head.mp3"
+			},
+			{
+				"name": "Grizzly Bear",
+				"duration": "03:25",
+				"file": "17-grizzly-bear.mp3"
+			},
+			{
+				"name": "Decider",
+				"duration": "04:54",
+				"file": "18-decider.mp3"
+			},
+			{
+				"name": "Where I Better Last!",
+				"duration": "03:00",
+				"file": "19-where-i-better-last.mp3"
+			},
+			{
+				"name": "Sure",
+				"duration": "04:04",
+				"file": "20-sure.mp3"
+			},
+			{
+				"name": "More",
+				"duration": "03:44",
+				"file": "21-more.mp3"
+			},
+			{
+				"name": "Mushroom",
+				"duration": "06:46",
+				"file": "22-mushroom.mp3"
+			},
+			{
+				"name": "Don’t Go Alone [Bonus Track]",
+				"duration": "03:07",
+				"file": "23-dont-go-alone-bonus-track.mp3"
+			},
+			{
+				"name": "Summary of Plot [Bonus Track]",
+				"duration": "01:06",
+				"file": "24-summary-of-plot-bonus-track.mp3"
+			},
+			{
+				"name": "Tybalt (Put Down Your Weapon) [Bonus Track]",
+				"duration": "02:49",
+				"file": "25-tybalt-put-down-your-weapon-bonus-track.mp3"
+			},
+			{
+				"name": "Three Unrelated Parts [Bonus Track]",
+				"duration": "01:00",
+				"file": "26-three-unrelated-parts-bonus-track.mp3"
+			},
+			{
+				"name": "Scrapped [Bonus Track]",
+				"duration": "00:40",
+				"file": "27-scrapped-bonus-track.mp3"
+			},
+			{
+				"name": "Sweet Obsolete [Bonus Track]",
+				"duration": "02:32",
+				"file": "28-sweet-obsolete-bonus-track.mp3"
+			},
+			{
+				"name": "Track 17 [Bonus Track]",
+				"duration": "03:12",
+				"file": "29-track-17-bonus-track.mp3"
+			},
+			{
+				"name": "What Am I Doing, What Have I Done [Bonus Track]",
+				"duration": "02:51",
+				"file": "30-what-am-i-doing-what-have-i-done-bonus-track.mp3"
+			},
+			{
+				"name": "On a Budget [Bonus Track]",
+				"duration": "01:42",
+				"file": "31-on-a-budget-bonus-track.mp3"
+			},
+			{
+				"name": "Ghost Commercial [Bonus Track]",
+				"duration": "02:09",
+				"file": "32-ghost-commercial-bonus-track.mp3"
+			},
+			{
+				"name": "End to an End [Bonus Track]",
+				"duration": "02:09",
+				"file": "33-end-to-an-end-bonus-track.mp3"
+			},
+			{
+				"name": "Harmony [Bonus Track]",
+				"duration": "01:51",
+				"file": "34-harmony-bonus-track.mp3"
 			}
 		]
 	},

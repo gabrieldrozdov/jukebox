@@ -4,10 +4,27 @@ const data = require('./songs.json');
 function generateHTML() {
 	// Generate songs
 	let albumsHTML = "";
-	let navHTML = "";
 	let infoNotes = "";
 	for (let key of Object.keys(data)) {
 		let album = data[key];
+
+		let songsHTML = "";
+		let songNumber = 1;
+		for (let song of album['songs']) {
+			let durationHTML = "";
+			for (let letter of song['duration']) {
+				durationHTML += `<span>${letter}</span>`;
+			}
+			songsHTML += `
+				<li class="song" onclick="playSong('${key}', '${song['name']}'); generateQueue(); closeMusic();" data-active="0" data-song="${song['name']}">
+					<span class="song-number">${songNumber}</span>
+					<span class="song-name">${song['name']}</span>
+					<span class="song-duration">${song['duration']}</span>
+					<button class="song-share"><svg viewBox="0 0 24 24"><path d="M6.188 8.719c.439-.439.926-.801 1.444-1.087 2.887-1.591 6.589-.745 8.445 2.069l-2.246 2.245c-.644-1.469-2.243-2.305-3.834-1.949-.599.134-1.168.433-1.633.898l-4.304 4.306c-1.307 1.307-1.307 3.433 0 4.74 1.307 1.307 3.433 1.307 4.74 0l1.327-1.327c1.207.479 2.501.67 3.779.575l-2.929 2.929c-2.511 2.511-6.582 2.511-9.093 0s-2.511-6.582 0-9.093l4.304-4.306zm6.836-6.836l-2.929 2.929c1.277-.096 2.572.096 3.779.574l1.326-1.326c1.307-1.307 3.433-1.307 4.74 0 1.307 1.307 1.307 3.433 0 4.74l-4.305 4.305c-1.311 1.311-3.44 1.3-4.74 0-.303-.303-.564-.68-.727-1.051l-2.246 2.245c.236.358.481.667.796.982.812.812 1.846 1.417 3.036 1.704 1.542.371 3.194.166 4.613-.617.518-.286 1.005-.648 1.444-1.087l4.304-4.305c2.512-2.511 2.512-6.582.001-9.093-2.511-2.51-6.581-2.51-9.092 0z"/></svg></button>
+				</li>
+			`;
+			songNumber++
+		}
 
 		let linksHTML = "";
 		if (album['links'].length > 0) {
@@ -16,41 +33,24 @@ function generateHTML() {
 					<a href="${link[1]}" target="_blank">${link[0]}</a>
 				`;
 			}
-			linksHTML = `<div class="info-notes-links">${linksHTML}</div>`;
-		}
-
-		let songsHTML = "";
-		let songNumber = 1;
-		for (let song of album['songs']) {
-			songsHTML += `
-				<li class="song" onclick="playSong('${key}', '${song['name']}'); generateQueue(); closeMusic();" data-active="0" data-song="${key} ${song['name']}">
-					<span class="song-number">${songNumber}</span>
-					<span class="song-name">${song['name']}</span>
-					<span class="song-duration">${song['duration']}</span>
-				</li>
-			`;
-			songNumber++
+			linksHTML = `<div class="album-info-links">${linksHTML}</div>`;
 		}
 		
 		albumsHTML += `
-			<section class="album" id="${key}" data-active="0">
-				<a class="album-header" href="#${key}">
-					<div class="album-header-cover">
-						<img src="music/${key}/${album['cover']}">
-					</div>
-					<div class="album-header-info">
-						<p class="album-header-info-date">${album['date']}</p>
-						<h2 class="album-header-info-title">${album['name']}</h2>
-					</div>
-				</a>
+			<section class="album" data-album="${key}" data-active="0">
+				<button class="album-header" href="#${key}" onclick="toggleAlbum('${key}');">
+					<p class="album-header-details">${album['date']} | ${album['songs'].length} songs</p>
+					<h2 class="album-header-title">${album['name']}</h2>
+					<div class="album-share"><svg viewBox="0 0 24 24"><path d="M6.188 8.719c.439-.439.926-.801 1.444-1.087 2.887-1.591 6.589-.745 8.445 2.069l-2.246 2.245c-.644-1.469-2.243-2.305-3.834-1.949-.599.134-1.168.433-1.633.898l-4.304 4.306c-1.307 1.307-1.307 3.433 0 4.74 1.307 1.307 3.433 1.307 4.74 0l1.327-1.327c1.207.479 2.501.67 3.779.575l-2.929 2.929c-2.511 2.511-6.582 2.511-9.093 0s-2.511-6.582 0-9.093l4.304-4.306zm6.836-6.836l-2.929 2.929c1.277-.096 2.572.096 3.779.574l1.326-1.326c1.307-1.307 3.433-1.307 4.74 0 1.307 1.307 1.307 3.433 0 4.74l-4.305 4.305c-1.311 1.311-3.44 1.3-4.74 0-.303-.303-.564-.68-.727-1.051l-2.246 2.245c.236.358.481.667.796.982.812.812 1.846 1.417 3.036 1.704 1.542.371 3.194.166 4.613-.617.518-.286 1.005-.648 1.444-1.087l4.304-4.305c2.512-2.511 2.512-6.582.001-9.093-2.511-2.51-6.581-2.51-9.092 0z"/></svg></div>
+				</button>
+				<div class="album-info">
+					${album['desc']}
+					${linksHTML}
+				</div>
 				<ul class="album-songs">
 					${songsHTML}
 				</ul>
 			</section>
-		`;
-
-		navHTML += `
-			<a href="#${key}" class="nav-link" data-album="${key}" onclick="closeInfo(); openMusic();"><img src="music/${key}/${album['cover']}"></a>
 		`;
 
 		infoNotes += `
@@ -81,9 +81,9 @@ function generateHTML() {
 			<link rel="icon" type="image/png" href="assets/meta/favicon.png" />
 			<link rel="stylesheet" href="style.css">
 		</head>
-		<body>		
+		<body data-player="0" data-music="0" data-info="0">		
 			<div class="container">
-				<header class="header">
+				<header class="header" onclick="closeInfo();">
 					<div class="logo-parent">
 						<div class="logo-container">
 							<h1 class="logo" data-pos="right">Jukebox</h1>
@@ -91,94 +91,61 @@ function generateHTML() {
 					</div>
 		
 					<div class="player" data-active="0">
-						<div class="player-song" onclick="openMusic();">
-							Pick a song!
-						</div>
-						<a class="player-album" onclick="openMusic();" href=""></a>
+						<button class="player-info" onclick="viewCurrentSong();">
+							<div class="player-info-details"></div>
+							<div class="player-info-song"></div>
+						</button>
 				
-						<div class="player-controls">
-							<div class="player-section" id="player-buttons">
-								<button class="player-button" id="player-back" onclick="prevSong();">
-									<svg width="24" height="24" viewBox="0 0 24 24"><path d="M13,12l11,7V5l-11,7ZM13,5v14L3,12l10-7ZM0,6h3v12H0V6Z"/></svg>
-								</button>
-								<button class="player-button" id="player-playpause" onclick="togglePlayPause();" data-active="1">
-									<svg viewBox="0 0 24 24" class="player-playpause-1"><path d="M9,22h-5V2h5v20ZM20,2h-5v20h5V2Z"/></svg>
-									<svg width="24" height="24" viewBox="0 0 24 24" class="player-playpause-2"><path d="M3 22v-20l18 10-18 10z"/></svg>
-								</button>
-								<button class="player-button" id="player-forward" onclick="nextSong();">
-									<svg width="24" height="24" viewBox="0 0 24 24"><path d="M11 12l-11 7v-14l11 7zm0-7v14l10-7-10-7zm13 1h-3v12h3v-12z"/></svg>
-								</button>
-							</div>
-			
-							<div class="player-section" id="player-playbar">
-								<div class="player-time">00:00</div>
-								<input type="range" class="player-playbar" min="0" max="100" value="0" oninput="skipToTime(this.value);">
-								<div class="player-duration">00:00</div>
-							</div>
-				
-							<div class="player-section" id="player-volume">
-								<button class="player-button" id="player-mute" onclick="toggleMute();" data-active="0">
-									<svg width="24" height="24" viewBox="0 0 24 24" class="player-mute-1"><path d="M19 7.358v15.642l-8-5v-.785l8-9.857zm3-6.094l-1.548-1.264-3.446 4.247-6.006 3.753v3.646l-2 2.464v-6.11h-4v10h.843l-3.843 4.736 1.548 1.264 18.452-22.736z"/></svg>
-									<svg width="24" height="24" viewBox="0 0 24 24" class="player-mute-2"><path d="M6 7l8-5v20l-8-5v-10zm-6 10h4v-10h-4v10zm20.264-13.264l-1.497 1.497c1.847 1.783 2.983 4.157 2.983 6.767 0 2.61-1.135 4.984-2.983 6.766l1.498 1.498c2.305-2.153 3.735-5.055 3.735-8.264s-1.43-6.11-3.736-8.264zm-.489 8.264c0-2.084-.915-3.967-2.384-5.391l-1.503 1.503c1.011 1.049 1.637 2.401 1.637 3.888 0 1.488-.623 2.841-1.634 3.891l1.503 1.503c1.468-1.424 2.381-3.309 2.381-5.394z"/></svg>
-								</button>
-								<input type="range" class="player-volume" min="0" max="100" value="80" oninput="changeVolume(this.value/100);">
-							</div>
+						<div class="player-section">
+							<button class="player-button" id="player-playpause" onclick="togglePlayPause();" data-active="0">
+								<svg class="player-playpause-play" viewBox="0 0 20 20"><path d="M6.13,2.89v14.22l9.74-7.11L6.13,2.89h0Z"/></svg>
+								<svg class="player-playpause-pause" viewBox="0 0 20 20"><rect x="4.82" y="3.48" width="3.54" height="13.05"/><rect x="11.64" y="3.48" width="3.54" height="13.05"/></svg>
+							</button>
+							<button class="player-button" id="player-back" onclick="prevSong();">
+								<svg viewBox="0 0 20 20"><path d="M17.11,2.89l-7.11,7.11,7.11,7.11V2.89h0ZM10,2.89l-7.11,7.11,7.11,7.11V2.89h0Z"/></svg>
+							</button>
+							<button class="player-button" id="player-forward" onclick="nextSong();">
+								<svg viewBox="0 0 20 20"><path d="M2.89,2.89v14.22l7.11-7.11L2.89,2.89h0ZM10,2.89v14.22l7.11-7.11-7.11-7.11h0Z"/></svg>
+							</button>
+							<button class="player-toggle" id="repeat" onclick="toggleRepeat();">
+								<span>Repeat</span>
+								<span id="repeat-mode">All</span>
+							</button>
+							<button class="player-toggle" id="shuffle" onclick="toggleShuffle();">
+								<span>Shuffle</span>
+								<span id="shuffle-mode">None</span>
+							</button>
 						</div>
 				
-						<div class="player-toggles">
-							<div class="player-toggle" id="repeat">
-								<label class="player-toggle-label">Repeat</label>
-								<button class="player-toggle-button" id="repeat-all" data-active="1" onclick="setRepeat('all');">
-									All
-								</button>
-								<button class="player-toggle-button" id="repeat-song" onclick="setRepeat('song');">
-									Song
-								</button>
-								<button class="player-toggle-button" id="repeat-album" onclick="setRepeat('album');">
-									Album
-								</button>
-							</div>
-							<div class="player-toggle" id="shuffle">
-								<label class="player-toggle-label">Shuffle</label>
-								<button class="player-toggle-button" id="shuffle-none" data-active="1" onclick="setShuffle('none');">
-									None
-								</button>
-								<button class="player-toggle-button" id="shuffle-album" onclick="setShuffle('album');">
-									Album
-								</button>
-								<button class="player-toggle-button" id="shuffle-all" onclick="setShuffle('all');">
-									All
-								</button>
-							</div>
+						<div class="player-section" id="player-playbar">
+							<div class="player-time"><span>0</span><span>0</span><span>:</span><span>0</span><span>0</span></div>
+							<input type="range" class="player-playbar" min="0" max="100" value="0" oninput="skipToTime(this.value);">
+							<div class="player-duration"><span>0</span><span>0</span><span>:</span><span>0</span><span>0</span></div>
 						</div>
 					</div>
 				</header>
 		
-				<main class="music" data-active="0">
-					<button class="music-close" onclick="closeMusic();">Close</button>
+				<main class="music" data-active="0" onclick="closeInfo();">
+					<button class="music-close" onclick="closeMusic();">×</button>
 					${albumsHTML}
+					<div class="music-controls">
+						<button onclick="expandAllAlbums();">Expand All</button>
+						<button onclick="collapseAllAlbums();">Collapse All</button>
+					</div>
 				</main>
 			</div>
 
 			<button class="menu-toggle menu-toggle-info" onclick="openInfo();">Info</button>
+
 			<button class="menu-toggle menu-toggle-music" onclick="openMusic();">Music</button>
 
-			<div class="info" data-active="0">
-				<button class="info-close" onclick="closeInfo();">Close</button>
-				<nav class="nav">
-					${navHTML}
-				</nav>
-				<div class="info-content">
-					<section class="info-content-intro">
-						<p>
-							Oh hi there. <a href='https://gabrieldrozdov.com/' target='_blank'>Gabriel Drozdov</a>, a.k.a. <a href="https://barcoloudly.com/" target="_blank">Barco Loudly</a>, here. I’ve been making music for a while. Here’s all of it.
-						</p>
-						<p>
-							This music is mine. If you want royalty-free tracks for whatever, check out <a href="https://bgm.barcoloudly.com/" target="_blank">BGM</a>. If you want musical toys, go to <a href="https://barcoloudly.com/" target="_blank">Barco Loudly</a>. If you want your own website (like to work together), reach out to <a href="https://noreplica.com/" target="_blank">No Replica</a>.
-						</p>
-					</section>
-					${infoNotes}
-				</div>
+			<div class="copy-notice" data-active="0">
+				<span>Link copied!</span>
+			</div>
+
+			<div class="info">
+				<button onclick="closeInfo();">×</button>
+				<p>Music and music player by <a href="https://barcoloudly.com/" target="_blank">Barco Loudly</a> (a.k.a. <a href="https://gabrieldrozdov.com/" target="_blank">Gabriel Drozdov</a>). I got sick of the other music services so I made my own. If you want to copy this site, all the code is free to download from <a href="https://github.com/gabrieldrozdov/jukebox" target="_blank">GitHub</a>. If you want to work with me on something (websites, music, etc.), head to <a href="https://noreplica.com/" target="_blank">No Replica</a>. Fonts are Limkin by <a href="https://toomuchtype.com/" target="_blank">Too Much Type</a> and <a href="https://vercel.com/font" target="_blank">Geist Mono</a>.</p>
 			</div>
 		
 			<script src="script.js"></script>
